@@ -1,4 +1,4 @@
-CUHackit Landing Page Github Page
+CUHackit Landing Page Github
 
 This is my first attempt at starting a git project hope it works. This is where All code changes/additions/etc should be put for the CUHackit splash page. I'm not entirely sure how to use this program, however, if anyone needs, a friend of mine did a good git rundown which I can try to put somewhere in here. 
 
