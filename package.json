@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "cu-hackathon",
+=======
+  "name": "cuhackit",
+>>>>>>> refs/remotes/origin/master
   "version": "0.1.0",
   "private": true,
   "dependencies": {
