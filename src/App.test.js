@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 /*jshint esversion:6*/
 
-=======
->>>>>>> refs/remotes/origin/master
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';

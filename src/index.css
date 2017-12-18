@@ -1,5 +1,4 @@
 body {
-<<<<<<< HEAD
   font-family: PT Mono;
   margin: 0;
   padding: 0;
@@ -82,11 +81,3 @@ ul {
   padding: 0 10px;
   text-align: center;
 }
-=======
-	align-items: center;
-	font-family: 'PT Mono', 'monospace';
-	margin: 0;
-	padding: 0;
-	text-align: center;
-}
->>>>>>> refs/remotes/origin/master
