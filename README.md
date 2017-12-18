@@ -1,19 +1,6 @@
 # CU Hackathon Splash-Page
 ### Sorry for formatting/other weirdness
-
-This is my first attempt at a real readme, please bear with me on this.
-
-   ____ _   _ _   _            _    _ _   
-
-  / ___| | | | | | | __ _  ___| | _(_) |_ 
-
- | |   | | | | |_| |/ _` |/ __| |/ / | __|
-
- | |___| |_| |  _  | (_| | (__|   <| | |_ 
-
-  \____|\___/|_| |_|\__,_|\___|_|\_\_|\__|
   
-
   This splash page, so far, is made in React, a javascript framework.
   That said: I do not really know what I am doing, and this is more or 
   less what I was able to learn about react in a day. The code is sloppy,
