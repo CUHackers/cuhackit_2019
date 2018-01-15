@@ -1,10 +1,25 @@
 body {
-    background-color: black;
+    background-color: #111;
     font-family: PT Mono;
+    color: white;
 }
 
 nav {
     border-radius: 0em !important;
+    background-color: #222222 !important;
+}
+
+#text_parent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-items: center;
+}
+h2{
+  color:#e70000;
+}
+#details{
+  text-align: center;
 }
 
 #footer{
@@ -15,4 +30,11 @@ nav {
 }
 .social{
   margin: 10px;
+}
+.bg-dark {
+    background-color: #191919 !important;
+}
+
+.bg-primary {
+    background-color: #191919 !important;
 }

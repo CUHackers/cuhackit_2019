@@ -31,7 +31,7 @@
 <!------------------------------------------------------------------------------------------------------>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <img src="resources/RGB_logo_bug.png" height="50" width="50" />
@@ -62,29 +62,40 @@
 </nav>
 
 <header class="bg-primary text-white">
-  <div class="container text-center">
+  <div class="container">
+    <div class="row">
+      <canvas id="clock" class="col-lg-10 mx-auto" width="780" height="140">Can't render clock</canvas>
+    </div>
   </div>
 </header>
 
-<div class="container">
-  <div class="row">
-    <canvas id="clock" class="col-lg-10 mx-auto" width="780" height="140" style="width: 100%; border:1px solid #000000;">Can't render clock</canvas>
-  </div>
-</div>
 
-<section id="details">
+
+<section id = "details">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <h2>Details</h2>
-        <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-        <ul>
-          <li>Clickable nav links that smooth scroll to page sections</li>
-          <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-          <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-          <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-        </ul>
-      </div>
+    <div class="col-lg-10 mx-auto">
+        <div >
+          <h1> Build Design Code </h1>
+          <p class="lead" style= "margin:50px">"The Mission of CUhackit is to encourage creativity and collaboration"</p>
+        </div>
+        <div class="row">
+          <div class = "col-lg-6" style= "text-align:center">
+            <h2>What</h2>
+            <p>aaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+          </div>
+          <div class = "col-lg-6" style= "text-align:center">
+            <h2>Where</h2>
+            <p>bbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+          </div>
+          <div class = "col-lg-6" style= "text-align:center">
+            <h2>Win</h2>
+            <p>cccccccccccccccccccccccccc</p>
+          </div>
+          <div class = "col-lg-6" style= "text-align:center">
+            <h2>When</h2>
+            <p>dddddddddddddddddddddddddd</p>
+          </div>
+        </div>
     </div>
   </div>
 </section>
@@ -95,17 +106,17 @@
       <div class="col-lg-8 mx-auto">
       	<div class="faq-body">
       		<div class="faq-head clearfix">
-		      	<i 
-		      		class="fa fa-flip-horizontal fa-commenting-o fa-commenting-o-1" 
+		      	<i
+		      		class="fa fa-flip-horizontal fa-commenting-o fa-commenting-o-1"
 		      		aria-hidden="true"
 		      		style="font-size: 4em;"></i>
 		      	<h2 class="faq-title">Frequently Asked Questions</h2>
-		        <i 
-		      		class="fa fa-commenting-o fa-commenting-o-2" 
+		        <i
+		      		class="fa fa-commenting-o fa-commenting-o-2"
 		      		aria-hidden="true"
 		      		style="font-size: 6em;"></i>
-		        <i 
-		      		class="fa fa-flip-horizontal fa-commenting-o fa-commenting-o-3" 
+		        <i
+		      		class="fa fa-flip-horizontal fa-commenting-o fa-commenting-o-3"
 		      		aria-hidden="true"
 		      		style="font-size: 5em;"></i>
 		      </div>
@@ -243,10 +254,7 @@
 <!-- Javascript for accordion menu in faq -->
 <script src="js/faq.js"></script>
 
-<div class="container">
-  <div class="row">
-    <canvas id="clock" class="col-lg-10 mx-auto" width="780" height="140" style="width: 100%; border:1px solid #000000;">Can't render clock</canvas>
-  </div>
-</div>
+<!-- Our canvas clock controller -->
+<script src="js/canvas-clock.js"></script>
 
 </body></html>
