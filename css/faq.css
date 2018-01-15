@@ -1,33 +1,37 @@
 .accordion {
   cursor: pointer;
+  border-bottom: 1px solid #ccc;
   padding: 18px;
   width: 100%;
   text-align: left;
   border: none;
   outline: none;
-  transition: 0.7s;
+  transition: 0.4s;
 }
 
 .active, .accordion:hover {
-	border-bottom: 1px solid #888;
   outline: none;
 }
 
 .panel {
+  background-color: #222224;
+  color: white;
 	display: none;
 	font-size: 12px;
-  padding: 22px 18px;
-  margin-bottom: 20px;
-  max-height: 0;
-  overflow: hidden;			
-  transition: all 0.2s ease-out;	
+  padding: 22px 18px 22px 18px;		
 }
 
 .accordion::before {
-    content: "\02795  "; /* Unicode character for "plus" sign (+) */
-    font-size: 12px;
+  content: "\02795  "; /* Unicode character for "plus" sign (+) */
+  font-size: 12px;
+  color: #FFFFFF;
 }
 
 .active::before {
-    content: "\2796  "; /* Unicode character for "minus" sign (-) */
+  content: "\2796  "; /* Unicode character for "minus" sign (-) */
+  color: #fff;
+}
+
+.bg-dark {
+  background-color: #191919 !important;
 }
