@@ -1,18 +1,7 @@
 # CU Hackathon Splash-Page
 ### Sorry for formatting/other weirdness
   
-  This splash page, so far, is made in React, a javascript framework.
-  That said: I do not really know what I am doing, and this is more or 
-  less what I was able to learn about react in a day. The code is sloppy,
-  but it more or less works.
-
-  This app was made in create-react-app. In order to run it, clone the 
-  repository into a directory where you want it, navigate to it, and run
-
-  >npm start.
-
-  This will launch a web browser with the current version of 
-  the website.
+# Could someone please let me into McAdams? 01/15/2018 -Charlie
 
   Commit changes often, we have version control for bad additions, but no
   way to recoup lost work if it isn't saved.
