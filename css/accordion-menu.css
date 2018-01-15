@@ -6,7 +6,7 @@
   border: none;
   border-bottom: 1px solid black;
   outline: none;
-  transition: 0.4s;
+  transition: 0.7s;
 }
 
 .active, .accordion:hover {
@@ -22,8 +22,6 @@
 
 .accordion::before {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
-    float: left;
-    margin-left: 5px;
 }
 
 .active::before {
