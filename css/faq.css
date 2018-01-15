@@ -6,7 +6,7 @@
   text-align: left;
   border: none;
   outline: none;
-  transition: 0.7s;
+  transition: 0.4s;
 }
 
 .active, .accordion:hover {
@@ -29,6 +29,7 @@
 
 .active::before {
   content: "\2796  "; /* Unicode character for "minus" sign (-) */
+  color: #fff;
 }
 
 .bg-dark {
