@@ -6,3 +6,15 @@ body {
 nav {
     border-radius: 0em !important;
 }
+
+#footer{
+  display: flex;
+  align-content:center;
+  justify-content:space-between;
+
+}
+
+#footer_social{
+  display: block;
+
+}
