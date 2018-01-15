@@ -1,0 +1,17 @@
+.comment {
+	color: white;
+}
+
+.updated {
+	background-color: #0C2CFB;
+	border: 1px solid #0C2CFB;
+	border-radius: 3px;
+	color: white;
+	margin-top: 2em;
+	padding: 5px 20px;
+}
+
+.updated:hover {
+  background-color: black;
+  color: white;
+}
