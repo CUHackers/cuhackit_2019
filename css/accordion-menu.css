@@ -9,12 +9,14 @@
 }
 
 .active, .accordion:hover {
+	border-bottom: 1px solid #888;
   outline: none;
 }
 
 .panel {
+	display: none;
+	font-size: 10px;
   padding: 0 18px;
-  display: none;
 }
 
 .accordion::before {
