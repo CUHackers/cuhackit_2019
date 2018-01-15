@@ -17,6 +17,9 @@
 	display: none;
 	font-size: 12px;
   padding: 22px 18px;
+  max-height: 0;
+  overflow: hidden;			
+  transition: max-height 0.2s ease-out;	
 }
 
 .accordion::before {
