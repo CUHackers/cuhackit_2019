@@ -1,8 +1,6 @@
 # CU Hackathon Splash-Page
 ### Sorry for formatting/other weirdness
   
-# Could someone please let me into McAdams? 01/15/2018 -Charlie
-
   Commit changes often, we have version control for bad additions, but no
   way to recoup lost work if it isn't saved.
 
