@@ -1,6 +1,7 @@
 body {
-    background-color: black;
+    background-color: #111;
     font-family: PT Mono;
+    color: white;
 }
 
 nav {
@@ -30,6 +31,22 @@ nav {
 .social{
   margin: 10px;
 }
+<<<<<<< HEAD
 #details{
   color: white;
+=======
+
+
+header {
+    background-color: #111
+}
+
+
+.bg-dark {
+    background-color: #111 !important;
+}
+
+.bg-primary {
+   background-color: #111 !important;
+>>>>>>> 2603be581ecfa21b8e8b2772c4d8aba94c6daf7f
 }
