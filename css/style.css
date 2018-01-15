@@ -8,11 +8,7 @@ nav {
     border-radius: 0em !important;
     background-color: #222222 !important;
 }
-.container{
-  align-self: center !important;
-  padding: 0 !important;
 
-}
 #text_parent{
   display: flex;
   flex-wrap: wrap;
@@ -35,3 +31,13 @@ h2{
 .social{
   margin: 10px;
 }
+<<<<<<< HEAD
+=======
+.bg-dark {
+    background-color: #191919 !important;
+}
+
+.bg-primary {
+    background-color: #191919 !important;
+}
+>>>>>>> 47fe6a8080321dd1ee4fa5a1556419ce6b20ff6e
