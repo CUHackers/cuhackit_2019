@@ -7,20 +7,23 @@ body {
 nav {
     border-radius: 0em !important;
 }
+.container{
+  align-self: center !important;
+  padding: 0 !important;
+
+}
 #text_parent{
   display: flex;
   flex-wrap: wrap;
   justify-content:space-between;
   align-items: center;
 }
-#child{
-  width: 50%;
-  height: 50%;
-}
-#child h2{
+h2{
   color:#e70000;
 }
-
+#details{
+  text-align: center;
+}
 
 #footer{
   display: flex;
@@ -30,5 +33,4 @@ nav {
 }
 .social{
   margin: 10px;
-}
 }
