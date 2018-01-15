@@ -15,8 +15,8 @@
 
 .panel {
 	display: none;
-	font-size: 10px;
-  padding: 0 18px;
+	font-size: 12px;
+  padding: 22px 18px;
 }
 
 .accordion::before {
