@@ -6,6 +6,7 @@ body {
 
 nav {
     border-radius: 0em !important;
+    background-color: #222222 !important;
 }
 .container{
   align-self: center !important;
