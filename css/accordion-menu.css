@@ -4,7 +4,6 @@
   width: 100%;
   text-align: left;
   border: none;
-  border-bottom: 1px solid black;
   outline: none;
   transition: 0.7s;
 }
@@ -21,9 +20,10 @@
 }
 
 .accordion::before {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: "\02795 "; /* Unicode character for "plus" sign (+) */
+    font-size: 12px;
 }
 
 .active::before {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "\2796 "; /* Unicode character for "minus" sign (-) */
 }
