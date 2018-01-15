@@ -1,12 +1,16 @@
 .accordion {
   cursor: pointer;
-  border-bottom: 1px solid #ccc;
+  border: none;
+  border-bottom: 1px solid #444;
   padding: 18px;
   width: 100%;
   text-align: left;
-  border: none;
   outline: none;
   transition: 0.4s;
+}
+
+.active {
+  border: none;
 }
 
 .active, .accordion:hover {
@@ -22,16 +26,58 @@
 }
 
 .accordion::before {
-  content: "\02795  "; /* Unicode character for "plus" sign (+) */
-  font-size: 12px;
+  content: "+  ";
+  font-size: 18px;
   color: #FFFFFF;
 }
 
 .active::before {
-  content: "\2796  "; /* Unicode character for "minus" sign (-) */
+  content: "-  ";
   color: #fff;
 }
 
 .bg-dark {
   background-color: #191919 !important;
+}
+
+.faq-title {
+  color: #0C2CFB;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.faq-head {
+  display: flex;
+  margin: 0 auto 50px auto;
+}
+
+.fa-commenting-o {
+  position: absolute;
+  font-weight: 100 !important;
+  display: inline-block !important;
+  z-index: 0;
+}
+
+.fa-commenting-o-1 {
+  float: left;
+  top: -50px;
+}
+
+.fa-commenting-o-2 {
+  float: right;
+  top: -15px;
+  right: 50px;
+}
+
+.fa-commenting-o-3 {
+  float: right;
+  top: -40px;
+  right: -30px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
