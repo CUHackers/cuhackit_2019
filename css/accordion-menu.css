@@ -19,9 +19,7 @@
 
 .accordion::before {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
-    float: right;
+    float: left;
     margin-left: 5px;
 }
 
