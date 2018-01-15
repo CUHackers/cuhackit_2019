@@ -1,0 +1,27 @@
+#becomeSponsor {
+	background: linear-gradient(
+		rgba(12,44,251,.5),
+		rgba(12,44,251,.5)), 
+		url("/resources/becomeSponsorBackground.png");
+	background-size: cover;
+	max-height: 400px;
+	color: white;
+}
+
+.becomeSponsor {
+	margin-top: -50px;
+}
+
+.sponsorButton {
+	background-color: black;
+	border-radius: 3px;
+	border: 1px solid black;
+	color: white;
+	margin-top: 50px;
+	padding: 8px 20px;
+}
+
+
+.sponsorButton:hover {
+	border: 1px solid white;
+}
