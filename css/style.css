@@ -6,6 +6,7 @@ body {
 
 nav {
     border-radius: 0em !important;
+    background-color: #222222 !important;
 }
 #text_parent{
   display: flex;
@@ -31,4 +32,10 @@ nav {
 .social{
   margin: 10px;
 }
+.bg-dark {
+    background-color: #191919 !important;
+}
+
+.bg-primary {
+    background-color: #191919 !important;
 }
