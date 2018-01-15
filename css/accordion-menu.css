@@ -4,6 +4,7 @@
   width: 100%;
   text-align: left;
   border: none;
+  border-bottom: 1px solid black;
   outline: none;
   transition: 0.4s;
 }
