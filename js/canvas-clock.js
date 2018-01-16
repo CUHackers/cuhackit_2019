@@ -1,3 +1,4 @@
+var eventDate = new Date(2018, 2, 10, 12);
 // Canvas access
 var c = document.getElementById("clock"),
     ctx = c.getContext("2d"),
@@ -5,7 +6,7 @@ var c = document.getElementById("clock"),
     height = c.height;
 
 // Colors
-var gridLineColor = "#444",
+var gridLineColor = "#333",
     gridTextGradient = ctx.createLinearGradient(0,0,0,height);
 gridTextGradient.addColorStop(0, "#00f");
 gridTextGradient.addColorStop(1, "#005");
@@ -136,7 +137,7 @@ const digits = [zero, one, two, three, four, five, six, seven, eight, nine];
 
 
 
-var eventDate = new Date(2018, 1, 1, 0, 0, 0, 0);
+
 var eventTime = eventDate.getTime();
 
 function secondsLeft() { return Math.floor((eventTime -  (new Date().getTime())) / 1000); }
