@@ -20,6 +20,12 @@ h2{
 }
 #details{
   text-align: center;
+  background-image: url("../resources/images/gridBig.png");
+  background-size: cover;
+}
+#register{
+  background-image: url("../resources/images/gridSmall.png");
+  background-size: cover;
 }
 
 #footer{

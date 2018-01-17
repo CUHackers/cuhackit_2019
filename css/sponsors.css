@@ -1,8 +1,5 @@
 #becomeSponsor {
-	background: linear-gradient(
-		rgba(12,44,251,.5),
-		rgba(12,44,251,.5)), 
-		url("/resources/becomeSponsorBackground.png");
+	background-image: url("../resources/images/codeBlueStock.png");
 	background-size: cover;
 	max-height: 400px;
 	color: white;
