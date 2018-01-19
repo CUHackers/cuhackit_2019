@@ -44,3 +44,36 @@ h2{
 .bg-primary {
     background-color: #191919 !important;
 }
+
+
+.active {
+
+    border-style: solid;
+    border-color: white;
+    border-radius: .2em;
+    border-width: 1px;
+}
+
+.time-label-container {
+    width: 100%;
+    margin-bottom: 6em;
+    color: #555;
+}
+.time-label-container span {
+    width: 23%;
+    display: inline-block;
+}
+
+
+.mainButton {
+    background-color: transparent;
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: .1em;
+    padding: .7em 1.2em .7em 1.2em;
+    border-color: #00f;
+    border-width: 2px;
+}
+.mainButton:hover {
+    border-color: white !important;
+}

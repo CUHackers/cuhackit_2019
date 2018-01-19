@@ -9,9 +9,6 @@
   transition: 0.4s;
 }
 
-.active {
-  border: none;
-}
 
 .active, .accordion:hover {
   outline: none;
@@ -22,18 +19,13 @@
   color: white;
 	display: none;
 	font-size: 12px;
-  padding: 22px 18px 22px 18px;		
+  padding: 22px 18px 22px 18px;
 }
 
 .accordion::before {
   content: "+  ";
   font-size: 18px;
   color: #FFFFFF;
-}
-
-.active::before {
-  content: "-  ";
-  color: #fff;
 }
 
 .bg-dark {

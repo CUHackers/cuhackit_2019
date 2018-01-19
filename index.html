@@ -62,28 +62,17 @@
 </nav>
 
 <header class="bg-primary">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto" style="text-align:center; margin-bottom: 4em;">
-	<img src="resources/RGB_logo.png" height="150" width="192" style="margin:auto"/>
-      </div>
-      <canvas id="clock" class="col-lg-10 mx-auto" width="780" height="140" style="margin-bottom: 1em;">
-	Can't render clock
-      </canvas>
-      <div class="col-lg-10 mx-auto row" style="text-align: center; margin-bottom: 4em; color: #555">
-	<span style="width:25%">DAYS</span>
-	<span style="width:25%">HOURS</span>
-	<span style="width:25%">MINUTES</span>
-	<span style="width:25%">SECONDS</span>
-      </div>
-      <div class="col-lg-10 mx-auto" style="text-align:center">
-	<button class="btn btn-primary" style="margin-bottom: 3em;">
-	  STAY UPDATED
-	</button>
-	<h3>MAR.10 - MAR.11 2018</h3>
-	<h3>Clemson University</h3>
-      </div>
+  <div style="width: 100%; text-align: center;">
+    <img src="resources/RGB_logo.png" height="150" width="192" style="margin:auto; margin-bottom: 4em;"/>
+    <canvas id="clock" width="780" height="140" style="width: 90%; margin-bottom: 1em;">
+      Can't render clock
+    </canvas>
+    <div class="time-label-container">
+      <span>DAYS</span><span>HOURS</span><span>MINUTES</span><span>SECONDS</span>
     </div>
+    <button class="mainButton" style="margin-bottom: 3em;">STAY UPDATED</button>
+    <h3>MAR.10 - MAR.11 2018</h3>
+    <h3>Clemson University</h3>
   </div>
 </header>
 
@@ -91,7 +80,7 @@
 
 <section id = "details">
   <div class="container">
-    <div class="col-lg-10 mx-auto">
+    <div class="col-md-10 mx-auto">
         <div>
           <h1>Design. Code. Build.</h1>
           <p class="lead" style= "margin:50px">"The Mission of CUhackit is to encourage creativity and collaboration"</p>
