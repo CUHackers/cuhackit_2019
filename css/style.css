@@ -1,79 +1,84 @@
+/*****************************************************************************/
+/*                                    font                                   */
+/*****************************************************************************/
+@import url('https://fonts.googleapis.com/css?family=PT+Mono|Roboto:300,400,500,700');
 body {
-    background-color: #111;
-    font-family: PT Mono;
+    background-color: #191919;
+    font-family: 'PT Mono', monospace; /*font-family: 'Roboto', sans-serif;*/
     color: white;
 }
+/* default colors */
+:root {
+    --darker: #191919;
+    --lighter: #222;
+    --emphasis: #e00;
+    --blue: #508fbd;
+}
 
+/*****************************************************************************/
+/*                               nav and footer                              */
+/*****************************************************************************/
+nav, footer {
+    box-shadow: 1em  0em 2em black;
+}
 nav {
-    border-radius: 0em !important;
-    background-color: #222222 !important;
+    height: 4em;
+    background-color: var(--lighter);
 }
-
-#text_parent{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-between;
-  align-items: center;
-}
-h2{
-  color:#e70000;
-}
-#details{
-  text-align: center;
-  background-image: url("../resources/images/gridBig.png");
-  background-size: cover;
-}
-#register{
-  background-image: url("../resources/images/gridSmall.png");
-  background-size: cover;
-}
-
-#footer{
-  display: flex;
-  align-content:center;
-  justify-content:space-between;
-
-}
-.social{
-  margin: 10px;
-}
-.bg-dark {
-    background-color: #191919 !important;
-}
-
-.bg-primary {
-    background-color: #191919 !important;
-}
-
-
-.active {
-
-    border-style: solid;
-    border-color: white;
-    border-radius: .2em;
-    border-width: 1px;
-}
-
-.time-label-container {
+footer {
+    height: 8em;
+    line-height: 8em;
+    background-color: var(--darker);
     width: 100%;
-    margin-bottom: 6em;
-    color: #555;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    vertical-align: middle;
 }
-.time-label-container span {
-    width: 23%;
-    display: inline-block;
+/* fix margin to account for  header and footer */
+body {
+    padding-top: 4em;
+}
+/*****************************************************************************/
+/*                                  sections                                 */
+/*****************************************************************************/
+section {
+    padding: 8em;
+    min-height: 40em;
+}
+.primary, .secondary {
+    width: 100%;
+    text-align: center;
+}
+.primary {
+    background-color: var(--darker);
+}
+.secondary {
+    background-color: var(--lighter);
 }
 
 
-.mainButton {
-    background-color: transparent;
+/*****************************************************************************/
+/*                                    misc                                   */
+/*****************************************************************************/
+a {
     color: white;
-    font-size: 1.2em;
-    letter-spacing: .1em;
-    padding: .7em 1.2em .7em 1.2em;
-    border-color: #00f;
-    border-width: 2px;
 }
-.mainButton:hover {
-    border-color: white !important;
+
+.comment {
+	color: white;
+}
+
+.updated {
+	background-color: #0C2CFB;
+	border: 1px solid #0C2CFB;
+	border-radius: 3px;
+	color: white;
+	margin-top: 2em;
+	padding: 5px 20px;
+}
+
+.updated:hover {
+  background-color: black;
+  color: white;
 }

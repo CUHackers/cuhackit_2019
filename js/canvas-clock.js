@@ -8,8 +8,8 @@ var c = document.getElementById("clock"),
 // Colors
 var gridLineColor = "#333",
     gridTextGradient = ctx.createLinearGradient(0,0,0,height);
-gridTextGradient.addColorStop(0, "#00f");
-gridTextGradient.addColorStop(1, "#005");
+gridTextGradient.addColorStop(0, "#1783C1");//"#002cf5");
+gridTextGradient.addColorStop(1, "#27B");
 
 
 

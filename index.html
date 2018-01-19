@@ -5,33 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="Angelo Carrabba, Charlie Gallentine, Courtney Shearer">
-
   <!-- Tab title and icon -->
   <title>CUhackit</title>
   <link rel="icon" href="resources/RGB_logo_bug.png">
-  <!--link rel="shortcut icon" href="/public/favicon.ico" /-->
+
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/scrolling-nav.css" rel="stylesheet">
+  <!--Font Awesome link to include icons-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom styles  -->
   <link rel="stylesheet" href="css/style.css">
-
-  <!-- Custom styles for register/faq-->
-  <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/countdown.css">
+  <link rel="stylesheet" href="css/faqs.css">
   <link rel="stylesheet" href="css/register.css">
   <link rel="stylesheet" href="css/sponsors.css">
-
-  <!--Font Awesome link to include icons-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="css/details.css">
 </head>
 <body id="page-top">
 <!------------------------------------------------------------------------------------------------------>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <img src="resources/RGB_logo_bug.png" height="50" width="50" />
@@ -51,34 +48,39 @@
           <a class="nav-link js-scroll-trigger" href="#sponsors">SPONSORS</a>
         </li>
 	<!-- <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#contact">CONTACT</a>
+             <a class="nav-link js-scroll-trigger" href="#contact">CONTACT</a>
         </li> -->
 	<li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#register">REGISTER</a>
+          <a class="nav-link js-scroll-trigger register" href="#register" >REGISTER</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<header class="bg-primary">
-  <div style="width: 100%; text-align: center;">
+
+<section id="countdown" class="primary">
+  <div>
     <img src="resources/RGB_logo.png" height="150" width="192" style="margin:auto; margin-bottom: 4em;"/>
+  </div>
+  <div>
     <canvas id="clock" width="780" height="140" style="width: 90%; margin-bottom: 1em;">
       Can't render clock
     </canvas>
-    <div class="time-label-container">
+    <div class="time-label">
       <span>DAYS</span><span>HOURS</span><span>MINUTES</span><span>SECONDS</span>
     </div>
-    <button class="mainButton" style="margin-bottom: 3em;">STAY UPDATED</button>
+  </div>
+  <div>
+    <button class="register" style="margin-bottom: 3em;">REGISTER</button>
     <h3>MAR.10 - MAR.11 2018</h3>
     <h3>Clemson University</h3>
   </div>
-</header>
+</section>
 
 
 
-<section id="details" style="background-color: #222 !important" >
+<section id="details" class="secondary">
   <div class="container">
     <div class="col-md-10 mx-auto">
         <div>
@@ -107,85 +109,97 @@
   </div>
 </section>
 
-<section id="faqs" class="bg-dark">
+<section id="faqs" class="primary">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto">
-      	<div class="faq-body">
-      		<div class="faq-head clearfix">
-		      	<i
-		      		class="fa fa-flip-horizontal fa-commenting-o fa-commenting-o-1"
-		      		aria-hidden="true"
-		      		style="font-size: 4em;"></i>
-		      	<h2 class="faq-title">Frequently Asked Questions</h2>
-		        <i
-		      		class="fa fa-commenting-o fa-commenting-o-2"
-		      		aria-hidden="true"
-		      		style="font-size: 6em;"></i>
-		        <i
-		      		class="fa fa-flip-horizontal fa-commenting-o fa-commenting-o-3"
-		      		aria-hidden="true"
-		      		style="font-size: 5em;"></i>
-		      </div>
-        <button class="accordion bg-dark  text-white">What is a hackathon?</button>
-					<div class="panel">
-					  <p>A hackathon is a 24 hour long event where students from different disciplines come together in small teams to work on real projects. The purpose of a hackathon is to have students learn about idea development and product design by being provided resources like hardware, workshops, and mentors. Hackathons are ultimately a collaborative space where creativity is encouraged and self-confidence can be obtained through hands on learning.</p>
-					</div>
-				<button class="accordion bg-dark text-white">Where is CUhackit?</button>
-					<div class="panel">
-					  <p>CUhackit will be held in the Watt Family Innovation Center at Clemson University. You can expect a large commonspace for announcements and community hacking, medium rooms for workshops, individual rooms for team concentration, and a separate area for sleep. We will also feature the Clemson Makerspace and the Immersive Space.</p>
-					</div>
-				<button class="accordion bg-dark  text-white">Who is CUhackit for?</button>
-					<div class="panel">
-					  <p>If you attend Clemson University and are interested in making and/or learning something awesome, CUhackit is for you! This event is specifically designed to be a great experience for students at any level.</p>
-					</div>
-				<button class="accordion bg-dark  text-white">What should I bring?</button>
-					<div class="panel">
-					  <p>Bring comfy clothes, toiletries (toothbrush, toothpaste, deodorant, etc.), your laptop, its charger, and yourself.</p>
-					</div>
-				<button class="accordion bg-dark  text-white">Help, this is my first hackathon!</button>
-					<div class="panel">
-					  <p>Awesome! Don't worry -- this event is as much about learning as it is making. We will have workshops and mentors to assist you throughout the event. Don't be afraid to ask for help and reach out to your peers. We're all excited for you to join the hacking community. Don't forget the best conversation starter: bonding over free food.</p>
-					</div>
-				<button class="accordion bg-dark  text-white">Can high school students attend?</button>
-					<div class="panel">
-					  <p>No. Currently this event is Clemson University student - exclusive.</p>
-					</div>
-				<button class="accordion bg-dark  text-white">Can mentors participate in hacking?</button>
-					<div class="panel">
-					  <p>Unfortunately, no. We need you all to be available to help our hackers throughout the duration of the event.</p>
-					</div>
-				<button class="accordion bg-dark  text-white">What happens after I register?</button>
-					<div class="panel">
-					  <p>Thanks for registering! You should receive an email in the following 1-2 days with registration confirmation. Further instructions will follow.</p>
-					</div>
-				<button class="accordion bg-dark  text-white">What do I do about teams?</button>
-					<div class="panel">
-					  <p>Gather your friends, meet some people at opening, or attend our team-creation event right after opening announcements. We're all about creating new connections and meeting new people! Max 4 people per team.</p>
-					</div>
-				<button class="accordion bg-dark  text-white">Is it really all free?!</button>
-					<div class="panel">
-					  <p>Yes yes yes! Food, swag, prizes, workshops, mentors, naps, and coffee. It's all thanks to our wonderful sponsors and participants who connect with them.</p>
-					</div>
-				<button class="accordion bg-dark  text-white">Will I be sitting at my computer all weekend?</button>
-					<div class="panel">
-					  <p>No! There’s more to the experience -- networking sessions, informal talks, workshops, super smash bro, midnight yoga, and much more!</p>
-					</div>
-				<button class="accordion bg-dark  text-white">Do I have to be there all 23 hours?</button>
-					<div class="panel">
-					  <p>Have to?! It's part of the experience to be there all 23 hours! Don't worry, the sleep room will have sleeping pads on deck.</p>
-					</div>
-				</div>
+      	<div class="body">
+      	  <div class="head clearfix">
+	    <h2 class="title">Frequently Asked Questions</h2>
+	    <i class="fa fa-commenting-o icon1" aria-hidden="true" style="font-size: 4em;"></i>
+	    <i class="fa fa-commenting-o icon2" aria-hidden="true" style="font-size: 6em;"></i>
+	    <i class="fa fa-commenting-o icon3" aria-hidden="true" style="font-size: 5em;"></i>
+	  </div>
+          <button class="accordion">What is a hackathon?</button>
+	  <div class="panel secondary">
+	    <p>A hackathon is a 24 hour long event where students from different disciplines come
+	    together in small teams to work on real projects. The purpose of a hackathon is to have
+	    students learn about idea development and product design by being provided resources
+	    like hardware, workshops, and mentors. Hackathons are ultimately a collaborative space
+	    where creativity is encouraged and self-confidence can be obtained through hands on
+	    learning.</p>
+	  </div>
+	  <button class="accordion">Where is CUhackit?</button>
+	  <div class="panel secondary">
+	    <p>CUhackit will be held in the Watt Family Innovation Center at Clemson University. You
+	    can expect a large commonspace for announcements and community hacking, medium rooms for
+	    workshops, individual rooms for team concentration, and a separate area for sleep. We
+	    will also feature the Clemson Makerspace and the Immersive Space.</p>
+	  </div>
+	  <button class="accordion">Who is CUhackit for?</button>
+	  <div class="panel ">
+	    <p>If you attend Clemson University and are interested in making and/or learning
+	    something awesome, CUhackit is for you! This event is specifically designed to be a
+	    great experience for students at any level.</p>
+	  </div>
+	  <button class="accordion">What should I bring?</button>
+	  <div class="panel">
+	    <p>Bring comfy clothes, toiletries (toothbrush, toothpaste, deodorant, etc.), your
+	    laptop, its charger, and yourself.</p>
+	  </div>
+	  <button class="accordion">Help, this is my first hackathon!</button>
+	  <div class="panel">
+	    <p>Awesome! Don't worry -- this event is as much about learning as it is making. We will
+	    have workshops and mentors to assist you throughout the event. Don't be afraid to ask
+	    for help and reach out to your peers. We're all excited for you to join the hacking
+	    community. Don't forget the best conversation starter: bonding over free food.</p>
+	  </div>
+	  <button class="accordion">Can high school students attend?</button>
+	  <div class="panel">
+	    <p>No. Currently this event is Clemson University student - exclusive.</p>
+	  </div>
+	  <button class="accordion">Can mentors participate in hacking?</button>
+	  <div class="panel">
+	    <p>Unfortunately, no. We need you all to be available to help our hackers throughout the
+	    duration of the event.</p>
+	  </div>
+	  <button class="accordion">What happens after I register?</button>
+	  <div class="panel">
+	    <p>Thanks for registering! You should receive an email in the following 1-2 days with
+	    registration confirmation. Further instructions will follow.</p>
+	  </div>
+	  <button class="accordion">What do I do about teams?</button>
+	  <div class="panel">
+	    <p>Gather your friends, meet some people at opening, or attend our team-creation event
+	    right after opening announcements. We're all about creating new connections and meeting
+	    new people! Max 4 people per team.</p>
+	  </div>
+	  <button class="accordion">Is it really all free?!</button>
+	  <div class="panel">
+	    <p>Yes yes yes! Food, swag, prizes, workshops, mentors, naps, and coffee. It's all
+	    thanks to our wonderful sponsors and participants who connect with them.</p>
+	  </div>
+	  <button class="accordion">Will I be sitting at my computer all weekend?</button>
+	  <div class="panel">
+	    <p>No! There’s more to the experience -- networking sessions, informal talks, workshops,
+	    super smash bro, midnight yoga, and much more!</p>
+	  </div>
+	  <button class="accordion">Do I have to be there all 23 hours?</button>
+	  <div class="panel">
+	    <p>Have to?! It's part of the experience to be there all 23 hours! Don't worry, the
+	    sleep room will have sleeping pads on deck.</p>
+	  </div>
+	</div>
+      </div>
     </div>
-  </div>
 </section>
 
 <section id="becomeSponsor">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mx-auto text-center becomeSponsor">
+      <div class="col-lg-8 mx-auto text-center ">
         <h2>CUhackit is only possible <br/> thanks to
-        the support of our <br/> awesome sponsors!</h2>
+          the support of our <br/> awesome sponsors!</h2>
         <button class="sponsorButton">BECOME A SPONSOR</button>
       </div>
     </div>
@@ -204,22 +218,22 @@
 </section>
 
 <!-- <section id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <h2>Contact us!</h2>
-        <p class="lead">Contact at cat@dog.com</p>
-      </div>
-    </div>
-  </div>
+     <div class="container">
+       <div class="row">
+	 <div class="col-lg-8 mx-auto">
+           <h2>Contact us!</h2>
+           <p class="lead">Contact at cat@dog.com</p>
+	 </div>
+       </div>
+     </div>
 </section> -->
 
-<section id="register" style="background-color: #222 !important" >
+<section id="register" class="secondary">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto text-center">
         <h2 class="comment">If you have any comments, questions, or just wanna chat,
-        reach out to us at CUhackit@gmail.com</h2>
+          reach out to us at CUhackit@gmail.com</h2>
         <button class="updated">STAY UPDATED</button>
       </div>
     </div>
@@ -227,24 +241,20 @@
 </section>
 
 <!-- Footer -->
-<footer class="py-5 bg-dark">
-
-  <div class="container" id="footer">
-    <p class="m-0 text-center text-white">Copyright &copy; CUhackit 2018</p>
-    <img src="resources/logos/CMYK Bug Color PREFERRED.png" height="100" width="100"/>
-    <div>
-      <a href="">
-        <img class="social" src="resources/images/fb.png" height="50" width="50"/>
-      </a>
-      <a href="">
-        <img class="social" src="resources/images/gram.png" height="50" width="50"/>
-      </a>
-      <a  href="">
-        <img class="social" src="resources/images/twit.png" height="50" width="50"/>
-     </a>
+<footer class="primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">Copyright &copy; CUhackit 2018</div>
+      <div class="col-md-4">
+	<img src="resources/RGB_logo_bug.png" height="80" width="80"/>
+      </div>
+      <div class="col-md-4" style="font-size: 4em">
+	<a href="" class="fab fa-facebook"></a>
+	<a href="" class="fab fa-instagram"></a>
+	<a href="" class="fab fa-twitter"></a>
+      </div>
     </div>
   </div>
-  <!-- /.container -->
 </footer>
 
 <!-- ------------------------------ Scripts go here -------------------------------------------- -->

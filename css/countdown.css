@@ -1,0 +1,31 @@
+/* selects div with div above it */
+#countdown > div + div {
+    margin-top: 3.5em;
+}
+
+#countdown #clock {
+    width: 90%;
+    margin-bottom: 1em;
+}
+#countdown .time-label {
+    width: 100%;
+    color: #555;
+}
+#countdown .time-label span {
+    width: 23%;
+    display: inline-block;
+}
+
+
+#countdown button {
+    background-color: transparent;
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: .1em;
+    padding: .7em 1.2em .7em 1.2em;
+    border-color: var(--blue);
+    border-width: 2px;
+}
+#countdown button:hover {
+    border-color: white;
+}

@@ -1,8 +1,14 @@
-.comment {
+
+#register {
+  background-image: url("../resources/images/gridSmall.png");
+  background-size: cover;
+}
+
+#register .comment {
 	color: white;
 }
 
-.updated {
+#register .updated {
 	background-color: #0C2CFB;
 	border: 1px solid #0C2CFB;
 	border-radius: 3px;
@@ -11,7 +17,7 @@
 	padding: 5px 20px;
 }
 
-.updated:hover {
+#register .updated:hover {
   background-color: black;
   color: white;
 }

@@ -1,4 +1,8 @@
-.accordion {
+#faqs {
+    color: white;
+    background-color: var(--darker);
+}
+#faqs .accordion {
   cursor: pointer;
   border: none;
   border-bottom: 1px solid #444;
@@ -7,68 +11,64 @@
   text-align: left;
   outline: none;
   transition: 0.4s;
+  background-color: var(--darker) !important;
+  color: white !important;
+}
+#faqs .panel {
+  background-color: var(--lighter);
+  display: none;
+  font-size: .9em;
+  padding: 1.5em 1em .8em 1em;
+  text-align: left;
+  vertical-align: middle;
+
 }
 
-
-.active, .accordion:hover {
-  outline: none;
-}
-
-.panel {
-  background-color: #222224;
-  color: white;
-	display: none;
-	font-size: 12px;
-  padding: 22px 18px 22px 18px;
-}
-
-.accordion::before {
+#faqs .accordion::before {
   content: "+  ";
   font-size: 18px;
-  color: #FFFFFF;
+  color: white;
 }
 
-.bg-dark {
-  background-color: #191919 !important;
-}
 
-.faq-title {
-  color: #0C2CFB;
+#faqs .title {
+  color: var(--emphasis);
   text-align: center;
   margin: 0 auto;
   z-index: 1;
 }
 
-.faq-head {
+#faqs .head {
   display: flex;
   margin: 0 auto 50px auto;
 }
 
-.fa-commenting-o {
+#faqs i {
   position: absolute;
   font-weight: 100 !important;
   display: inline-block !important;
   z-index: 0;
+  color: var(--lighter);
 }
 
-.fa-commenting-o-1 {
+#faqs .icon1 {
   float: left;
   top: -50px;
 }
 
-.fa-commenting-o-2 {
+#faqs .icon2 {
   float: right;
   top: -15px;
   right: 50px;
 }
 
-.fa-commenting-o-3 {
+#faqs .icon3 {
   float: right;
   top: -40px;
   right: -30px;
 }
 
-.clearfix:after {
+#faqs .clearfix:after {
   content: "";
   display: table;
   clear: both;

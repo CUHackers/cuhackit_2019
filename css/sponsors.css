@@ -5,11 +5,7 @@
 	color: white;
 }
 
-.becomeSponsor {
-	margin-top: -50px;
-}
-
-.sponsorButton {
+#becomeSponsor button {
 	background-color: black;
 	border-radius: 3px;
 	border: 1px solid black;
@@ -19,6 +15,6 @@
 }
 
 
-.sponsorButton:hover {
+#becomeSponsor button:hover {
 	border: 1px solid white;
 }
