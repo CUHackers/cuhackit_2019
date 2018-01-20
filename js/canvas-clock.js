@@ -154,7 +154,7 @@ function writeDigitAt(number, numberPos) {
 
     for (y = 0; y < digit.height; y++) {
 	for (x = 0; x < digit.width; x++) {
-	    if (grid[base[0] + y][base[1] + x] == numberSpec[y][x]) { continue; }
+	    if (grid[base[0] + y][base[1] + x] === numberSpec[y][x]) { continue; }
 	    grid[base[0] + y][base[1] + x] = numberSpec[y][x];
 	    wasChange = true;
 	}
