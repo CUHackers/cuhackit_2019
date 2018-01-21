@@ -30,6 +30,10 @@
   color: white;
 }
 
+.active::before {
+  content: "-  ";
+}
+
 
 #faqs .title {
   color: var(--emphasis);
