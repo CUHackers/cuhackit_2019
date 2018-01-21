@@ -87,4 +87,8 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    -moz-box-shadow:    inset 0em 0em 2em #000;
+    -webkit-box-shadow: inset 0em 0em 2em #000;
+    box-shadow:         inset 0em 0em 2em #000;
 }
