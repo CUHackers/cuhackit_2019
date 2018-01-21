@@ -30,7 +30,7 @@
   color: white;
 }
 
-.active::before {
+#faqs .active::before {
   content: "-  ";
 }
 
