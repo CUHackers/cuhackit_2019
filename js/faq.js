@@ -8,7 +8,7 @@ for (let i = 0; i < accordionTitle.length; i++) {
     if (panel.style.maxHeight) {
     	panel.style.maxHeight = null;
     } else {
-      panel.style.maxHeight = 200px;
+      panel.style.maxHeight = "200px";
     }
   });
 }
