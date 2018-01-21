@@ -6,7 +6,7 @@ for (let i = 0; i < accordionTitle.length; i++) {
     var panel = this.nextElementSibling;
 
     if (panel.style.display === "none") {
-    	panel.style.height = "block";
+    	panel.style.display = "block";
     } else {
       panel.style.display = "none";
     }
