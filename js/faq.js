@@ -5,10 +5,10 @@ for (let i = 0; i < accordionTitle.length; i++) {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
 
-    if (panel.style.maxHeight) {
-    	panel.style.maxHeight = null;
+    if (panel.style.height) {
+    	panel.style.height = null;
     } else {
-      panel.style.maxHeight = "200px";
+      panel.style.height = "200px";
     }
   });
 }
