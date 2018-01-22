@@ -1,4 +1,4 @@
-nav a {
+nav a, nav i {
     --setcolor: #999;
     color: var(--setcolor) !important;
     border-color: var(--setcolor) !important;
@@ -10,4 +10,12 @@ nav .register {
     border-style: solid;
     border-width: .05em;
     border-radius: .1em;
+    padding: 1em;
+}
+nav i {
+    color: var(--setcolor);
+}
+
+nav #navbarResponsive {
+    text-align: center;
 }

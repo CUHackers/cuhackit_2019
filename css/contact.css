@@ -1,14 +1,14 @@
 
-#register {
+#contact {
   background-image: url("../resources/images/gridSmall.png");
   background-size: cover;
 }
 
-#register .comment {
+#contact .comment {
 	color: white;
 }
 
-#register .updated {
+#contact .updated {
 	background-color: #0C2CFB;
 	border: 1px solid #0C2CFB;
 	border-radius: 3px;
@@ -17,7 +17,7 @@
 	padding: 5px 20px;
 }
 
-#register .updated:hover {
+#contact .updated:hover {
   background-color: black;
   color: white;
 }
