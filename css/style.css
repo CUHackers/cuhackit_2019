@@ -6,6 +6,7 @@ body {
     background-color: #191919;
     font-family: 'PT Mono', monospace; /*font-family: 'Roboto', sans-serif;*/
     color: white;
+    min-width: 500px;
 }
 /* default colors */
 :root {
@@ -22,7 +23,6 @@ nav, footer {
     box-shadow: 1em 0em 2em black;
 }
 nav {
-    height: 4em;
     background-color: var(--lighter);
 }
 footer {
@@ -37,7 +37,7 @@ footer {
 }
 /* fix margin to account for  header and footer */
 body {
-    padding-top: 4em;
+    padding-top: 70px;
 }
 /*****************************************************************************/
 /*                                  sections                                 */

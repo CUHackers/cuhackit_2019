@@ -7,7 +7,6 @@ nav :hover, nav .active {
     --setcolor: white;
 }
 nav .register {
-
     border-style: solid;
     border-width: .05em;
     border-radius: .1em;
