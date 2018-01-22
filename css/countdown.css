@@ -33,7 +33,7 @@
     letter-spacing: .1em;
     padding: .7em 1.2em .7em 1.2em;
     border-color: var(--blue);
-    border-width: 2px;
+    border-width: .1em;
 }
 #countdown button:hover {
     border-color: white;
