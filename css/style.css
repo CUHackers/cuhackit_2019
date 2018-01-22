@@ -6,7 +6,7 @@ body {
     background-color: #191919;
     font-family: 'PT Mono', monospace; /*font-family: 'Roboto', sans-serif;*/
     color: white;
-    min-width: 500px;
+    min-width: 300px;
 }
 /* default colors */
 :root {
@@ -91,4 +91,19 @@ a {
     -moz-box-shadow:    inset 0em 0em 2em #000;
     -webkit-box-shadow: inset 0em 0em 2em #000;
     box-shadow:         inset 0em 0em 2em #000;
+}
+.mysquare {
+    width: 100%;
+    position: relative;
+}
+.mysquare:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+
+}
+.in-mysquare {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
