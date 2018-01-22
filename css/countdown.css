@@ -1,4 +1,8 @@
 /* selects div with div above it */
+#countdown {
+    margin-left: 5%;
+    width: 90%;
+}
 #countdown > div + div {
     margin-top: 3.5em;
 }
@@ -7,9 +11,11 @@
     width: 90%;
     margin-bottom: 1em;
 }
+
+
 #countdown .time-label {
     width: 100%;
-    color: #555;
+    color: white;
 }
 #countdown .time-label span {
     width: 23%;

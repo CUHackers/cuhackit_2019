@@ -19,7 +19,7 @@ body {
 /*                               nav and footer                              */
 /*****************************************************************************/
 nav, footer {
-    box-shadow: 1em  0em 2em black;
+    box-shadow: 1em 0em 2em black;
 }
 nav {
     height: 4em;
@@ -43,7 +43,7 @@ body {
 /*                                  sections                                 */
 /*****************************************************************************/
 section {
-    padding: 8em;
+    padding: 8em 0em 8em 0em;
     min-height: 40em;
 }
 .primary, .secondary {
