@@ -6,7 +6,6 @@ body {
     background-color: #191919;
     font-family: 'PT Mono', monospace; /*font-family: 'Roboto', sans-serif;*/
     color: white;
-    min-width: 300px;
 }
 /* default colors */
 :root {
