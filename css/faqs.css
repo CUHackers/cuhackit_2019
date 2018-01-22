@@ -22,8 +22,10 @@
   text-align: left;
   transition: max-height 0.2s ease-out;
   vertical-align: middle;
-  padding: 0em 1em;
-
+}
+/* Selector for active panel */
+#faqs .active + .panel{
+  padding: 1em 1em 0em 1em;
 }
 
 #faqs .accordion::before {
