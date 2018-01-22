@@ -4,8 +4,10 @@ for (let i = 0; i < accordionTitle.length; i++) {
   	accordionTitle[i].addEventListener("click", function() {
   		let panel = this.nextElementSibling;
 
-  		hideAllPanels();
-
+  		if (!panel.style.maxHeight) {
+  			hideAllPanels();
+  		}
+  		
     	this.classList.toggle("active");
 
     	if (panel.style.maxHeight) {
