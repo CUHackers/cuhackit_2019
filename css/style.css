@@ -73,6 +73,11 @@ section {
 /*****************************************************************************/
 a {
     color: white;
+
+}
+a:hover {
+    text-decoration: none;
+    color: var(--blue)
 }
 
 .comment {
