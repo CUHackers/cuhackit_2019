@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="Angelo Carrabba, Charlie Gallentine, Courtney Shearer">
   <!-- Tab title and icon -->
@@ -19,21 +19,35 @@
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/countdown.css">
   <link rel="stylesheet" href="css/faqs.css">
-  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/sponsors.css">
   <link rel="stylesheet" href="css/details.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112858061-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112858061-1');
+  </script>
+
 </head>
 <body id="page-top">
 <!------------------------------------------------------------------------------------------------------>
 
+
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <img src="resources/RGB_logo_bug.png" height="50" width="50" />
+      <img src="resources/RGB_logo_bug.png" height="50" width="64"  />
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <i class="fas fa-bars fa-2x" ></i>
+    </button>
+
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
@@ -46,21 +60,29 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#sponsors">SPONSORS</a>
         </li>
-	<!-- <li class="nav-item">
-             <a class="nav-link js-scroll-trigger" href="#contact">CONTACT</a>
-        </li> -->
 	<li class="nav-item">
-          <a class="nav-link js-scroll-trigger register">REGISTER</a>
+             <a class="nav-link js-scroll-trigger" href="#contact">CONTACT</a>
+        </li>
+	<li class="nav-item">
+          <a class="nav-link js-scroll-trigger"><span class="register">REGISTER</span></a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-
 <section id="countdown" class="primary">
   <div>
-    <img src="resources/RGB_logo.png" height="150" width="192" style="margin:auto; margin-bottom: 4em;"/>
+    <div style="width: 20%; margin-left: 40%;">
+      <div class="mysquare">
+	<img src="resources/RGB_logo.png"
+	     class="in-mysquare"
+	     height="150"
+	     width="192"
+	     style="width: 100%; height: 78%;"
+	     />
+      </div>
+    </div>
   </div>
   <div>
     <!-- needs 39 by 7 ratio for width to height -->
@@ -80,7 +102,7 @@
 
 
 
-<section id="details" class="secondary">
+<section id="details" class="secondary parallax">
   <div class="container">
     <div class="col-md-10 mx-auto">
         <div>
@@ -89,19 +111,19 @@
         </div>
         <div class="row">
           <div class = "col-lg-6" style= "text-align:center">
-            <h2><b>What</b></h2>
+            <h2 class="title"><b>What</b></h2>
             <p>A hackathon is best described as a 24 hour "invention marathon!</p>
           </div>
           <div class = "col-lg-6" style= "text-align:center">
-            <h2><b>Where</b></h2>
+            <h2 class="title"><b>Where</b></h2>
             <p>The Watt Family Innovation Center</p>
           </div>
           <div class = "col-lg-6" style= "text-align:center">
-            <h2><b>When</b></h2>
+            <h2 class="title"><b>When</b></h2>
             <p> March 10/11 from 10am to 10am</p>
           </div>
           <div class = "col-lg-6" style= "text-align:center">
-            <h2><b>Win</b></h2>
+            <h2 class="title"><b>Win</b></h2>
             <p>Cool prizes for solving our interesting challenges or create something completely your own!</p>
           </div>
         </div>
@@ -182,7 +204,7 @@
 	  <button class="accordion">Will I be sitting at my computer all weekend?</button>
 	  <div class="panel">
 	    <p>No! There’s more to the experience -- networking sessions, informal talks, workshops,
-	    super smash bro, midnight yoga, and much more!</p>
+	    super smash bros, midnight yoga, and much more!</p>
 	  </div>
 	  <button class="accordion">Do I have to be there all 23 hours?</button>
 	  <div class="panel">
@@ -194,12 +216,12 @@
     </div>
 </section>
 
-<section id="becomeSponsor">
+<section id="becomeSponsor" class="parallax">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto text-center ">
-        <h2>CUhackit is only possible <br/> thanks to
-          the support of our <br/> awesome sponsors!</h2>
+        <p>CUhackit is only possible <br/> thanks to
+          the support of our <br/> awesome sponsors!</p>
         <button class="sponsorButton">BECOME A SPONSOR</button>
       </div>
     </div>
@@ -228,13 +250,13 @@
      </div>
 </section> -->
 
-<section id="register" class="secondary">
+<section id="contact" class="secondary parallax">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
-        <h2 class="comment">If you have any comments, questions, or just wanna chat,
-          reach out to us at CUhackit@gmail.com</h2>
-        <button class="updated">STAY UPDATED</button>
+      <div class="col-lg-8 col-sm-12 mx-auto text-center">
+        <p>If you have any comments, questions, or just wanna chat,
+          reach out to us at CUhackit@gmail.com</p>
+        <button class="updated">CONTACT</button>
       </div>
     </div>
   </div>
@@ -244,11 +266,13 @@
 <footer class="primary">
   <div class="container">
     <div class="row">
-      <div class="col-md-4">Copyright &copy; CUhackit 2018</div>
-      <div class="col-md-4">
-	<img src="resources/RGB_logo_bug.png" height="80" width="80"/>
+      <div style="width: 40%; font-size: .8em; text-align: left;">CUhackit<sup>&copy;</sup> 2018</div>
+      <div style="width: 20%;">
+	<div class="square">
+	  <img src="resources/RGB_logo_bug.png" height="63" width="80"/>
+	</div>
       </div>
-      <div class="col-md-4" style="font-size: 4em">
+      <div style="width: 40%; font-size: 5vw; text-align: right">
 	<a href="" class="fab fa-facebook"></a>
 	<a href="" class="fab fa-instagram"></a>
 	<a href="" class="fab fa-twitter"></a>

@@ -6,7 +6,7 @@
   cursor: pointer;
   border: none;
   border-bottom: 1px solid #444;
-  padding: 18px;
+  padding: 1em;
   width: 100%;
   text-align: left;
   outline: none;
@@ -16,56 +16,60 @@
 }
 #faqs .panel {
   background-color: var(--lighter);
-  display: none;
   font-size: .9em;
-  padding: 1.5em 1em .8em 1em;
+  max-height: 0;
+  overflow: hidden;
   text-align: left;
+  transition: max-height 0.2s ease-out;
   vertical-align: middle;
-
+}
+/* Selector for active panel */
+#faqs .active + .panel{
+  padding: 1em 1em 0em 1em;
 }
 
 #faqs .accordion::before {
   content: "+  ";
-  font-size: 18px;
+  font-size: 1em;
   color: white;
 }
 
+#faqs .active::before {
+  content: "-  ";
+}
 
 #faqs .title {
-  color: var(--emphasis);
-  text-align: center;
-  margin: 0 auto;
-  z-index: 1;
+    z-index: 100;
 }
+
 
 #faqs .head {
   display: flex;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 3em auto;
 }
 
 #faqs i {
   position: absolute;
   font-weight: 100 !important;
   display: inline-block !important;
-  z-index: 0;
   color: var(--lighter);
 }
 
 #faqs .icon1 {
   float: left;
-  top: -50px;
+  top: -1em;
 }
 
 #faqs .icon2 {
   float: right;
-  top: -15px;
-  right: 50px;
+  top: -1em;
+  right: 10%;
 }
 
 #faqs .icon3 {
   float: right;
-  top: -40px;
-  right: -30px;
+  top: -.1em;
+  right: 5%;
 }
 
 #faqs .clearfix:after {

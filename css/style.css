@@ -12,17 +12,16 @@ body {
     --darker: #191919;
     --lighter: #222;
     --emphasis: #e00;
-    --blue: #508fbd;
+    --blue: #002cf5;
 }
 
 /*****************************************************************************/
 /*                               nav and footer                              */
 /*****************************************************************************/
 nav, footer {
-    box-shadow: 1em  0em 2em black;
+    box-shadow: 1em 0em 2em black;
 }
 nav {
-    height: 4em;
     background-color: var(--lighter);
 }
 footer {
@@ -37,13 +36,13 @@ footer {
 }
 /* fix margin to account for  header and footer */
 body {
-    padding-top: 4em;
+    padding-top: 70px;
 }
 /*****************************************************************************/
 /*                                  sections                                 */
 /*****************************************************************************/
 section {
-    padding: 8em;
+    padding: 8em 0em 8em 0em;
     min-height: 40em;
 }
 .primary, .secondary {
@@ -69,16 +68,47 @@ a {
 	color: white;
 }
 
+.title {
+  color: var(--emphasis);
+  text-align: center;
+  margin: 0 auto;
+}
+
 .updated {
 	background-color: #0C2CFB;
 	border: 1px solid #0C2CFB;
-	border-radius: 3px;
+	border-radius: .1em;
 	color: white;
 	margin-top: 2em;
-	padding: 5px 20px;
+	padding: .2em 1em;
 }
 
 .updated:hover {
   background-color: black;
   color: white;
+}
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    -moz-box-shadow:    inset 0em 0em 2em #000;
+    -webkit-box-shadow: inset 0em 0em 2em #000;
+    box-shadow:         inset 0em 0em 2em #000;
+}
+.mysquare {
+    width: 100%;
+    position: relative;
+}
+.mysquare:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+
+}
+.in-mysquare {
+    position: absolute;
+    top: 0;
+    left: 0;
 }

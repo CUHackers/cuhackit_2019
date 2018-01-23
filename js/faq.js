@@ -1,14 +1,26 @@
 const accordionTitle = document.getElementsByClassName("accordion");
 
 for (let i = 0; i < accordionTitle.length; i++) {
-  accordionTitle[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+  	accordionTitle[i].addEventListener("click", function() {
+  		let panel = this.nextElementSibling;
 
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";  
-    }
+  		if (!panel.style.maxHeight) {
+  			hideAllPanels();
+  		}
+  		
+    	this.classList.toggle("active");
+
+    	if (panel.style.maxHeight) {
+    		panel.style.maxHeight = null;
+    	} else {
+     		panel.style.maxHeight = panel.scrollHeight + "px";
+    	}
   });
+}
+
+function hideAllPanels() {
+    for (i = 0; i < accordionTitle.length; i++) {
+        accordionTitle[i].classList.toggle("active", false);
+        accordionTitle[i].nextElementSibling.style.maxHeight = null;
+    }
 }
