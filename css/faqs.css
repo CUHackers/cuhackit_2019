@@ -57,18 +57,18 @@
 
 #faqs .icon1 {
   float: left;
-  top: -1em;
+  top: -.5em;
 }
 
 #faqs .icon2 {
   float: right;
-  top: -1em;
+  top: -.5em;
   right: 10%;
 }
 
 #faqs .icon3 {
   float: right;
-  top: -.1em;
+  top: .3em;
   right: 5%;
 }
 
