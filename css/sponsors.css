@@ -1,32 +1,9 @@
 #becomeSponsor {
-	background-image: url("../resources/images/codeBlueStock.png");
-	background-size: cover;
-	max-height: 400px;
-	color: white;
+    background-image: url("../resources/images/codeBlueStock.png");
+    background-size: cover;
+    max-height: 400px;
+    color: white;
 }
-
-#becomeSponsor button {
-	background-color: black;
-	border-radius: 3px;
-	border: 1px solid black;
-	color: white;
-	margin-top: 50px;
-	padding: 8px 20px;
-}
-
-
-#becomeSponsor button:hover {
-	border: 1px solid white;
-}
-
-#becomeSponsor p {
-    font-size: larger;
-}
-
-
-
-
 #sponsors {
-
     text-align: center;
 }

@@ -1,27 +1,5 @@
-
 #contact {
-  background-image: url("../resources/images/gridSmall.png");
+  background-image: url("../resources/images/codeBlueStock.png");
   background-size: cover;
-}
-
-#contact .comment {
-	color: white;
-}
-
-#contact .updated {
-	background-color: #0C2CFB;
-	border: 1px solid #0C2CFB;
-	border-radius: 3px;
-	color: white;
-	margin-top: 2em;
-	padding: 5px 20px;
-}
-
-#contact .updated:hover {
-  background-color: black;
-  color: white;
-}
-
-#contact p {
-    font-size: larger;
+  vertical-align: middle;
 }

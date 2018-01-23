@@ -4,7 +4,3 @@
   background-size: cover;
   background-color: var(--lighter);
 }
-
-#details .title {
-    color: var(--blue);
-}

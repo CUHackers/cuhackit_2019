@@ -77,3 +77,7 @@
   display: table;
   clear: both;
 }
+
+#faqs p {
+    font-size: 1em;
+}
