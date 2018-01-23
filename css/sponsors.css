@@ -18,3 +18,15 @@
 #becomeSponsor button:hover {
 	border: 1px solid white;
 }
+
+#becomeSponsor p {
+    font-size: larger;
+}
+
+
+
+
+#sponsors {
+
+    text-align: center;
+}

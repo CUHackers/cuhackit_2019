@@ -21,3 +21,7 @@
   background-color: black;
   color: white;
 }
+
+#contact p {
+    font-size: larger;
+}
