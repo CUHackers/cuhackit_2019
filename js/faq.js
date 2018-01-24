@@ -1,4 +1,5 @@
 const accordionTitle = document.getElementsByClassName("accordion");
+let faqWidth = Math.max(document.getElementsByTagName("body")[0].offsetWidth);
 
 for (let i = 0; i < accordionTitle.length; i++) {
   	accordionTitle[i].addEventListener("click", function() {
@@ -12,8 +13,16 @@ for (let i = 0; i < accordionTitle.length; i++) {
 
     	if (panel.style.maxHeight) {
     		panel.style.maxHeight = null;
+
+        if (faqWidth < 500) {
+          document.getElementById("faqs").style.minHeight = 65 + "em";
+        };
     	} else {
      		panel.style.maxHeight = panel.scrollHeight + "px";
+
+        if (faqWidth < 500) {
+          document.getElementById("faqs").style.minHeight = 85 + "em";
+        };
     	}
   });
 }
@@ -23,4 +32,9 @@ function hideAllPanels() {
         accordionTitle[i].classList.toggle("active", false);
         accordionTitle[i].nextElementSibling.style.maxHeight = null;
     }
+}
+
+window.onresize = function() {
+  faqWidth = Math.max(document.getElementsByTagName("body")[0].offsetWidth);
+  console.log("width: " + faqWidth);
 }
