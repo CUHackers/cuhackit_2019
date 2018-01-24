@@ -136,9 +136,8 @@ button {
     padding: .8em 1.6em;
     cursor: pointer;
 }
-button:hover {
-    border-color: white;
-}
+button:hover { border-color: white; }
+button:focus { outline: 0; }
 
 .blue-button {
     background-color: var(--blue);
