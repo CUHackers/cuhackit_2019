@@ -24,3 +24,6 @@ function hideAllPanels() {
         accordionTitle[i].nextElementSibling.style.maxHeight = null;
     }
 }
+
+
+
