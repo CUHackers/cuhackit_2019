@@ -133,6 +133,7 @@ button {
     border-radius: .1em;
     color: white;
     padding: .8em 1.6em;
+    cursor: pointer;
 }
 button:hover {
     border-color: white;
