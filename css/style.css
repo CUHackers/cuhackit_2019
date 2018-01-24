@@ -43,6 +43,7 @@ body {
 /*****************************************************************************/
 section {
     padding: 8em 0em 8em 0em;
+    height: 100vh;
 }
 .full-section {
     min-height: 100vh;
@@ -152,7 +153,7 @@ button:hover {
 
 
 h1 {
-    font-size: 3.5em;
+    font-size: 3.2em;
     padding-bottom: 1em;
 }
 .sub {
