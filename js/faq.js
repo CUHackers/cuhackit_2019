@@ -35,7 +35,7 @@ function hideAllPanels() {
 }
 
 window.onresize = function() {
-  faqWidth = Math.max(document.getElementsByTagName("body")[0].offsetWidth);
+  faqWidth = Math.max(document.getElementsByTagnam("body")[0].offsetWidth);
 }
 
 
