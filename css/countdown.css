@@ -26,11 +26,7 @@
 }
 
 
-#countdown button {
-    background-color: transparent;
-    font-size: 1.2em;
-    border-color: var(--blue);
-}
+
 #countdown button:hover {
     border-color: white;
 }

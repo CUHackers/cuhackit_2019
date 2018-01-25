@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="Angelo Carrabba, Charlie Gallentine, Courtney Shearer">
   <!-- Tab title and icon -->
@@ -10,10 +10,12 @@
   <link rel="icon" href="resources/RGB_logo_bug.png">
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   <!--Font Awesome link to include icons-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- Custom styles  -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/nav.css">
@@ -34,40 +36,41 @@
   </script>
 
 </head>
-<body id="page-top">
-<!------------------------------------------------------------------------------------------------------>
-
-
+<body>
+<div id="myscrollspy">
+<div id="top"></div>
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg fixed-top">
+<nav id="myNavbar" class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <a class="navbar-brand nav-link" href="#top">
       <img src="resources/RGB_logo_bug.png" height="50" width="64"  />
     </a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars fa-2x" ></i>
     </button>
 
-    </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#details">DETAILS</a>
+          <a class="nav-link" href="#details">DETAILS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#faqs">FAQs</a>
+          <a class="nav-link" href="#faqs">FAQs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#becomeSponsor">SPONSORS</a>
+          <a class="nav-link" href="#becomeSponsor">SPONSORS</a>
         </li>
 	<li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#sponsors">MENTORS</a>
+          <a class="nav-link" href="#sponsors">MENTORS</a>
         </li>
 	<li class="nav-item">
-             <a class="nav-link js-scroll-trigger" href="#contact">CONTACT</a>
+          <a class="nav-link" href="#contact">CONTACT</a>
         </li>
 	<li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="https://docs.google.com/forms/d/e/1FAIpQLSe74iE8SkqVFOAR9szMRofQZZuvF_ptVntQmUlIxPupSjg4Fg/viewform?usp=sf_link" target="_blank"><span class="register">REGISTER</span></a>
+          <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSe74iE8SkqVFOAR9szMRofQZZuvF_ptVntQmUlIxPupSjg4Fg/viewform?usp=sf_link" target="_blank">
+	    <span id="hideOnCountdown" class="apply-button" style="display: none">APPLY</span>
+	  </a>
         </li>
       </ul>
     </div>
@@ -77,7 +80,7 @@
 <section id="countdown" class="primary">
   <div class="container">
     <div style="width: 20%; margin-left: 40%;">
-      <div class="mysquare">
+      <div class="mysquare" >
 	<img src="resources/RGB_logo.png"
 	     class="in-mysquare"
 	     height="150"
@@ -98,9 +101,9 @@
   </div>
   <div>
     <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSe74iE8SkqVFOAR9szMRofQZZuvF_ptVntQmUlIxPupSjg4Fg/viewform?usp=sf_link">
-      <button style="margin-bottom: 3em;">REGISTER</button>
+      <button class="apply-button" style="margin-bottom: 3em; font-size: 1.2em">APPLY</button>
     </a>
-    <h3>MAR.10 - MAR.11 2018</h3>
+    <h3>MAR 10-11 2018</h3>
     <h3>Clemson University</h3>
   </div>
 </section>
@@ -110,7 +113,7 @@
 <section id="details" class="secondary parallax">
   <div class="container">
     <div class="col-12 mx-auto">
-      <h1 class="title"><b>Design. Code. Build.</b></h1>
+      <h1 class="title"><b>Design Code Build</b></h1>
       <p class="sub" style="font-style: italic;">"CUhackit encourages creativity and collaboration on campus"</p>
     </div>
     <div class="col-md-12">
@@ -253,16 +256,6 @@
   </div>
 </section>
 
-<!-- <section id="contact">
-     <div class="container">
-       <div class="row">
-	 <div class="col-lg-8 mx-auto">
-           <p class="lead">Contact at cat@dog.com</p>
-	 </div>
-       </div>
-     </div>
-</section> -->
-
 <section id="contact" class="secondary parallax full-section">
   <div class="container">
     <div class="row">
@@ -278,12 +271,15 @@
   </div>
 </section>
 
+
+</div>
+
 <!-- Footer -->
 <footer class="primary" style="text-align: left">
   <div class="container">
     <div class="row">
       <div class="col-6">
-	<a class="js-scroll-trigger" href="#page-top">
+	<a href="#top">
 	  <img src="resources/RGB_logo_bug.png" height="40" width="51">
 	</a>
       </div>
@@ -297,8 +293,9 @@
 
 <!-- ------------------------------ Scripts go here -------------------------------------------- -->
 <!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <!-- Plugin JavaScript -->
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
