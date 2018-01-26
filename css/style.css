@@ -154,6 +154,9 @@ button:focus { outline: 0; }
 }
 .apply-button:hover { border-color: white; }
 
+.navbar-toggler {
+    border: none !important;
+}
 
 
 h1 {
