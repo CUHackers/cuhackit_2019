@@ -19,6 +19,8 @@
 }
 
 #countdown .time-label span {
-    width: 23%;
+    width: 25%;
     display: inline-block;
+    text-align: center;
+    font-size: .8em;
 }
