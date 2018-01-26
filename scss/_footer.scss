@@ -1,0 +1,21 @@
+
+footer {
+    background-color: $dark2;
+    height: 6em;
+    .container-fluid {
+	height: 6em;
+    }
+    .row {
+	height: 6em;
+    }
+    .fab {
+	color: $light1;
+	font-size: 2.5em;
+
+    }
+    .fab:hover {
+	color: $purple;
+	text-decoration: none;
+    }
+
+}

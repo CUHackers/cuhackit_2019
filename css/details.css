@@ -1,9 +1,0 @@
-#details {
-    text-align: center;
-    background-image: url("../resources/images/gridBig.png");
-    background-size: cover;
-    background-color: var(--lighter);
-}
-#details h2 {
-    color: red;
-}

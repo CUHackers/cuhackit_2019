@@ -1,0 +1,70 @@
+
+#faqs {
+    color: $light1;
+    padding-bottom: 4em;
+
+    .title-row {
+	height: 20vh;
+	min-height: 10em;
+    }
+
+    .accordion {
+	cursor: pointer;
+	border: none;
+	border-bottom: 1px solid #444;
+	padding: 1em;
+	width: 100%;
+	text-align: left;
+	outline: none;
+	transition: 0.4s;
+	background-color: $dark1 !important;
+	color: $light1 !important;
+    }
+    .panel {
+	background-color: $dark2;
+	font-size: .9em;
+	max-height: 0;
+	overflow: hidden;
+	text-align: left;
+	transition: max-height 0.2s ease-out;
+	vertical-align: middle;
+	padding: 0em 1em;
+    }
+    .active + .panel{
+	padding: 1em 1em 0em 1em;
+    }
+    .accordion::before {
+	content: "+  ";
+	font-size: 1em;
+	color: white;
+    }
+    .active::before {
+	content: "-  ";
+    }
+    .title {
+	z-index: 100;
+    }
+    i {
+/*	position: absolute;*/
+	font-weight: 100 !important;
+/*	display: inline-block !important;*/
+	color: $dark2;
+    }
+    .icon1 {
+	float: left;
+	top: -.5em;
+    }
+
+    .icon2 {
+	float: right;
+	top: -.5em;
+	right: 10%;
+    }
+
+    .icon3 {
+	float: right;
+	top: .3em;
+	right: 5%;
+    }
+
+}
