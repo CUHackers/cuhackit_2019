@@ -141,15 +141,15 @@ button:focus { outline: 0; }
 
 .blue-button {
     background-color: var(--blue);
-    border: 1px solid var(--blue);
+    border: .1em solid var(--blue);
 }
 .grey-button {
     background-color: var(--lighter);
-    border: 1px solid var(--lighter);
+    border: .1em solid var(--lighter);
 }
 .apply-button {
     background-color: transparent;
-    border: 1px solid var(--blue);
+    border: .1em solid var(--blue);
     padding: .8em 1.6em;
 }
 .apply-button:hover { border-color: white; }

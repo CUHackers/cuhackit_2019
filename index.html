@@ -78,33 +78,31 @@
 </nav>
 
 <section id="countdown" class="primary">
-  <div class="container">
-    <div style="width: 20%; margin-left: 40%;">
-      <div class="mysquare" >
-	<img src="resources/RGB_logo.png"
-	     class="in-mysquare"
-	     height="150"
-	     width="192"
-	     style="width: 100%; height: 78%;"
-	     />
+  <div class="container" style="text-align: center;width: 100%;">
+    <img src="resources/RGB_logo.png"
+	 height="150"
+	 width="192"
+	 style="width: 20vw; height: 15.6vw; min-width: 10em; min-height: 7.8em; max-width: 15em; max-height: 11.7em;"
+	 />
+    <div class="row middle-element">
+      <div class="col-md-1 col-sm-hidden"></div>
+      <div class="col-md-10 col-sm-12">
+	<!-- needs 39 by 7 ratio for width to height -->
+	<canvas id="clock" width="975" height="175" style="margin-bottom: 1em; width: 100%;">
+	  Can't render clock
+	</canvas>
+	<div class="time-label">
+	  <span>DAYS</span><span>HOURS</span><span>MINUTES</span><span>SECONDS</span>
+	</div>
       </div>
     </div>
-  </div>
-  <div>
-    <!-- needs 39 by 7 ratio for width to height -->
-    <canvas id="clock" width="975" height="175" style="width: 90%; margin-bottom: 1em;">
-      Can't render clock
-    </canvas>
-    <div class="time-label">
-      <span>DAYS</span><span>HOURS</span><span>MINUTES</span><span>SECONDS</span>
+    <div>
+      <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSe74iE8SkqVFOAR9szMRofQZZuvF_ptVntQmUlIxPupSjg4Fg/viewform?usp=sf_link">
+	<button class="apply-button" style="margin-bottom: 3em; font-size: 1.2em">APPLY</button>
+      </a>
+      <h3>MAR 10-11 2018</h3>
+      <h3>Clemson University</h3>
     </div>
-  </div>
-  <div>
-    <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSe74iE8SkqVFOAR9szMRofQZZuvF_ptVntQmUlIxPupSjg4Fg/viewform?usp=sf_link">
-      <button class="apply-button" style="margin-bottom: 3em; font-size: 1.2em">APPLY</button>
-    </a>
-    <h3>MAR 10-11 2018</h3>
-    <h3>Clemson University</h3>
   </div>
 </section>
 
