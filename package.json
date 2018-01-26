@@ -1,0 +1,32 @@
+{
+    "name": "splash-page",
+    "version": "1.0.0",
+    "description": "countdown to CUhackit!",
+    "main": "index.html",
+    "scripts": {
+	"build-scss": "node-sass scss -o css",
+	"watch-scss": "node-sass --watch scss -o css",
+	"watch-web": "python3 testweb.py index.html css/* js/*",
+	"watch": "concurrently -k -p \"[{name}]\" -n \"CSS,WEB1,WEB2,\" -c \"yellow.bold,cyan.bold,green.bold,\" \"npm run watch-scss\" \"npm run watch-web\" \"npm run watch-web\""
+    },
+    "repository": {
+	"type": "git",
+	"url": "git+https://github.com/CUHackers/Splash-Page.git"
+    },
+    "keywords": [
+	"hackathon"
+    ],
+    "author": "Angelo Carrabba, Charlie Gallentine, Courtney Shearer",
+    "license": "MIT",
+    "bugs": {
+	"url": "https://github.com/CUHackers/Splash-Page/issues"
+    },
+    "homepage": "https://github.com/CUHackers/Splash-Page#readme",
+    "dependencies": {
+	"bootstrap": "^4.0.0",
+	"concurrently": "^3.5.1",
+	"node-sass": "^4.7.2",
+	"popper": "^1.0.1",
+	"popper.js": "^1.12.9"
+    }
+}

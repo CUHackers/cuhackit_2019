@@ -11,15 +11,11 @@
   <title>CUhackit</title>
   <link rel="icon" href="resources/RGB_logo_bug.png">
 
-  <!-- Bootstrap core CSS -->
-  <!-- link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
   <!--Font Awesome link to include icons-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
 
-  <!-- Custom styles  -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Custom styles (includes bootstrap too)  -->
+  <link rel="stylesheet" href="css/main.css">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-112858061-1"></script>
@@ -31,10 +27,10 @@
     gtag('config', 'UA-112858061-1');
   </script-->
 </head>
-<body>
+<body id="top">
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg fixed-top">
+<nav class="navbar navbar-expand-md fixed-top">
   <div class="container">
     <a class="navbar-brand nav-link" href="#top">
       <img src="resources/RGB_logo_bug.png" height="50" width="64"  />
@@ -52,9 +48,9 @@
 
         <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
 
-        <li class="nav-item"><a class="nav-link" href="#sponsors">SPONSORS</a></li>
-
 	<li class="nav-item"><a class="nav-link" href="#mentors">MENTORS</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="#sponsors">SPONSORS</a></li>
 
 	<li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
 
@@ -86,9 +82,14 @@
 	</div>
       </div>
     </div>
-    <div class="row align-items-center">
-      <div class="col">
-	<h3>MAR 10-11 2018</h3>
+    <div class="row align-items-center date-container">
+      <div id="navtoggler" class="col-12 d-md-none">
+	<a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSe74iE8SkqVFOAR9szMRofQZZuvF_ptVntQmUlIxPupSjg4Fg/viewform?usp=sf_link" target="_blank">
+	  <button class="apply-button">APPLY</button>
+	</a>
+      </div>
+      <div class="col-12">
+	<h3>MAR. 10-11 2018</h3>
 	<h3>Clemson University</h3>
 	<div>
 	</div>
@@ -129,175 +130,161 @@
 
 
 <section id="faqs" class="primary">
+  <div class="container-fluid">
+    <div class="row title-row align-items-center">
+      <div class="col-12">
+	<h2>Frequently Asked Questions</h2>
+	<i class="fa fa-commenting-o icon1" aria-hidden="true" style="font-size: 4em;"></i>
+	<i class="fa fa-commenting-o icon2" aria-hidden="true" style="font-size: 6em;"></i>
+	<i class="fa fa-commenting-o icon3" aria-hidden="true" style="font-size: 5em;"></i>
+      </div>
+    </div>
+    <div class="row  main-row">
+      <div class="offset-md-1 col-md-10 col-sm-12">
+	<button class="accordion">What is a hackathon?</button>
+	<div class="panel">
+	  <p>A hackathon is a 24 hour long event where students from different disciplines come
+	    together in small teams to work on real projects. The purpose of a hackathon is to have
+	    students learn about idea development and product design by being provided resources
+	    like hardware, workshops, and mentors. Hackathons are ultimately a collaborative space
+	    where creativity is encouraged and self-confidence can be obtained through hands on
+	    learning.</p>
+	</div>
+	<button class="accordion">Where is CUhackit?</button>
+	<div class="panel">
+	  <p>CUhackit will be held in the Watt Family Innovation Center at Clemson University. You
+	    can expect a large commonspace for announcements and community hacking, medium rooms for
+	    workshops, individual rooms for team concentration, and a separate area for sleep. We
+	    will also feature the Clemson Makerspace and the Immersive Space.</p>
+	</div>
+	<button class="accordion">Who is CUhackit for?</button>
+	<div class="panel ">
+	  <p>If you attend Clemson University and are interested in making and/or learning
+	    something awesome, CUhackit is for you! This event is specifically designed to be a
+	    n	  great experience for students at any level.</p>
+	</div>
+	<button class="accordion">What should I bring?</button>
+	<div class="panel">
+	  <p>Bring comfy clothes, toiletries (toothbrush, toothpaste, deodorant, etc.), your
+	    laptop, its charger, and yourself.</p>
+	</div>
+	<button class="accordion">Help, this is my first hackathon!</button>
+	<div class="panel">
+	  <p>Awesome! Don't worry -- this event is as much about learning as it is making. We will
+	    have workshops and mentors to assist you throughout the event. Don't be afraid to ask
+	    for help and reach out to your peers. We're all excited for you to join the hacking
+	    community. Don't forget the best conversation starter: bonding over free food.</p>
+	</div>
+	<button class="accordion">Can high school students attend?</button>
+	<div class="panel">
+	  <p>No. Currently this event is Clemson University student - exclusive.</p>
+	</div>
+	<button class="accordion">Can mentors participate in hacking?</button>
+	<div class="panel">
+	  <p>Unfortunately, no. We need you all to be available to help our hackers throughout the
+	    duration of the event.</p>
+	</div>
+	<button class="accordion">What happens after I register?</button>
+	<div class="panel">
+	  <p>Thanks for registering! You should receive an email in the following 1-2 days with
+	    registration confirmation. Further instructions will follow.</p>
+	</div>
+	<button class="accordion">What do I do about teams?</button>
+	<div class="panel">
+	  <p>Gather your friends, meet some people at opening, or attend our team-creation event
+	    right after opening announcements. We're all about creating new connections and meeting
+	    new people! Max 4 people per team.</p>
+	</div>
+	<button class="accordion">Is it really all free?!</button>
+	<div class="panel">
+	  <p>Yes yes yes! Food, swag, prizes, workshops, mentors, naps, and coffee. It's all
+	    thanks to our wonderful sponsors and participants who connect with them.</p>
+	</div>
+	<button class="accordion">Will I be sitting at my computer all weekend?</button>
+	<div class="panel">
+	  <p>No! There’s more to the experience -- networking sessions, informal talks, workshops,
+	    super smash bros, midnight yoga, and much more!</p>
+	</div>
+	<button class="accordion">Do I have to be there all 23 hours?</button>
+	<div class="panel">
+	  <p>Have to?! It's part of the experience to be there all 23 hours! Don't worry, the
+	    sleep room will have sleeping pads on deck.</p>
+	</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mentors" class="secondary">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col">
-	<h2>Frequently Asked Questions</h2>
+      <div class="mini-section">
+	<h1 pclass="title">Mentors</h1>
+	<p>
+	  If you would like to give guidance to some of the students
+	  at our hackathon, please apply through our mentor form!
+	</p>
+	<a href="https://goo.gl/forms/E1ukE3aCEEgny9q72" target="_blank">
+	  <button class="grey-button">BECOME A MENTOR</button>
+	</a>
       </div>
     </div>
   </div>
 </section>
 
 
-<section id="sponsors" class="secondary"></section>
-<section id="mentors" class="primary"></section>
-<section id="contact" class="secondary"></section>
+<section id="sponsors" class="primary">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="mini-section">
+	<h1>Sponsors</h1>
+	<p style="font-size: larger;">CUhackit is only possible thanks to
+	  the support of our awesome sponsors!</p>
+	<a href="resources/CUhackitSponsorPacket.pdf" target="_blank">
+	  <button class="blue-button">BECOME A SPONSOR</button>
+	</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-<footer class="container-fluid">
-  <a class="navbar-brand nav-link" href="#top">
-    <img src="resources/RGB_logo_bug.png" height="50" width="64"  />
-  </a>
+<section id="contact" class="secondary">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="mini-section">
+	<h1>Contact us!</h1>
+	<p>If you have any comments, questions, or just wanna chat,
+	  reach out to us at CUhackit@gmail.com
+	</p>
+	<a href="mailto:cuhackit@gmail.com">
+	  <button class="blue-button">CONTACT</button>
+	</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col d-none d-md-block">
+	CUhackit&trade; 2018
+      </div>
+      <div class="col">
+	<a class="navbar-brand nav-link" href="#top">
+	  <img src="resources/RGB_logo_bug.png" height="50" width="64"  />
+	</a>
+      </div>
+      <div class="col">
+	<a target="_blank" href="https://fb.me/CUhackers" class="fab fa-facebook"></a>
+	<a target="_blank" href="https://www.instagram.com/cuhackit" class="fab fa-instagram"></a>
+	<a target="_blank" href="https://twitter.com/CUhackit" class="fab fa-twitter"></a>
+      </div>
+    </div>
+  </div>
 </footer>
-
-<!--section id="countdown" class="primary">
-
-     <section id="faqs" class="primary">
-     <h2 class="title">Frequently Asked Questions</h2>
-     <i class="fa fa-commenting-o icon1" aria-hidden="true" style="font-size: 4em;"></i>
-     <i class="fa fa-commenting-o icon2" aria-hidden="true" style="font-size: 6em;"></i>
-     <i class="fa fa-commenting-o icon3" aria-hidden="true" style="font-size: 5em;"></i>
-     </div>
-     <button class="accordion">What is a hackathon?</button>
-     <div class="panel secondary">
-     <p>A hackathon is a 24 hour long event where students from different disciplines come
-     together in small teams to work on real projects. The purpose of a hackathon is to have
-     students learn about idea development and product design by being provided resources
-     like hardware, workshops, and mentors. Hackathons are ultimately a collaborative space
-     where creativity is encouraged and self-confidence can be obtained through hands on
-     learning.</p>
-     </div>
-     <button class="accordion">Where is CUhackit?</button>
-     <div class="panel secondary">
-     <p>CUhackit will be held in the Watt Family Innovation Center at Clemson University. You
-     can expect a large commonspace for announcements and community hacking, medium rooms for
-     workshops, individual rooms for team concentration, and a separate area for sleep. We
-     will also feature the Clemson Makerspace and the Immersive Space.</p>
-     </div>
-     <button class="accordion">Who is CUhackit for?</button>
-     <div class="panel ">
-     <p>If you attend Clemson University and are interested in making and/or learning
-     something awesome, CUhackit is for you! This event is specifically designed to be a
-     great experience for students at any level.</p>
-     </div>
-     <button class="accordion">What should I bring?</button>
-     <div class="panel">
-     <p>Bring comfy clothes, toiletries (toothbrush, toothpaste, deodorant, etc.), your
-     laptop, its charger, and yourself.</p>
-     </div>
-     <button class="accordion">Help, this is my first hackathon!</button>
-     <div class="panel">
-     <p>Awesome! Don't worry -- this event is as much about learning as it is making. We will
-     have workshops and mentors to assist you throughout the event. Don't be afraid to ask
-     for help and reach out to your peers. We're all excited for you to join the hacking
-     community. Don't forget the best conversation starter: bonding over free food.</p>
-     </div>
-     <button class="accordion">Can high school students attend?</button>
-     <div class="panel">
-     <p>No. Currently this event is Clemson University student - exclusive.</p>
-     </div>
-     <button class="accordion">Can mentors participate in hacking?</button>
-     <div class="panel">
-     <p>Unfortunately, no. We need you all to be available to help our hackers throughout the
-     duration of the event.</p>
-     </div>
-     <button class="accordion">What happens after I register?</button>
-     <div class="panel">
-     <p>Thanks for registering! You should receive an email in the following 1-2 days with
-     registration confirmation. Further instructions will follow.</p>
-     </div>
-     <button class="accordion">What do I do about teams?</button>
-     <div class="panel">
-     <p>Gather your friends, meet some people at opening, or attend our team-creation event
-     right after opening announcements. We're all about creating new connections and meeting
-     new people! Max 4 people per team.</p>
-     </div>
-     <button class="accordion">Is it really all free?!</button>
-     <div class="panel">
-     <p>Yes yes yes! Food, swag, prizes, workshops, mentors, naps, and coffee. It's all
-     thanks to our wonderful sponsors and participants who connect with them.</p>
-     </div>
-     <button class="accordion">Will I be sitting at my computer all weekend?</button>
-     <div class="panel">
-     <p>No! There’s more to the experience -- networking sessions, informal talks, workshops,
-     super smash bros, midnight yoga, and much more!</p>
-     </div>
-     <button class="accordion">Do I have to be there all 23 hours?</button>
-     <div class="panel">
-     <p>Have to?! It's part of the experience to be there all 23 hours! Don't worry, the
-     sleep room will have sleeping pads on deck.</p>
-     </div>
-     </div>
-     </div>
-     </div>
-     </section>
-
-     <section id="becomeSponsor" class="parallax full-section">
-     <div class="container">
-     <div class="row">
-     <div class="col-lg-8 mx-auto text-center" >
-     <h1>Sponsors</h1>
-     <p style="font-size: larger;">CUhackit is only possible thanks to
-     the support of our awesome sponsors!</p>
-     <a href="resources/CUhackitSponsorPacket.pdf" target="_blank">
-     <button class="grey-button">BECOME A SPONSOR</button>
-     </a>
-     </div>
-     </div>
-     </div>
-     </section>
-
-     <section id="sponsors" class="full-section">
-     <div class="container">
-     <div class="row">
-     <div class="col-lg-8 mx-auto">
-     <h1 class="title">Mentors</h1>
-     <p>
-     If you would like to give guidance to some of the students
-     at our hackathon, please apply through our mentor form!
-     </p>
-     <a href="https://goo.gl/forms/E1ukE3aCEEgny9q72" target="_blank">
-     <button class="blue-button">BECOME A MENTOR</button>
-     </a>
-     </div>
-     </div>
-     </div>
-     </section>
-
-     <section id="contact" class="secondary parallax full-section">
-     <div class="container">
-     <div class="row">
-     <div class="col-md-8 col-sm-12 mx-auto text-center">
-     <h1>Contact us!</h1>
-     <p>If you have any comments, questions, or just wanna chat,
-     reach out to us at CUhackit@gmail.com</p>
-     <a href="mailto:cuhackit@gmail.com">
-     <button class="grey-button">CONTACT</button>
-     </a>
-     </div>
-     </div>
-     </div>
-     </section>
-
-
-     </div>
-
-     <!-- Footer -- >
-     <footer class="primary" style="text-align: left">
-     <div class="container">
-     <div class="row">
-     <div class="col-6">
-     <a href="#top">
-     <img src="resources/RGB_logo_bug.png" height="40" width="51">
-     </a>
-     </div>
-     <div class="col-6" style="text-align: right; font-size: 2em">
-     <a target="_blank" href="https://fb.me/CUhackers" class="fab fa-facebook"></a>
-     <a target="_blank" href="https://www.instagram.com/cuhackit" class="fab fa-instagram"></a>
-     <a target="_blank" href="https://twitter.com/CUhackit" class="fab fa-twitter"></a>
-     </div>
-     </div>
-</footer-->
 
 <!---------------------------------------------------------------------------->
 <!--                             Scripts go here                            -->
@@ -307,6 +294,9 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- Accordion controller -->
+<script src="js/faq.js"></script>
 
 <!-- Canvas clock controller -->
 <script src="js/canvas-clock.js"></script>

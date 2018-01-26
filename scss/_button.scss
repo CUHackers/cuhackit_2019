@@ -1,0 +1,32 @@
+button {
+    background-color: transparent;
+    border-color: transparent;
+    color: $light1;
+    padding: .8em 1.2em;
+    border-style: solid;
+    border-radius: .2em;
+    border-width: .1em;
+    letter-spacing: .05em;
+
+
+}
+
+button.apply-button {
+    border-color: $blue;
+}
+
+
+
+button.blue-button {
+    border-color: $blue;
+    background-color: $blue;
+
+}
+button.grey-button {
+    background-color: $dark2;
+}
+
+button:hover {
+    border-color: $light1;
+    cursor: pointer;
+}

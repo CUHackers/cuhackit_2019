@@ -1,0 +1,25 @@
+#countdown {
+    .container > div {
+	height: 30vh;
+	max-height: 40vw;
+    }
+
+    .main-logo {
+	width: 20vw; height: 15.6vw;
+	min-width: 6.4em; min-height: 5em;
+	max-width: 12.8em; max-height: 10em;
+    }
+
+    .time-label {
+	width: 100%;
+	padding-top: 1vh;
+	span {
+	    display: inline-block;
+	    width: 25%;
+	}
+    }
+
+    .date-container {
+	min-height: 15em;
+    }
+}
