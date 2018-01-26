@@ -4,10 +4,8 @@
     "description": "countdown to CUhackit!",
     "main": "index.html",
     "scripts": {
-	"build-scss": "node-sass scss -o css",
-	"watch-scss": "node-sass --watch scss -o css",
-	"watch-web": "python3 testweb.py index.html css/* js/*",
-	"watch": "concurrently -k -p \"[{name}]\" -n \"CSS,WEB1,WEB2,\" -c \"yellow.bold,cyan.bold,green.bold,\" \"npm run watch-scss\" \"npm run watch-web\" \"npm run watch-web\""
+	"build": "node-sass scss -o css",
+	"watch": "node-sass --watch scss -o css"
     },
     "repository": {
 	"type": "git",

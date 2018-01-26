@@ -2,8 +2,10 @@
 
 ## Installation
 
-You are going to need to have sass installed
+You only need to build the css, then push to gh-pages!
 
 ```bash
-$ gem install sass
+$ npm install
+$ npm build
+
 ```
