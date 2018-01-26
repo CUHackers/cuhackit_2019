@@ -1,176 +1,110 @@
 /*****************************************************************************/
 /*                                    font                                   */
 /*****************************************************************************/
-@import url('https://fonts.googleapis.com/css?family=PT+Mono|Roboto:300,400,500,700');
-body {
-    background-color: #191919;
-    font-family: 'PT Mono', monospace; /*font-family: 'Roboto', sans-serif;*/
-    color: white;
-}
-/* default colors */
+@import url('https://fonts.googleapis.com/css?family=PT+Mono');
 :root {
-    --darker: #191919;
-    --lighter: #222;
+    --darkest: #191919;
+    --dark: #222;
+    --grey: #888;
     --emphasis: #e00;
     --blue: #002cf5;
 }
+body {
+    font-family: 'PT Mono', monospace;
+    background-color: var(--darkest); color: white;
+    padding-top: 76px;
+    text-align: center;
+}
+
+h3 {
+    1em;
+}
 
 /*****************************************************************************/
-/*                               nav and footer                              */
+/*                               navigation bar                              */
 /*****************************************************************************/
 nav, footer {
-    box-shadow: 1em 0em 2em black;
+    background-color: var(--dark);
+    box-shadow: 0em 0em 2.5em black;
+    color: var(--grey);
 }
-nav {
-    background-color: var(--lighter);
+footer { padding: 1em 0em; }
+nav a { color: var(--grey); }
+nav a:hover { color: white; }
+nav a.active { color: white; }
+
+button {
+    background-color: transparent;
+    color: white;
+    padding: .5em .6em;
+    border-style: solid;
+    border-radius: .2em;
+    border-width: .1em;
+    border-color: var(--blue);
+    letter-spacing: .05em;
 }
-footer {
-    height: 8em;
-    line-height: 8em;
-    background-color: var(--darker);
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    text-align: center;
-    vertical-align: middle;
-}
-/* fix margin to account for  header and footer */
-#top {
-    padding-bottom: 70px;
-}
+button:hover { border-color:  white; cursor: pointer; }
+
 /*****************************************************************************/
 /*                                  sections                                 */
 /*****************************************************************************/
-section {
-    padding: 8em 0em 8em 0em;
-    min-height: 100vh;
-}
-.full-section {
-    min-height: 100vh;
-    width: 100%;
-    vertical-align: middle;
-    position: relative;
-}
-.full-section > .container {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-}
-.primary, .secondary {
-    width: 100%;
-    text-align: center;
-}
+section { min-height: 100vh; }
 .primary {
-    background-color: var(--darker);
+    background-color: var(--darkest);
 }
 .secondary {
-    background-color: var(--lighter);
+    background-color: var(--dark);
+    box-shadow: inset 0em 0em 2.5em black;
 }
 
+/* Countdown section *********************************************************/
+#countdown > .container > div { height: 30vh; }
+#countdown > .container > div:nth-child(1) { min-height: 6em; }
+#countdown > .container > div:nth-child(2) { min-height: 7.8em; }
 
-/*****************************************************************************/
-/*                                    misc                                   */
-/*****************************************************************************/
-a {
-    color: white;
-
+.main-logo {
+    width: 20vw; height: 15.6vw;
+    min-width: 6.4em; min-height: 5em;
+    max-width: 12.8em; max-height: 10em;
 }
-a:hover {
-    text-decoration: none;
-    color: var(--blue)
-}
-
-.comment {
-	color: white;
-}
-
-.title {
-  margin: 0 auto;
-}
-
-.updated {
-	background-color: #0C2CFB;
-	border: 1px solid #0C2CFB;
-	border-radius: .1em;
-	color: white;
-	margin-top: 2em;
-	padding: .2em 1em;
-}
-
-.updated:hover {
-  background-color: black;
-  color: white;
-}
-.parallax {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    -moz-box-shadow:    inset 0em 0em 2em #000;
-    -webkit-box-shadow: inset 0em 0em 2em #000;
-    box-shadow:         inset 0em 0em 2em #000;
-}
-.mysquare {
+.time-label {
     width: 100%;
-    position: relative;
-}
-.mysquare:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-
-}
-.in-mysquare {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-
-button {
-    letter-spacing: .1em;
-    border-radius: .1em;
     color: white;
-    padding: .8em 1.6em;
-    cursor: pointer;
+    padding-top: 1vh;
 }
-button:hover { border-color: white; }
-button:focus { outline: 0; }
-
-.blue-button {
-    background-color: var(--blue);
-    border: .1em solid var(--blue);
-}
-.grey-button {
-    background-color: var(--lighter);
-    border: .1em solid var(--lighter);
-}
-.apply-button {
-    background-color: transparent;
-    border: .1em solid var(--blue);
-    padding: .8em 1.6em;
-}
-.apply-button:hover { border-color: white; }
-
-.navbar-toggler {
-    border: none !important;
+.time-label > span {
+    display: inline-block;
+    color: white;
+    width: 25%;
 }
 
+/* Details section  **********************************************************/
 
-h1 {
-    font-size: 3.2em;
-    padding-bottom: 1em;
-}
-.sub {
-    font-family: inherit;
-    margin-top: -1em;
-    padding-bottom: 1.5em;
-    font-size: 1.4em;
+#details {
+    background-image: url("../resources/images/gridBig.png");
+    background-repeat: repeat;
+    background-size: cover;
 }
 
+#details > .container > div:nth-child(1) { height: 30vh; min-height: 16em; }
+#details > .container > div:nth-child(2) { height: 40vh; min-height: 40em; }
 
-h2 {
-    margin-bottom: .2em;
+
+/* FAQs section **************************************************************/;
+#faqs {
+
 }
+
+/* Mentor section ************************************************************/
+/* Sponsor section ***********************************************************/
+/* Contact section ***********************************************************/
+
+
+
+
+
+
+
+.make-together > div :nth-child(1) { text-align: right; }
+.make-together > div :nth-child(2) { text-align: center; }
+.make-together > div :nth-child(3) { text-align: left; }
