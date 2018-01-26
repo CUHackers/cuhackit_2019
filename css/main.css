@@ -6047,6 +6047,9 @@ button {
 button.apply-button {
   border-color: #002CF5; }
 
+button:focus {
+  outline: 0 !important; }
+
 button.blue-button {
   border-color: #002CF5;
   background-color: #002CF5; }
@@ -6084,6 +6087,8 @@ nav {
     color: white; }
   nav a.active {
     color: white; }
+  nav .navbar-toggler {
+    border-style: none !important; }
 
 #countdown .container > div {
   height: 30vh;

@@ -15,7 +15,9 @@ button.apply-button {
     border-color: $blue;
 }
 
-
+button:focus {
+    outline: 0 !important;
+}
 
 button.blue-button {
     border-color: $blue;
