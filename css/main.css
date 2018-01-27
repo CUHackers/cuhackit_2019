@@ -6078,6 +6078,9 @@ section > div + div {
   background-color: #222;
   box-shadow: inset 0em 0em 2.5em black; }
 
+.mini-section button {
+  margin-top: 3em; }
+
 nav {
   background-color: #222;
   box-shadow: 0em 0em 2.5em black; }
@@ -6126,10 +6129,11 @@ nav {
 
 #faqs {
   color: white;
-  padding-bottom: 4em; }
+  padding-bottom: 4em;
+  padding-top: 3em; }
   #faqs .title-row {
     height: 20vh;
-    min-height: 10em; }
+    min-height: 13em; }
     #faqs .title-row h2 {
       color: #002CF5;
       z-index: 1000;
@@ -6150,7 +6154,7 @@ nav {
   #faqs .icon3 {
     float: right;
     top: .3em;
-    right: 4vw; }
+    right: 10vw; }
   #faqs .accordion {
     cursor: pointer;
     border: none;

@@ -2,10 +2,11 @@
 #faqs {
     color: $light1;
     padding-bottom: 4em;
+    padding-top: 3em;
 
     .title-row {
 	height: 20vh;
-	min-height: 10em;
+	min-height: 13em;
 
 	h2 {
 	    color: $blue;
@@ -34,7 +35,7 @@
     .icon3 {
 	float: right;
 	top: .3em;
-	right: 4vw;
+	right: 10vw;
     }
     .accordion {
 	cursor: pointer;

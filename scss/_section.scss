@@ -24,4 +24,8 @@ section > div + div {
     @extend .offset-md-2;
     @extend .col-md-8;
     @extend .col-sm-12;
+
+    button {
+	margin-top: 3em;
+    }
 }
