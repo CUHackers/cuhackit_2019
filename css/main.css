@@ -6130,6 +6130,27 @@ nav {
   #faqs .title-row {
     height: 20vh;
     min-height: 10em; }
+    #faqs .title-row h2 {
+      color: #002CF5;
+      z-index: 1000;
+      position: relative; }
+  #faqs i {
+    z-index: 5;
+    position: absolute;
+    font-weight: 100 !important;
+    color: #222; }
+  #faqs .icon1 {
+    float: left;
+    top: -.5em;
+    right: 70vw; }
+  #faqs .icon2 {
+    float: right;
+    top: -.5em;
+    right: 20vw; }
+  #faqs .icon3 {
+    float: right;
+    top: .3em;
+    right: 4vw; }
   #faqs .accordion {
     cursor: pointer;
     border: none;
@@ -6158,24 +6179,6 @@ nav {
     color: white; }
   #faqs .active::before {
     content: "-  "; }
-  #faqs .title {
-    z-index: 100; }
-  #faqs i {
-    /*	position: absolute;*/
-    font-weight: 100 !important;
-    /*	display: inline-block !important;*/
-    color: #222; }
-  #faqs .icon1 {
-    float: left;
-    top: -.5em; }
-  #faqs .icon2 {
-    float: right;
-    top: -.5em;
-    right: 10%; }
-  #faqs .icon3 {
-    float: right;
-    top: .3em;
-    right: 5%; }
 
 #mentors {
   background-image: url("../resources/images/codeBlueStock.png");

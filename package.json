@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "build": "node-sass scss -o css",
-    "watch": "node-sass --watch scss -o css"
+    "watch": "npm run build; node-sass --watch scss -o css"
   },
   "repository": {
     "type": "git",

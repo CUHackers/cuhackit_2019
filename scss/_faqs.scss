@@ -6,8 +6,36 @@
     .title-row {
 	height: 20vh;
 	min-height: 10em;
+
+	h2 {
+	    color: $blue;
+	    z-index: 1000;
+	    position: relative;
+	}
+    }
+    i {
+	z-index: 5;
+	position: absolute;
+	font-weight: 100 !important;
+	color: $dark2;
+    }
+    .icon1 {
+	float: left;
+	top: -.5em;
+	right: 70vw;
     }
 
+    .icon2 {
+	float: right;
+	top: -.5em;
+	right: 20vw;
+    }
+
+    .icon3 {
+	float: right;
+	top: .3em;
+	right: 4vw;
+    }
     .accordion {
 	cursor: pointer;
 	border: none;
@@ -40,31 +68,6 @@
     }
     .active::before {
 	content: "-  ";
-    }
-    .title {
-	z-index: 100;
-    }
-    i {
-/*	position: absolute;*/
-	font-weight: 100 !important;
-/*	display: inline-block !important;*/
-	color: $dark2;
-    }
-    .icon1 {
-	float: left;
-	top: -.5em;
-    }
-
-    .icon2 {
-	float: right;
-	top: -.5em;
-	right: 10%;
-    }
-
-    .icon3 {
-	float: right;
-	top: .3em;
-	right: 5%;
     }
 
 }
