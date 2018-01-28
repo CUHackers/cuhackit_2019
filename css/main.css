@@ -6029,6 +6029,12 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
+.parallax, #details, #mentors, #contact {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 body {
   font-family: 'PT Mono', monospace;
   padding-top: 76px;
@@ -6096,6 +6102,10 @@ nav {
 #countdown .container > div {
   height: 30vh;
   max-height: 40vw; }
+
+#countdown canvas {
+  width: 100%;
+  color: #002CF5; }
 
 #countdown .main-logo {
   width: 20vw;

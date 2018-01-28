@@ -3,8 +3,9 @@
     background-image: url('../resources/images/gridBig.png');
     background-repeat: repeat;
     background-size: 100% auto;
-
     min-height: 55em;
+    @extend .parallax;
+
 
     .container > div:nth-child(1) {
 	height: 30vh;
