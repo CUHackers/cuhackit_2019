@@ -13,7 +13,7 @@ $(document).ready(function(){
     });*/
 
 
-    $("nav a").on('click', function(event) {
+    $("nav .nav-link").on('click', function(event) {
 	event.preventDefault();
 	if (this.hash !== "") {
 	    var hash = this.hash;
