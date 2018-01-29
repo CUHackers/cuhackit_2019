@@ -2,6 +2,12 @@
     .container > div {
 	height: 30vh;
 	max-height: 40vw;
+	min-height: calc(7em + 7vw);
+    }
+
+    #clock {
+	width: 100%;
+	color: $blue;
     }
 
     .main-logo {
