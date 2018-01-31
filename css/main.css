@@ -6202,8 +6202,20 @@ nav {
   #mentors .row {
     height: 100vh; }
 
-#sponsors .row {
-  height: 100vh; }
+#sponsors {
+  color: black;
+  background-color: white; }
+  #sponsors .main-contain {
+    height: 100vh; }
+  #sponsors .sponsor-box {
+    padding: 2em;
+    margin: 1em;
+    height: 16em; }
+    #sponsors .sponsor-box img {
+      width: 100%; }
+  #sponsors .main-content {
+    padding-top: 10vh;
+    padding-bottom: 10vh; }
 
 #contact {
   background-image: url("../resources/images/gridBig.png");

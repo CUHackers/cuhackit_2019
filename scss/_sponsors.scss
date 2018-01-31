@@ -1,5 +1,21 @@
 #sponsors {
-    .row  {
+    color: black;
+    background-color: $light1;
+    .main-contain  {
 	height: 100vh
+    }
+    .sponsor-box {
+	padding: 2em;
+	margin: 1em;
+	height: 16em;
+	img {
+	    width: 100%;
+	}
+
+    }
+    .main-content {
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+
     }
 }
