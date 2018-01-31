@@ -6204,13 +6204,12 @@ nav {
 
 #sponsors {
   color: black;
-  background-color: white; }
+  background-color: white;
+  padding-bottom: 3em; }
   #sponsors .main-contain {
     height: 100vh; }
   #sponsors .sponsor-box {
-    padding: 2em;
-    margin: 1em;
-    height: 16em; }
+    margin: 1em; }
     #sponsors .sponsor-box img {
       width: 100%; }
   #sponsors .main-content {
