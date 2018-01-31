@@ -6035,8 +6035,17 @@ a.text-dark:hover, a.text-dark:focus {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
 body {
-  font-family: 'PT Mono', monospace;
+  /* replace with your selector */
+  font-family: 'Access Regular', 'PT Mono', monospace;
+  font-weight: normal;
+  font-style: normal;
   padding-top: 76px;
   text-align: center; }
 
@@ -6203,17 +6212,18 @@ nav {
     height: 100vh; }
 
 #sponsors {
-  color: black;
-  background-color: white;
   padding-bottom: 3em; }
+  #sponsors .special-sizing {
+    max-width: 1140px; }
   #sponsors .main-contain {
     height: 100vh; }
   #sponsors .sponsor-box {
-    margin: 1em; }
+    margin: 1em;
+    height: 20vw;
+    min-height: 12em; }
     #sponsors .sponsor-box img {
       width: 100%; }
   #sponsors .main-content {
-    padding-top: 10vh;
     padding-bottom: 10vh; }
 
 #contact {

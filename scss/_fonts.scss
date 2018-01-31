@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Mono');
-body {
-    font-family: 'PT Mono', monospace;
+
+body { /* replace with your selector */
+    font-family: 'Access Regular', 'PT Mono', monospace;
+    font-weight: normal;
+    font-style: normal;
     padding-top: 76px;
     text-align: center;
 }

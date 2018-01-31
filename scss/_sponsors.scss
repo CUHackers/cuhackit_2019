@@ -1,20 +1,24 @@
 #sponsors {
-    color: black;
-    background-color: $light1;
+
+    .special-sizing {
+	max-width: 1140px;
+    }
+
     padding-bottom: 3em;
     .main-contain  {
 	height: 100vh
     }
     .sponsor-box {
 	margin: 1em;
+	height: 20vw;
+	min-height: 12em;
+
 	img {
 	    width: 100%;
 	}
 
     }
     .main-content {
-	padding-top: 10vh;
 	padding-bottom: 10vh;
-
     }
 }
