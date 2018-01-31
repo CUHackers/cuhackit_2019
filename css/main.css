@@ -6212,6 +6212,7 @@ nav {
     height: 100vh; }
 
 #sponsors {
+  padding-top: 4em;
   padding-bottom: 3em; }
   #sponsors .special-sizing {
     max-width: 1140px; }
