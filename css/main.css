@@ -6139,6 +6139,8 @@ nav {
 
 #countdown .date-container {
   min-height: 15em; }
+  #countdown .date-container .apply-button-container {
+    margin-bottom: 1em; }
 
 #details {
   background-image: url("../resources/images/gridBig.png");
