@@ -14,8 +14,10 @@ footer {
 
     }
     .fab:hover {
-	color: $purple;
+	color: $blue;
 	text-decoration: none;
     }
-
+    .fab + .fab {
+	margin-left: .2em;
+    }
 }
