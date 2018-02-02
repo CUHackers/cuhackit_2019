@@ -6169,17 +6169,17 @@ nav {
     font-weight: 100 !important;
     color: #222; }
   #faqs .icon1 {
-    float: left;
+    float: right;
     top: -.5em;
-    right: 70vw; }
+    right: 80%; }
   #faqs .icon2 {
     float: right;
     top: -.5em;
-    right: 20vw; }
+    right: 30%; }
   #faqs .icon3 {
     float: right;
     top: .3em;
-    right: 10vw; }
+    right: 10%; }
   #faqs .accordion {
     cursor: pointer;
     border: none;
