@@ -6,6 +6,10 @@
     @extend .parallax;
 
     .row  {
-	height: 100vh
+	height: 35em;
     }
+}
+
+#contact > div {
+    min-height: 35em;
 }

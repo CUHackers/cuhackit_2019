@@ -6209,11 +6209,16 @@ nav {
   background-repeat: no-repeat;
   background-size: auto 100%; }
   #mentors .row {
-    height: 60vh; }
+    height: 35em; }
+
+#mentors > div {
+  min-height: 35em; }
 
 #sponsors {
   padding-top: 4em;
   padding-bottom: 3em; }
+  #sponsors .title {
+    margin: calc(.3em + 1vw) 0em; }
   #sponsors .special-sizing {
     max-width: 1140px; }
   #sponsors .main-contain {
@@ -6232,7 +6237,10 @@ nav {
   background-repeat: repeat;
   background-size: 100% auto; }
   #contact .row {
-    height: 100vh; }
+    height: 35em; }
+
+#contact > div {
+  min-height: 35em; }
 
 footer {
   background-color: #222;
