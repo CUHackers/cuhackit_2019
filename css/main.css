@@ -6041,6 +6041,11 @@ a.text-dark:hover, a.text-dark:focus {
   display: -ms-flexbox;
   display: flex; }
 
+.special-sizing {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
+
 body {
   /* replace with your selector */
   font-family: 'Access Regular', 'PT Mono', monospace;
@@ -6219,8 +6224,6 @@ nav {
   padding-bottom: 3em; }
   #sponsors .title {
     margin: calc(.3em + 1vw) 0em; }
-  #sponsors .special-sizing {
-    max-width: 1140px; }
   #sponsors .main-contain {
     height: 100vh; }
   #sponsors .sb {
