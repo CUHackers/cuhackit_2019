@@ -6218,11 +6218,11 @@ nav {
     max-width: 1140px; }
   #sponsors .main-contain {
     height: 100vh; }
-  #sponsors .sponsor-box {
+  #sponsors .sb {
     margin: 1em;
     height: 20vw;
     min-height: 12em; }
-    #sponsors .sponsor-box img {
+    #sponsors .sb img {
       width: 100%; }
   #sponsors .main-content {
     padding-bottom: 10vh; }
