@@ -17,7 +17,16 @@
 	}
 
     }
+    .sb-container {
+	padding-bottom: 2em;
+    }
     .main-content {
 	padding-bottom: 10vh;
+    }
+
+    @media all and (max-width: 1000px) {
+	.sb-container {
+	    padding-bottom: 0em;
+	}
     }
 }

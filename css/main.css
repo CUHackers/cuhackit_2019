@@ -6236,8 +6236,13 @@ nav {
     min-height: 12em; }
     #sponsors .sb img {
       width: 100%; }
+  #sponsors .sb-container {
+    padding-bottom: 2em; }
   #sponsors .main-content {
     padding-bottom: 10vh; }
+  @media all and (max-width: 1000px) {
+    #sponsors .sb-container {
+      padding-bottom: 0em; } }
 
 #contact {
   background-image: url("../resources/images/gridBig.png");
