@@ -7,6 +7,9 @@
     @extend .parallax;
 
 
+    .detail-list p {
+	text-align: left;
+    }
     .container > div:nth-child(1) {
 	height: 30vh;
 	min-height: 16em;
