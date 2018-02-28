@@ -493,7 +493,7 @@ pre {
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, #sponsors .sb-list div, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, #details > div .title, #details > div .list, #details > div .list div, #sponsors .title, #sponsors .sb-super, #sponsors .sb-super .tagline, #sponsors .sb-super .sb, #sponsors .sb-list, .col,
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, #sponsors .sb-list > div, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, #details > div .title, #details > div .list, #details > div .list div, #sponsors .title, #sponsors .sb-super, #sponsors .sb-super .tagline, #sponsors .sb-super .sb, #sponsors .sb-list, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .mini-section, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
@@ -535,7 +535,7 @@ pre {
   flex: 0 0 41.66667%;
   max-width: 41.66667%; }
 
-.col-6, #sponsors .sb-list div {
+.col-6, #sponsors .sb-list > div {
   flex: 0 0 50%;
   max-width: 50%; }
 
@@ -759,7 +759,7 @@ pre {
   .col-md-3 {
     flex: 0 0 25%;
     max-width: 25%; }
-  .col-md-4, #sponsors .sb-super .tagline, #sponsors .sb-list div {
+  .col-md-4, #sponsors .sb-super .tagline, #sponsors .sb-list > div {
     flex: 0 0 33.33333%;
     max-width: 33.33333%; }
   .col-md-5 {
@@ -6338,7 +6338,7 @@ nav {
   @media (min-width: 1200px) {
     #sponsors .title {
       font-size: 4em; } }
-  #sponsors img {
+  #sponsors img, #sponsors object {
     width: 100%; }
   @media (max-width: 575.98px) {
     #sponsors .sb-super .tagline {
@@ -6356,19 +6356,19 @@ nav {
     #sponsors .sb-super .tagline {
       font-size: 2.5em; } }
   @media (max-width: 575.98px) {
-    #sponsors .sb-list div {
+    #sponsors .sb-list > div {
       padding: 1em; } }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    #sponsors .sb-list div {
+    #sponsors .sb-list > div {
       padding: 1.5em; } }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    #sponsors .sb-list div {
+    #sponsors .sb-list > div {
       padding: 2em; } }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    #sponsors .sb-list div {
+    #sponsors .sb-list > div {
       padding: 2em; } }
   @media (min-width: 1200px) {
-    #sponsors .sb-list div {
+    #sponsors .sb-list > div {
       padding: 2em; } }
   #sponsors button {
     margin: 2em; }
