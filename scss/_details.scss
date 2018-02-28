@@ -5,14 +5,63 @@
     background-size: 100% auto;
     min-height: 55em;
     @extend .parallax;
+    @extend .secondary;
 
+    min-height: 100vh;
+    padding-top: 4em;
+    padding-bottom: 4em;
 
-    .detail-list p {
-	text-align: left;
+}
+#details > div {
+    @extend .container-fluid;
+    @extend .special-sizing;
+    @extend .row;
+    @extend .align-items-center;
+
+    .title {
+	@extend .col-12;
     }
-    .container > div:nth-child(1) {
-	height: 30vh;
-	min-height: 16em;
+
+    .list {
+	@extend .col-12; @extend .row; @extend .align-items-start;
+	text-align: left;
+
+	@include media-breakpoint-only(xs) { padding-top: 1em }
+	@include media-breakpoint-only(sm) { padding-top: 1em }
+	@include media-breakpoint-only(md) { padding-top: 2em }
+	@include media-breakpoint-only(lg) { padding-top: 3em }
+	@include media-breakpoint-only(xl) { padding-top: 4em }
+
+
+	div {
+	    @extend .col-12; @extend .col-md-6;
+	    @include media-breakpoint-only(xs) {
+		h2 { font-size: 1.5em; }
+		p {font-size: 1em; }
+		padding-top: 1em;
+	    }
+	    @include media-breakpoint-only(sm) {
+		h2 { font-size: 2em; }
+		p {font-size: 1em; }
+		padding-top: 1.5em;
+	    }
+	    @include media-breakpoint-only(md) {
+		h2 { font-size: 2em; }
+		p {font-size: 1em; }
+		padding-top: 3em;
+	    }
+	    @include media-breakpoint-only(lg) {
+		h2 { font-size: 2.5em; }
+		p {font-size: 1.3em; }
+		padding-top: 3em;
+	    }
+	    @include media-breakpoint-only(xl) {
+		h2 { font-size: 3em; }
+		p {font-size: 1.5em; }
+		padding-top: 3em;
+	    }
+	}
+
     }
 
     .container > div:nth-child(2) {

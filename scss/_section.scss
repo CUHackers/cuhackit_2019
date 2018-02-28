@@ -2,9 +2,13 @@
 body {
     position: relative;
 }
+
+section {
+    margin: 0em;
+}
 section > div  {
     padding-top: 2em;
-    min-height: 100vh;
+    // min-height: 100vh;
 }
 
 section > div + div {

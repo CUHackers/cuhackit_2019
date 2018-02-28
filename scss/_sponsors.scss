@@ -1,32 +1,76 @@
+
 #sponsors {
+
+    .row-full {
+	@extend .row;
+	margin: 0em; // why do I have to do this???
+    }
+
+
+    @extend .primary;
+    @extend .special-sizing;
+    @extend .container-fluid;
+    @extend .row-full;
+    text-align: center;
+
+
+    padding-top: 6em;
+    padding-bottom: 2em;
+
     .title {
-	margin: calc(.3em + 1vw) 0em;
-    }
-    padding-top: 4em;
-    padding-bottom: 3em;
-    .main-contain  {
-	height: 100vh
-    }
-    .sb {
-	margin: 1em;
-	height: 20vw;
-	min-height: 12em;
+	@extend .col-12;
 
-	img {
-	    width: 100%;
+	@include media-breakpoint-only(xs) { font-size: 2em; }
+	@include media-breakpoint-only(sm) { font-size: 2.5em; }
+	@include media-breakpoint-only(md) { font-size: 3em; }
+	@include media-breakpoint-only(lg) { font-size: 4em; }
+	@include media-breakpoint-only(xl) { font-size: 4em; }
+    }
+
+
+    img {
+	width: 100%;
+    }
+
+    .sb-super {
+	@extend .col-12;
+	@extend .row-full;
+	@extend .align-items-center;
+	.tagline {
+	    @extend .col-12;
+	    @extend .col-md-4;
+
+	    @include media-breakpoint-only(xs) { font-size: .8em; }
+	    @include media-breakpoint-only(sm) { font-size: .9em; }
+	    @include media-breakpoint-only(md) { font-size: 1.2em; }
+	    @include media-breakpoint-only(lg) { font-size: 2.5em; }
+	    @include media-breakpoint-only(xl) { font-size: 2.5em; }
+
 	}
-
-    }
-    .sb-container {
-	padding-bottom: 2em;
-    }
-    .main-content {
-	padding-bottom: 10vh;
-    }
-
-    @media all and (max-width: 1000px) {
-	.sb-container {
-	    padding-bottom: 0em;
+	.sb {
+	    @extend .col-12;
+	    @extend .col-md-8;
 	}
+    }
+
+
+    .sb-list {
+	@extend .col-12;
+	@extend .row-full;
+	@extend .align-items-center;
+	div {
+	    @extend .col-md-4;
+	    @extend .col-6;
+
+	    @include media-breakpoint-only(xs) { padding: 1em; }
+	    @include media-breakpoint-only(sm) { padding: 1.5em; }
+	    @include media-breakpoint-only(md) { padding: 2em; }
+	    @include media-breakpoint-only(lg) { padding: 2em; }
+	    @include media-breakpoint-only(xl) { padding: 2em; }
+	}
+    }
+
+    button {
+	margin: 2em;
     }
 }
