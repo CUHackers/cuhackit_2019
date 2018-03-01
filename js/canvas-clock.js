@@ -1,4 +1,54 @@
-var eventDate = new Date(2018, 2, 10, 10);
+var startTime = (new Date(2018, 2, 10, 10)).getTime();
+var endTime = (new Date(2018, 2, 11, 10)).getTime();
+
+
+/*// for testing
+var startTime = (new Date(2018, 1, 27, 10)).getTime();
+var endTime = (new Date(2018, 1, 28, 10)).getTime();
+*/
+
+
+
+
+function currentTime() {
+    return (new Date()).getTime();
+}
+
+var progress = {
+    before: function () {
+	return currentTime() < startTime;
+    },
+    during: function () {
+	return startTime <= currentTime() && currentTime() < endTime;
+    },
+    after: function () {
+	return endTime <= currentTime();
+    }
+}
+
+
+
+
+
+
+if (progress.before()) {
+    console.log("The event has not started");
+}
+else if (progress.during()) {
+    console.log("The event is in progress");
+}
+else if (progress.after()) {
+    console.log("The event is over");
+}
+else {
+    console.log("How did you get out of all time?");
+}
+
+
+
+
+
+
 // Canvas access
 var c = document.getElementById("clock"),
     ctx = c.getContext("2d"),
@@ -6,10 +56,25 @@ var c = document.getElementById("clock"),
     height = c.height;
 
 // Colors
-var gridLineColor = "#333",
-    gridTextGradient = ctx.createLinearGradient(0,0,0,height);
-gridTextGradient.addColorStop(0, "#002cf5"); // old color here!
-gridTextGradient.addColorStop(1, "#01a"); // make this a darker one!
+var gridLineColor = "#333";
+
+function getCurrentGradient() {
+    var gridTextGradient = ctx.createLinearGradient(0,0,0,height);
+    if (progress.before()) {
+	gridTextGradient.addColorStop(0, "#0016ff"); // old color here!
+	gridTextGradient.addColorStop(1, "#01a"); // make this a darker one!
+    }
+    else if (progress.during()) {
+	gridTextGradient.addColorStop(0, "#e70000"); // old color here!
+	gridTextGradient.addColorStop(1, "#a00"); // make this a darker one!
+    }
+    else {
+	gridTextGradient.addColorStop(0, "#711ed6"); // old color here!
+	gridTextGradient.addColorStop(1, "#40a"); // make this a darker one!
+    }
+
+    return gridTextGradient;
+}
 
 
 
@@ -138,9 +203,20 @@ const digits = [zero, one, two, three, four, five, six, seven, eight, nine];
 
 
 
-var eventTime = eventDate.getTime();
 
-function secondsLeft() { return Math.floor((eventTime -  (new Date().getTime())) / 1000); }
+
+function secondsLeft() {
+    if (progress.before()) {
+	return Math.floor((startTime -  (new Date().getTime())) / 1000);
+    }
+    else if (progress.during()) {
+	return Math.floor((endTime - (new Date().getTime())) / 1000);
+    }
+    else {
+	throw new Error("This shouldn't be happening!!!");
+    }
+
+}
 
 
 
@@ -210,17 +286,19 @@ function drawBox(y, x) {
     ctx.fill();
 }
 
-function drawGrid() {
+function drawNumbers() {
     // draw the boxes
     for (y = 0; y < rows; y++) {
 	for (x = 0; x < columns; x++) {
 	    if (grid[y][x] == 1) {
-		ctx.fillStyle = gridTextGradient;
+		ctx.fillStyle = getCurrentGradient();
 		drawBox(y, x);
 	    }
 	}
     }
+}
 
+function drawGrid() {
     ctx.strokeStyle = gridLineColor;
     ctx.lineWidth = 1;
     // draw the grid
@@ -243,13 +321,54 @@ function drawGrid() {
 }
 
 
+// Event Has Ended!
+// G_G___G____GG__G__G__GGG___GG__G__G_GGG
+// G_G__G_G__G__G_G_G___G__G_G__G_GG_G_G__
+// GGG__GGG__G____GG____G__G_G__G_G_GG_GGG
+// G_G_G___G_G__G_G_G___G__G_G__G_G__G_G__
+// G_G_G___G__GG__G__G__GGG___GG__G__G_GGG
+var eventOver = [
+    [G,_,_,G,_,_,G,G,_,_,_,G,G,_,G,_,G,_,_,G,G,G,_,_,_,G,G,_,_,G,_,_,G,_,G,G,G,_,G],
+    [G,_,_,G,_,G,_,_,G,_,G,_,_,_,G,_,G,_,_,G,_,_,G,_,G,_,_,G,_,G,G,_,G,_,G,_,_,_,G],
+    [G,G,G,G,_,G,G,G,G,_,G,_,_,_,G,G,_,_,_,G,_,_,G,_,G,_,_,G,_,G,G,G,G,_,G,G,G,_,G],
+    [G,_,_,G,_,G,_,_,G,_,G,_,_,_,G,_,G,_,_,G,_,_,G,_,G,_,_,G,_,G,_,G,G,_,G,_,_,_,_],
+    [G,_,_,G,_,G,_,_,G,_,_,G,G,_,G,_,G,_,_,G,G,G,_,_,_,G,G,_,_,G,_,_,G,_,G,G,G,_,G]
+]
+
+
+
+function staticDrawEnd() {
+    var rowStart = Math.floor(Math.max(0, rows/2) - eventOver.length/2),
+	colStart = Math.floor(Math.max(0, columns/2) - eventOver[0].length/2);
+
+    ctx.fillStyle = getCurrentGradient();
+    for (y = 0; y < eventOver.length; y++) {
+	for (x = 0; x < eventOver[0].length; x++) {
+	    if (eventOver[y][x]) {
+		drawBox(y+rowStart,x+colStart);
+	    }
+	}
+    }
+    drawGrid();
+
+
+    $(".time-label").hide();
+}
+
+
 
 
 function main() {
-    if (updateGrid()) {
+    if (progress.after()) {
 	ctx.clearRect(-10, -10, width + 10, height + 10);
-	drawGrid();
+	staticDrawEnd();
+    } else {
+	if (updateGrid()) {
+	    ctx.clearRect(-10, -10, width + 10, height + 10);
+	    drawNumbers();
+	    drawGrid();
+	}
+	setTimeout(function() { main(); }, 300);
     }
-    setTimeout(function() { main(); }, 300);
 }
 main();
