@@ -6325,19 +6325,24 @@ nav {
     margin: 0em; }
   @media (max-width: 575.98px) {
     #sponsors .title {
-      font-size: 2em; } }
+      font-size: 2em;
+      padding-bottom: .5em; } }
   @media (min-width: 576px) and (max-width: 767.98px) {
     #sponsors .title {
-      font-size: 2.5em; } }
+      font-size: 2.5em;
+      padding-bottom: .6em; } }
   @media (min-width: 768px) and (max-width: 991.98px) {
     #sponsors .title {
-      font-size: 3em; } }
+      font-size: 3em;
+      padding-bottom: .75em; } }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     #sponsors .title {
-      font-size: 4em; } }
+      font-size: 4em;
+      padding-bottom: 1.5em; } }
   @media (min-width: 1200px) {
     #sponsors .title {
-      font-size: 4em; } }
+      font-size: 4em;
+      padding-bottom: 1.5em; } }
   #sponsors img, #sponsors object {
     width: 100%; }
   @media (max-width: 575.98px) {
