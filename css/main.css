@@ -6195,6 +6195,8 @@ nav {
   @media (min-width: 1200px) {
     #details > div .list {
       padding-top: 4em; } }
+  #details > div .list .code-comment {
+    color: #bbb; }
   @media (max-width: 575.98px) {
     #details > div .list div {
       padding-top: 1em; }
