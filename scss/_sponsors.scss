@@ -14,33 +14,11 @@
 
 
     padding-top: 6em;
-    padding-bottom: 2em;
+    padding-bottom: 6em;
 
     .title {
-	@extend .col-12;
-
-	@include media-breakpoint-only(xs) {
-	    font-size: 2em;
-	    padding-bottom: 1.0em;
-	}
-	@include media-breakpoint-only(sm) {
-	    font-size: 2.5em;
-	    padding-bottom: 1.2em;
-	}
-	@include media-breakpoint-only(md) {
-	    font-size: 3em;
-	    padding-bottom: 1.5em;
-	}
-	@include media-breakpoint-only(lg) {
-	    font-size: 4em;
-	    padding-bottom: 3.0em;
-	}
-	@include media-breakpoint-only(xl) {
-	    font-size: 4em;
-	    padding-bottom: 3.0em;
-	}
+	@extend .default-title;
     }
-
 
     img, object {
 	width: 100%;
@@ -50,7 +28,9 @@
 	@extend .col-12;
 	@extend .row-full;
 	@extend .align-items-center;
+
 	.tagline {
+	    margin-top: 10%; margin-bottom: 5%;
 	    @extend .col-12;
 	    @extend .col-md-4;
 
@@ -59,18 +39,12 @@
 	    @include media-breakpoint-only(md) { font-size: 1.2em; }
 	    @include media-breakpoint-only(lg) { font-size: 2.5em; }
 	    @include media-breakpoint-only(xl) { font-size: 2.5em; }
-
 	}
 	.sb {
+	    margin-top: 10%; margin-bottom: 5%;
+	    padding-left: 10%; padding-right: 10%;
 	    @extend .col-12;
 	    @extend .col-md-8;
-
-	    @include media-breakpoint-only(xs) { margin-top: 2em; }
-	    @include media-breakpoint-only(sm) { margin-top: 2em; }
-	    @include media-breakpoint-only(md) { margin-top: 0em; }
-	    @include media-breakpoint-only(lg) { margin-top: 0em; }
-	    @include media-breakpoint-only(xl) { margin-top: 0em; }
-
 	}
     }
 
@@ -84,12 +58,8 @@
     .sb-list > div {
 	@extend .col-md-4;
 	@extend .col-6;
-
-	@include media-breakpoint-only(xs) { padding: 1em; }
-	@include media-breakpoint-only(sm) { padding: 1.5em; }
-	@include media-breakpoint-only(md) { padding: 2em; }
-	@include media-breakpoint-only(lg) { padding: 2em; }
-	@include media-breakpoint-only(xl) { padding: 2em; }
+	margin-top: 5%; margin-bottom: 5%;
+	padding-left: 5%; padding-right: 5%;
     }
 
     button {

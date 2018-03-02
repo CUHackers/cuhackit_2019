@@ -7,6 +7,10 @@
     .row  {
 	height: 35em;
     }
+
+    .title {
+	@extend .default-title-margin;
+    }
 }
 
 #mentors  > div {

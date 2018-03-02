@@ -493,7 +493,7 @@ pre {
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, #sponsors .sb-list > div, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, #details > div .title, #details > div .list, #details > div .list div, #sponsors .title, #sponsors .sb-super, #sponsors .sb-super .tagline, #sponsors .sb-super .sb, #sponsors .sb-list, .col,
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, #sponsors .sb-list > div, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .default-title, #sponsors .title, #details > div .title, #details > div .list, #details > div .list div, #sponsors .sb-super, #sponsors .sb-super .tagline, #sponsors .sb-super .sb, #sponsors .sb-list, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .mini-section, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
@@ -559,7 +559,7 @@ pre {
   flex: 0 0 91.66667%;
   max-width: 91.66667%; }
 
-.col-12, #details > div .title, #details > div .list, #details > div .list div, #sponsors .title, #sponsors .sb-super, #sponsors .sb-super .tagline, #sponsors .sb-super .sb, #sponsors .sb-list {
+.col-12, .default-title, #sponsors .title, #details > div .title, #details > div .list, #details > div .list div, #sponsors .sb-super, #sponsors .sb-super .tagline, #sponsors .sb-super .sb, #sponsors .sb-list {
   flex: 0 0 100%;
   max-width: 100%; }
 
@@ -6068,6 +6068,46 @@ a.text-dark:hover, a.text-dark:focus {
   margin-left: auto;
   margin-right: auto; }
 
+@media (max-width: 575.98px) {
+  .default-title-margin, .default-title, #sponsors .title, #mentors .title, #contact .title {
+    margin: .6em auto; } }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .default-title-margin, .default-title, #sponsors .title, #mentors .title, #contact .title {
+    margin: .8em auto; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .default-title-margin, .default-title, #sponsors .title, #mentors .title, #contact .title {
+    margin: 1.0em auto; } }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .default-title-margin, .default-title, #sponsors .title, #mentors .title, #contact .title {
+    margin: 1.0em auto; } }
+
+@media (min-width: 1200px) {
+  .default-title-margin, .default-title, #sponsors .title, #mentors .title, #contact .title {
+    margin: 1.0em auto; } }
+
+@media (max-width: 575.98px) {
+  .default-title-font-size, .default-title, #sponsors .title, #faqs .title-row h2 {
+    font-size: 1.5em; } }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .default-title-font-size, .default-title, #sponsors .title, #faqs .title-row h2 {
+    font-size: 2.0em; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .default-title-font-size, .default-title, #sponsors .title, #faqs .title-row h2 {
+    font-size: 2.5em; } }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .default-title-font-size, .default-title, #sponsors .title, #faqs .title-row h2 {
+    font-size: 3.5em; } }
+
+@media (min-width: 1200px) {
+  .default-title-font-size, .default-title, #sponsors .title, #faqs .title-row h2 {
+    font-size: 3.5em; } }
+
 body {
   /* replace with your selector */
   font-family: 'Access Regular', 'PT Mono', monospace;
@@ -6108,9 +6148,6 @@ body {
 
 section {
   margin: 0em; }
-
-section > div {
-  padding-top: 2em; }
 
 section > div + div {
   padding-top: 4em; }
@@ -6231,7 +6268,7 @@ nav {
       #details > div .list div h2 {
         font-size: 3em; }
       #details > div .list div p {
-        font-size: 1.5em; } }
+        font-size: 1.3em; } }
 
 #details > div .container > div:nth-child(2) {
   height: 40vh;
@@ -6248,21 +6285,6 @@ nav {
       color: #0016FF;
       z-index: 1000;
       position: relative; }
-      @media (max-width: 575.98px) {
-        #faqs .title-row h2 {
-          font-size: 2em; } }
-      @media (min-width: 576px) and (max-width: 767.98px) {
-        #faqs .title-row h2 {
-          font-size: 2em; } }
-      @media (min-width: 768px) and (max-width: 991.98px) {
-        #faqs .title-row h2 {
-          font-size: 2em; } }
-      @media (min-width: 992px) and (max-width: 1199.98px) {
-        #faqs .title-row h2 {
-          font-size: 2em; } }
-      @media (min-width: 1200px) {
-        #faqs .title-row h2 {
-          font-size: 3.5em; } }
   #faqs i {
     z-index: 5;
     position: absolute;
@@ -6322,76 +6344,39 @@ nav {
 #sponsors {
   text-align: center;
   padding-top: 6em;
-  padding-bottom: 2em; }
+  padding-bottom: 6em; }
   #sponsors .row-full, #sponsors #sponsors, #sponsors .sb-super, #sponsors .sb-list {
     margin: 0em; }
-  @media (max-width: 575.98px) {
-    #sponsors .title {
-      font-size: 2em;
-      padding-bottom: 1.0em; } }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    #sponsors .title {
-      font-size: 2.5em;
-      padding-bottom: 1.2em; } }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    #sponsors .title {
-      font-size: 3em;
-      padding-bottom: 1.5em; } }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    #sponsors .title {
-      font-size: 4em;
-      padding-bottom: 3.0em; } }
-  @media (min-width: 1200px) {
-    #sponsors .title {
-      font-size: 4em;
-      padding-bottom: 3.0em; } }
   #sponsors img, #sponsors object {
     width: 100%; }
-  @media (max-width: 575.98px) {
-    #sponsors .sb-super .tagline {
-      font-size: .8em; } }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    #sponsors .sb-super .tagline {
-      font-size: .9em; } }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    #sponsors .sb-super .tagline {
-      font-size: 1.2em; } }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    #sponsors .sb-super .tagline {
-      font-size: 2.5em; } }
-  @media (min-width: 1200px) {
-    #sponsors .sb-super .tagline {
-      font-size: 2.5em; } }
-  @media (max-width: 575.98px) {
-    #sponsors .sb-super .sb {
-      margin-top: 2em; } }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    #sponsors .sb-super .sb {
-      margin-top: 2em; } }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    #sponsors .sb-super .sb {
-      margin-top: 0em; } }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    #sponsors .sb-super .sb {
-      margin-top: 0em; } }
-  @media (min-width: 1200px) {
-    #sponsors .sb-super .sb {
-      margin-top: 0em; } }
-  @media (max-width: 575.98px) {
-    #sponsors .sb-list > div {
-      padding: 1em; } }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    #sponsors .sb-list > div {
-      padding: 1.5em; } }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    #sponsors .sb-list > div {
-      padding: 2em; } }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    #sponsors .sb-list > div {
-      padding: 2em; } }
-  @media (min-width: 1200px) {
-    #sponsors .sb-list > div {
-      padding: 2em; } }
+  #sponsors .sb-super .tagline {
+    margin-top: 10%;
+    margin-bottom: 5%; }
+    @media (max-width: 575.98px) {
+      #sponsors .sb-super .tagline {
+        font-size: .8em; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      #sponsors .sb-super .tagline {
+        font-size: .9em; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      #sponsors .sb-super .tagline {
+        font-size: 1.2em; } }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      #sponsors .sb-super .tagline {
+        font-size: 2.5em; } }
+    @media (min-width: 1200px) {
+      #sponsors .sb-super .tagline {
+        font-size: 2.5em; } }
+  #sponsors .sb-super .sb {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%; }
+  #sponsors .sb-list > div {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%; }
   @media (max-width: 575.98px) {
     #sponsors button {
       margin-top: 1.0em;

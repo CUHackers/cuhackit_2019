@@ -12,13 +12,7 @@
 	    color: $blue;
 	    z-index: 1000;
 	    position: relative;
-
-	    @include media-breakpoint-only(xs) { font-size: 2em; }
-	    @include media-breakpoint-only(sm) { font-size: 2em; }
-	    @include media-breakpoint-only(md) { font-size: 2em; }
-	    @include media-breakpoint-only(lg) { font-size: 2em; }
-	    @include media-breakpoint-only(xl) { font-size: 3.5em; }
-
+	    @extend .default-title-font-size;
 	}
     }
     i {
