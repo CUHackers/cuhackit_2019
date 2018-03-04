@@ -55,32 +55,57 @@
 	@extend .align-items-center;
 
     }
-    .sb-list > div {
-	@extend .col-md-4;
-	@extend .col-6;
-	margin-top: 5%; margin-bottom: 5%;
-	padding-left: 5%; padding-right: 5%;
+    .sb-major {
+	@extend .sb-list;
+	.make-centered-on-small {
+	    @extend .offset-md-0;
+	    @extend .offset-3;
+	}
+	.sb {
+	    @extend .col-md-4;
+	    @extend .col-6;
+	    margin-top: 5%; margin-bottom: 5%;
+	    padding-left: 5%; padding-right: 5%;
+
+	}
+    }
+    .sb-minor {
+	@extend .sb-list;
+	.make-centered-on-small {
+	    @extend .offset-md-0;
+	    @extend .offset-4;
+	}
+	.sb {
+	    @extend .col-md-3;
+	    @extend .col-4;
+	    margin-top: 5%; margin-bottom: 5%;
+	    padding-left: 5%; padding-right: 5%;
+	}
     }
 
+    hr {
+	border-color: $light3;
+	margin-left: 10vw; margin-right: 10vw;
+    }
     button {
 	@include media-breakpoint-only(xs) {
-	    margin-top: 1.0em;
+	    margin-top: 3.0em;
 	    margin-bottom: 1.0em;
 	}
 	@include media-breakpoint-only(sm) {
-	    margin-top: 1.2em;
+	    margin-top: 3.2em;
 	    margin-bottom: 1.2em;
 	}
 	@include media-breakpoint-only(md) {
-	    margin-top: 1.5em;
+	    margin-top: 3.5em;
 	    margin-bottom: 1.5em;
 	}
 	@include media-breakpoint-only(lg) {
-	    margin-top: 3.0em;
+	    margin-top: 4.0em;
 	    margin-bottom: 3.0em;
 	}
 	@include media-breakpoint-only(xl) {
-	    margin-top: 3.0em;
+	    margin-top: 4.0em;
 	    margin-bottom: 3.0em;
 	}
     }

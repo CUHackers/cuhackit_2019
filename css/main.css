@@ -479,7 +479,7 @@ pre {
   margin-right: auto;
   margin-left: auto; }
 
-.row, #details > div, #details > div .list, #sponsors .row-full, #sponsors #sponsors, #sponsors .sb-super, #sponsors .sb-list {
+.row, #details > div, #details > div .list, #sponsors .row-full, #sponsors #sponsors, #sponsors .sb-super, #sponsors .sb-list, #sponsors .sb-major, #sponsors .sb-minor {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -493,7 +493,7 @@ pre {
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, #sponsors .sb-list > div, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .default-title, #sponsors .title, #details > div .title, #details > div .list, #details > div .list div, #sponsors .sb-super, #sponsors .sb-super .tagline, #sponsors .sb-super .sb, #sponsors .sb-list, .col,
+.col-1, .col-2, .col-3, .col-4, #sponsors .sb-minor .sb, .col-5, .col-6, #sponsors .sb-major .sb, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .default-title, #sponsors .title, #details > div .title, #details > div .list, #details > div .list div, #sponsors .sb-super, #sponsors .sb-super .tagline, #sponsors .sb-super .sb, #sponsors .sb-list, #sponsors .sb-major, #sponsors .sb-minor, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .mini-section, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
@@ -527,7 +527,7 @@ pre {
   flex: 0 0 25%;
   max-width: 25%; }
 
-.col-4 {
+.col-4, #sponsors .sb-minor .sb {
   flex: 0 0 33.33333%;
   max-width: 33.33333%; }
 
@@ -535,7 +535,7 @@ pre {
   flex: 0 0 41.66667%;
   max-width: 41.66667%; }
 
-.col-6, #sponsors .sb-list > div {
+.col-6, #sponsors .sb-major .sb {
   flex: 0 0 50%;
   max-width: 50%; }
 
@@ -559,7 +559,7 @@ pre {
   flex: 0 0 91.66667%;
   max-width: 91.66667%; }
 
-.col-12, .default-title, #sponsors .title, #details > div .title, #details > div .list, #details > div .list div, #sponsors .sb-super, #sponsors .sb-super .tagline, #sponsors .sb-super .sb, #sponsors .sb-list {
+.col-12, .default-title, #sponsors .title, #details > div .title, #details > div .list, #details > div .list div, #sponsors .sb-super, #sponsors .sb-super .tagline, #sponsors .sb-super .sb, #sponsors .sb-list, #sponsors .sb-major, #sponsors .sb-minor {
   flex: 0 0 100%;
   max-width: 100%; }
 
@@ -614,10 +614,10 @@ pre {
 .offset-2 {
   margin-left: 16.66667%; }
 
-.offset-3 {
+.offset-3, #sponsors .sb-major .make-centered-on-small {
   margin-left: 25%; }
 
-.offset-4 {
+.offset-4, #sponsors .sb-minor .make-centered-on-small {
   margin-left: 33.33333%; }
 
 .offset-5 {
@@ -756,10 +756,10 @@ pre {
   .col-md-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%; }
-  .col-md-3 {
+  .col-md-3, #sponsors .sb-minor .sb {
     flex: 0 0 25%;
     max-width: 25%; }
-  .col-md-4, #sponsors .sb-super .tagline, #sponsors .sb-list > div {
+  .col-md-4, #sponsors .sb-super .tagline, #sponsors .sb-major .sb {
     flex: 0 0 33.33333%;
     max-width: 33.33333%; }
   .col-md-5 {
@@ -816,7 +816,7 @@ pre {
     order: 11; }
   .order-md-12 {
     order: 12; }
-  .offset-md-0 {
+  .offset-md-0, #sponsors .sb-major .make-centered-on-small, #sponsors .sb-minor .make-centered-on-small {
     margin-left: 0; }
   .offset-md-1 {
     margin-left: 8.33333%; }
@@ -4469,7 +4469,7 @@ button.bg-dark:focus {
 .align-items-end {
   align-items: flex-end !important; }
 
-.align-items-center, #details > div, #sponsors .sb-super, #sponsors .sb-list {
+.align-items-center, #details > div, #sponsors .sb-super, #sponsors .sb-list, #sponsors .sb-major, #sponsors .sb-minor {
   align-items: center !important; }
 
 .align-items-baseline {
@@ -6335,7 +6335,7 @@ nav {
   background-image: url("../resources/images/codeBlueStock.png");
   background-repeat: no-repeat;
   background-size: auto 100%; }
-  #mentors .row, #mentors #details > div, #mentors #details > div .list, #details > div #mentors .list, #mentors #sponsors .row-full, #sponsors #mentors .row-full, #mentors #sponsors #sponsors, #sponsors #mentors #sponsors, #mentors #sponsors .sb-super, #sponsors #mentors .sb-super, #mentors #sponsors .sb-list, #sponsors #mentors .sb-list {
+  #mentors .row, #mentors #details > div, #mentors #details > div .list, #details > div #mentors .list, #mentors #sponsors .row-full, #sponsors #mentors .row-full, #mentors #sponsors #sponsors, #sponsors #mentors #sponsors, #mentors #sponsors .sb-super, #sponsors #mentors .sb-super, #mentors #sponsors .sb-list, #sponsors #mentors .sb-list, #mentors #sponsors .sb-major, #sponsors #mentors .sb-major, #mentors #sponsors .sb-minor, #sponsors #mentors .sb-minor {
     height: 35em; }
 
 #mentors > div {
@@ -6345,7 +6345,7 @@ nav {
   text-align: center;
   padding-top: 6em;
   padding-bottom: 6em; }
-  #sponsors .row-full, #sponsors #sponsors, #sponsors .sb-super, #sponsors .sb-list {
+  #sponsors .row-full, #sponsors #sponsors, #sponsors .sb-super, #sponsors .sb-list, #sponsors .sb-major, #sponsors .sb-minor {
     margin: 0em; }
   #sponsors img, #sponsors object {
     width: 100%; }
@@ -6372,37 +6372,46 @@ nav {
     margin-bottom: 5%;
     padding-left: 10%;
     padding-right: 10%; }
-  #sponsors .sb-list > div {
+  #sponsors .sb-major .sb {
     margin-top: 5%;
     margin-bottom: 5%;
     padding-left: 5%;
     padding-right: 5%; }
+  #sponsors .sb-minor .sb {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%; }
+  #sponsors hr {
+    border-color: #555;
+    margin-left: 10vw;
+    margin-right: 10vw; }
   @media (max-width: 575.98px) {
     #sponsors button {
-      margin-top: 1.0em;
+      margin-top: 3.0em;
       margin-bottom: 1.0em; } }
   @media (min-width: 576px) and (max-width: 767.98px) {
     #sponsors button {
-      margin-top: 1.2em;
+      margin-top: 3.2em;
       margin-bottom: 1.2em; } }
   @media (min-width: 768px) and (max-width: 991.98px) {
     #sponsors button {
-      margin-top: 1.5em;
+      margin-top: 3.5em;
       margin-bottom: 1.5em; } }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     #sponsors button {
-      margin-top: 3.0em;
+      margin-top: 4.0em;
       margin-bottom: 3.0em; } }
   @media (min-width: 1200px) {
     #sponsors button {
-      margin-top: 3.0em;
+      margin-top: 4.0em;
       margin-bottom: 3.0em; } }
 
 #contact {
   background-image: url("../resources/images/gridBig.png");
   background-repeat: repeat;
   background-size: 100% auto; }
-  #contact .row, #contact #details > div, #contact #details > div .list, #details > div #contact .list, #contact #sponsors .row-full, #sponsors #contact .row-full, #contact #sponsors #sponsors, #sponsors #contact #sponsors, #contact #sponsors .sb-super, #sponsors #contact .sb-super, #contact #sponsors .sb-list, #sponsors #contact .sb-list {
+  #contact .row, #contact #details > div, #contact #details > div .list, #details > div #contact .list, #contact #sponsors .row-full, #sponsors #contact .row-full, #contact #sponsors #sponsors, #sponsors #contact #sponsors, #contact #sponsors .sb-super, #sponsors #contact .sb-super, #contact #sponsors .sb-list, #sponsors #contact .sb-list, #contact #sponsors .sb-major, #sponsors #contact .sb-major, #contact #sponsors .sb-minor, #sponsors #contact .sb-minor {
     height: 35em; }
 
 #contact > div {
@@ -6413,7 +6422,7 @@ footer {
   height: 6em; }
   footer .container-fluid, footer #details > div, footer #sponsors {
     height: 6em; }
-  footer .row, footer #details > div, footer #details > div .list, #details > div footer .list, footer #sponsors .row-full, #sponsors footer .row-full, footer #sponsors #sponsors, #sponsors footer #sponsors, footer #sponsors .sb-super, #sponsors footer .sb-super, footer #sponsors .sb-list, #sponsors footer .sb-list {
+  footer .row, footer #details > div, footer #details > div .list, #details > div footer .list, footer #sponsors .row-full, #sponsors footer .row-full, footer #sponsors #sponsors, #sponsors footer #sponsors, footer #sponsors .sb-super, #sponsors footer .sb-super, footer #sponsors .sb-list, #sponsors footer .sb-list, footer #sponsors .sb-major, #sponsors footer .sb-major, footer #sponsors .sb-minor, #sponsors footer .sb-minor {
     height: 6em; }
   footer .fab {
     color: white;
