@@ -6180,7 +6180,7 @@ nav {
 #countdown .container > div {
   height: 30vh;
   max-height: 40vw;
-  min-height: calc(7em + 7vw); }
+  min-height: calc(11em + 7vw); }
 
 #countdown #clock {
   width: 100%;
