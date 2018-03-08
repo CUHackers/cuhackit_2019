@@ -493,7 +493,7 @@ pre {
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, .col-4, #sponsors .sb-minor .sb, .col-5, .col-6, #sponsors .sb-major .sb, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .default-title, #sponsors .title, #details > div .title, #details > div .list, #details > div .list div, #sponsors .sb-super, #sponsors .sb-super .tagline, #sponsors .sb-super .sb, #sponsors .sb-list, #sponsors .sb-major, #sponsors .sb-minor, .col,
+.col-1, .col-2, #sponsors .sb-minor .sb-half, .col-3, .col-4, #sponsors .sb-minor .sb, .col-5, .col-6, #sponsors .sb-major .sb, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .default-title, #sponsors .title, #details > div .title, #details > div .list, #details > div .list div, #sponsors .sb-super, #sponsors .sb-super .tagline, #sponsors .sb-super .sb, #sponsors .sb-list, #sponsors .sb-major, #sponsors .sb-minor, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .mini-section, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
@@ -519,7 +519,7 @@ pre {
   flex: 0 0 8.33333%;
   max-width: 8.33333%; }
 
-.col-2 {
+.col-2, #sponsors .sb-minor .sb-half {
   flex: 0 0 16.66667%;
   max-width: 16.66667%; }
 
@@ -617,7 +617,7 @@ pre {
 .offset-3, #sponsors .sb-major .make-centered-on-small {
   margin-left: 25%; }
 
-.offset-4, #sponsors .sb-minor .make-centered-on-small {
+.offset-4 {
   margin-left: 33.33333%; }
 
 .offset-5 {
@@ -756,7 +756,7 @@ pre {
   .col-md-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%; }
-  .col-md-3, #sponsors .sb-minor .sb {
+  .col-md-3 {
     flex: 0 0 25%;
     max-width: 25%; }
   .col-md-4, #sponsors .sb-super .tagline, #sponsors .sb-major .sb {
@@ -816,7 +816,7 @@ pre {
     order: 11; }
   .order-md-12 {
     order: 12; }
-  .offset-md-0, #sponsors .sb-major .make-centered-on-small, #sponsors .sb-minor .make-centered-on-small {
+  .offset-md-0, #sponsors .sb-major .make-centered-on-small {
     margin-left: 0; }
   .offset-md-1 {
     margin-left: 8.33333%; }
@@ -6375,8 +6375,8 @@ nav {
   #sponsors .sb-major .sb {
     margin-top: 5%;
     margin-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 5%; }
+    padding-left: 4%;
+    padding-right: 4%; }
   #sponsors .sb-minor .sb {
     margin-top: 5%;
     margin-bottom: 5%;

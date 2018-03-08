@@ -65,18 +65,18 @@
 	    @extend .col-md-4;
 	    @extend .col-6;
 	    margin-top: 5%; margin-bottom: 5%;
-	    padding-left: 5%; padding-right: 5%;
+	    padding-left: 4%; padding-right: 4%;
 
 	}
     }
     .sb-minor {
 	@extend .sb-list;
-	.make-centered-on-small {
-	    @extend .offset-md-0;
-	    @extend .offset-4;
+
+	.sb-half {
+	    @extend .col-2;
 	}
 	.sb {
-	    @extend .col-md-3;
+
 	    @extend .col-4;
 	    margin-top: 5%; margin-bottom: 5%;
 	    padding-left: 5%; padding-right: 5%;
