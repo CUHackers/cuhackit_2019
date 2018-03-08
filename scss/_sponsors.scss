@@ -85,7 +85,8 @@
 
     hr {
 	border-color: $light3;
-	margin-left: 10vw; margin-right: 10vw;
+	margin-left: 15%;
+	width: 70%;
     }
     button {
 	@include media-breakpoint-only(xs) {

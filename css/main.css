@@ -6384,8 +6384,8 @@ nav {
     padding-right: 5%; }
   #sponsors hr {
     border-color: #555;
-    margin-left: 10vw;
-    margin-right: 10vw; }
+    margin-left: 15%;
+    width: 70%; }
   @media (max-width: 575.98px) {
     #sponsors button {
       margin-top: 3.0em;
