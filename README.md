@@ -11,9 +11,13 @@ $ npm build
 ```
 ### CURRENT PRIMARY GOALS
 
-  We need to aim to provide a better readme so that it is possible for any
+  We need to aim to provide a better README so that it is possible for any
 future team members to inherit the website and be immediately at home or to
 have the tools to find necessary information.
+  Additionally, READMEs do not have to be a one-time deal. If you write for 
+a new section of the website, write a README for that section. This can help
+keep this README streamlined while making relevant information for a particular
+part of the website more easily accessible. 
 
 #### TO THIS END
 ##### Descriptive Comments
