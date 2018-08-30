@@ -2,7 +2,7 @@ var startTime = (new Date(2018, 2, 10, 10)).getTime();
 var endTime = (new Date(2018, 2, 11, 10)).getTime();
 
 
-/*// for testing
+/* // for testing
 var startTime = (new Date(2018, 1, 27, 10)).getTime();
 var endTime = (new Date(2018, 1, 28, 10)).getTime();
 */
@@ -58,6 +58,11 @@ var c = document.getElementById("clock"),
 // Colors
 var gridLineColor = "#333";
 
+/*
+  This gradient is present where the top of the canvas is lighter than the bottom
+
+  Changes based on current state of competition, i.e. before/during/after
+ */
 function getCurrentGradient() {
     var gridTextGradient = ctx.createLinearGradient(0,0,0,height);
     if (progress.before()) {
