@@ -9,6 +9,23 @@ $ npm install
 $ npm build
 
 ```
+
+## Testing changes on the site
+
+In order to test changes to the website, a test server such as http-server should be used.
+Running the following command in the directory where the index.html is will start a localhost
+server which can be used to show the current state of the website.
+
+```bash
+http-server -p 8000
+```
+
+If http-server is not installed, it should be able to download it using:
+
+```bash
+npm install http-server
+```
+
 ### CURRENT PRIMARY GOALS
 
   We need to aim to provide a better README so that it is possible for any
