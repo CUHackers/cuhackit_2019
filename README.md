@@ -26,6 +26,8 @@ If http-server is not installed, it should be able to download it using:
 npm install http-server
 ```
 
+Test often to verify your changes as you go. Avoid pushing broken code.
+
 ## CURRENT PRIMARY GOALS
 
   We need to aim to provide a better README so that it is possible for any
