@@ -26,7 +26,7 @@ If http-server is not installed, it should be able to download it using:
 npm install http-server
 ```
 
-### CURRENT PRIMARY GOALS
+## CURRENT PRIMARY GOALS
 
   We need to aim to provide a better README so that it is possible for any
 future team members to inherit the website and be immediately at home or to
@@ -36,8 +36,8 @@ a new section of the website, write a README for that section. This can help
 keep this README streamlined while making relevant information for a particular
 part of the website more easily accessible. 
 
-#### TO THIS END
-##### Descriptive Comments
+### TO THIS END
+#### Descriptive Comments
   All code must be meticulously and descriptively commented. We've all heard
 it from our teachers, but we must strive to exemplify good commenting practices.
 Comments should not be:
@@ -53,12 +53,12 @@ text:
 int bar = 4; 
 ```
 
-##### Comment As You Go
+#### Comment As You Go
  
   Commenting is both a lost art and a process. Comment as you code or it will
 become backed up and will never be completed.
 
-##### Descriptive Names
+#### Descriptive Names
 
   Names should be enough to approximate the use of a variable. It is not a
 replacement for comments, but should allow the comments to add more clarity
