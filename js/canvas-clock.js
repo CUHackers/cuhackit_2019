@@ -7,6 +7,12 @@ var startTime = (new Date(2018, 1, 27, 10)).getTime();
 var endTime = (new Date(2018, 1, 28, 10)).getTime();
 */
 
+
+/*
+  Gets the number of milliseconds since 1/1/1970
+
+  Return: integer, milliseconds since the epoch
+ */
 function currentTime() {
     return (new Date()).getTime();
 }
@@ -27,16 +33,16 @@ var progress = {
 
 // Log the current relation to the event
 if (progress.before()) {
-    console.log("The event has not started");
+  console.log("The event has not started");
 }
 else if (progress.during()) {
-    console.log("The event is in progress");
+  console.log("The event is in progress");
 }
 else if (progress.after()) {
-    console.log("The event is over");
+  console.log("The event is over");
 }
 else {
-    console.log("How did you get out of all time?");
+  console.log("How did you get out of all time?");
 }
 
 
@@ -52,8 +58,11 @@ var gridLineColor = "#333";
 
 /*
   This gradient is present where the top of the canvas is lighter than the bottom
+    Changes based on current state of competition, i.e. before/during/after
 
-  Changes based on current state of competition, i.e. before/during/after
+  Return: gridTextGradient object, defines start/end colors for a linear 
+    gradient on the canvas
+  Params: None, does get information from progress object
  */
 function getCurrentGradient() {
   var gridTextGradient = ctx.createLinearGradient(0,0,0,height);
@@ -73,9 +82,6 @@ function getCurrentGradient() {
   return gridTextGradient;
 }
 
-
-
-// columns and rows
 
 // First object controls the number/size of each digit
 var digit = { count: 8, pairs: 4, width: 3, height: 5 };
@@ -102,6 +108,9 @@ for (y = 0; y < rows; y++) {
 
 /* getDigitPosition()
  * returns [y, x] digit position
+ *
+ *  Return: int array, the [y, x] coordinate of a digit on the canvas grid
+ *  Param1: position of the digit in clock i.e 01:23:45:67 || dd:hh:mm:ss
  */
 function getDigitPosition(d) {
     const y = space.topBottom;
