@@ -1,4 +1,10 @@
-# CU Hackathon Splash-Page
+# Home of CUhackit
+
+## Before you work each day
+
+```bash
+$ git pull
+```
 
 ## Installation
 
