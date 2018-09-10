@@ -1,4 +1,10 @@
-# CU Hackathon Splash-Page
+# Home of CUhackit
+
+## Before you work each day
+
+```bash
+$ git pull
+```
 
 ## Installation
 
@@ -60,7 +66,30 @@ int bar = 4;
   Commenting is both a lost art and a process. Comment as you code or it will
 become backed up and will never be completed.
 
-#### Descriptive Names
+##### Function Header Comments
+
+Each function should have a header of the style:
+
+```c
+/*
+  A function to check the validity of some detail
+  
+  Return: boolean, the validity of the given condition
+  Param1: integer, the number of letters to find
+  Param2: string, a string to test for validity 
+*/
+function myFunction(letter_num, run_string)
+{
+  // Do function stuff
+  return true;
+}
+```
+
+While Javascript doesn't have strict variable types, 
+it can be useful to other programmers in the project
+to know what to expect from your function, both as inputs, and on output.
+
+##### Descriptive Names
 
   Names should be enough to approximate the use of a variable. It is not a
 replacement for comments, but should allow the comments to add more clarity
