@@ -4,379 +4,43 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="author" content="Angelo Carrabba, Charlie Gallentine, Courtney Shearer">
+  <meta name="author" content="Charlie Gallentine">
 
   <!--meta http-equiv="refresh" content="1"-->
   <!-- Tab title and icon -->
-  <title>CUhackit</title>
-  <link rel="icon" href="resources/RGB_logo_bug.png">
-
-  <!--Font Awesome link to include icons-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- New font! -->
-  <link rel="stylesheet" href="https://webfonts.fontstand.com/WF-024682-e892056c2f2d30507bf3290339937e35.css" type="text/css">
+  <title>CUhackit|Helloworld</title>
 
   <!-- Custom styles (includes bootstrap too)  -->
   <link rel="stylesheet" href="css/main.css">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112858061-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-112858061-1');
-  </script>
 </head>
+
 <body id="top">
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md fixed-top">
-  <div class="container">
-    <a class="navbar-brand nav-link" href="#top">
-      <img src="resources/RGB_logo_bug.png" height="50" width="64"  />
-    </a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navtoggler" aria-controls="navtoggler" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars fa-2x" ></i>
-    </button>
-
-    <div id="navtoggler" class="collapse navbar-collapse">
-      <ul class="navbar-nav ml-auto form-inline">
-
-        <li class="nav-item"><a class="nav-link" href="#details">DETAILS</a></li>
-        <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
-	<li class="nav-item"><a class="nav-link" href="#mentors">MENTORS</a></li>
-        <li class="nav-item"><a class="nav-link" href="#sponsors">SPONSORS</a></li>
-	<li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
-
-	<!-- <li class="nav-item">
-             <a href="https://docs.google.com/forms/d/e/1FAIpQLSe74iE8SkqVFOAR9szMRofQZZuvF_ptVntQmUlIxPupSjg4Fg/viewform?usp=sf_link" target="_blank">
-	     <button class="apply-button">APPLY</button>
-	     </a>
-             </li>
-	-->
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<section id="countdown" class="primary">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col">
-	<img class="main-logo" src="resources/RGB_logo.png" height="150" width="192" />
-      </div>
-    </div>
-    <div class="row align-items-center">
-      <div class="col">
-	<canvas id="clock" width="975" height="175"></canvas>
-	<div class="time-label">
-	  <span>DAYS</span><span>HOURS</span><span>MINS</span><span>SECS</span>
-	</div>
-      </div>
-    </div>
-    <div class="row align-items-center date-container">
-      <!-- lazy way of making it toggle with rest was setting its id to navtoggler -->
-      <!-- <div id="navtoggler" class="col-12 d-md-none apply-button-container">
-	   <a href="https://docs.google.com/forms/d/e/1FAIpQLSe74iE8SkqVFOAR9szMRofQZZuvF_ptVntQmUlIxPupSjg4Fg/viewform?usp=sf_link" target="_blank">
-	   <button class="apply-button">APPLY</button>
-	   </a>
-      </div> -->
-      <div class="col-12">
-	<h3>MAR. 10-11 2018</h3>
-	<h3>Clemson University</h3>
-	<div>
-	</div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="details">
-  <div>
-    <object class="title" data="resources/images/headerWhite.svg">
-      Design Code Build
-    </object>
+  <div class="subcontent home-left">
+    <h1 id="title">CUhackit</h1>
+    <p>Jan 26-27 at Clemson University</p>
 
-    <div class="list">
-      <div>
-	<h2><b>What</b></h2>
-	<p>A hackathon is best described as a "24 hour invention
-	  marathon"! Come "time travel" with us on this special 23 hour
-	  hackathon over daylight savings.</p>
-      </div>
+    <div class="link-container">
+      <a class="link" href="#">Pre-apply</a>
+      <a class="link" href="#">Partner</a>
+      <a class="link" href="#">Mentor</a>
+    </div>
 
-      <div>
-	<h2><b>Where</b></h2>
-	<p>The Watt Family Innovation Center</p>
-      </div>
+    <p>(More Coming Soon)</p>
+  </div>
 
-      <div>
-	<h2><b>When</b></h2>
-	<p>
-	  March 10-11, 2018<br />
-	  SAT 8:00 AM <span class="code-comment">// Check-in begins</span><br />
-	  SAT 9:30 AM <span class="code-comment">// Opening ceremonies begin</span><br />
-	  SAT 10 AM <span class="code-comment">// Start hacking!</span><br />
-	  SUN 10:30 AM <span class="code-comment">// Demos demos demos!</span>
-	</p>
-      </div>
+  <div class="subcontent home-right">
+    <p id="team-working">What's out team working on <strong>right now?</strong></p>
+    <img class="subcontent" id="hello-world-logo" src="./images/HelloWorld_RGB.svg" alt="Helloworld"/>
+    <p>Oct 13, 2018 at Clemson University</p>
 
-      <div>
-	<h2><b>Win</b></h2>
-	<p>Cool prizes for solving our fun challenges or create
-	  something completely on your own!</p>
-      </div>
+    <div class="link-container right">
+      <a class="link" href="#">Learn More</a>
     </div>
   </div>
+  
 </section>
-
-<section id="faqs" class="primary">
-  <div class="container-fluid special-sizing">
-    <div class="row title-row align-items-center">
-      <div class="col-12">
-	<i class="fa fa-commenting-o icon1" aria-hidden="true" style="font-size: 4em;"></i>
-	<i class="fa fa-commenting-o icon2" aria-hidden="true" style="font-size: 6em;"></i>
-	<i class="fa fa-commenting-o icon3" aria-hidden="true" style="font-size: 5em;"></i>
-	<h2>Frequently Asked Questions</h2>
-      </div>
-    </div>
-    <div class="row  main-row">
-      <div class="offset-md-1 col-md-10 col-sm-12">
-	<button class="accordion">What is a hackathon?</button>
-	<div class="panel">
-	  <p>A hackathon is a 24 hour long event where students from different disciplines come
-	    together in small teams to work on real projects. The purpose of a hackathon is to have
-	    students learn about idea development and product design by being provided resources
-	    like hardware, workshops, and mentors. Hackathons are ultimately a collaborative space
-	    where creativity is encouraged and self-confidence can be obtained through hands on
-	    learning.</p>
-	</div>
-	<button class="accordion">Where is CUhackit?</button>
-	<div class="panel">
-	  <p>CUhackit will be held in the Watt Family Innovation Center at Clemson University. You
-	    can expect a large commonspace for announcements and community hacking, medium rooms for
-	    workshops, individual rooms for team concentration, and a separate area for sleep. We
-	    will also feature the Clemson Makerspace and the Immersive Space.</p>
-	</div>
-	<button class="accordion">Who is CUhackit for?</button>
-	<div class="panel ">
-	  <p>If you attend Clemson University and are interested in making and/or learning
-	    something awesome, CUhackit is for you! This event is specifically designed to be a
-	    great experience for students at any level.</p>
-	</div>
-	<button class="accordion">What should I bring?</button>
-	<div class="panel">
-	  <p>Bring comfy clothes, toiletries (toothbrush, toothpaste, deodorant, etc.), your
-	    laptop, its charger, and yourself.</p>
-	</div>
-	<button class="accordion">Help, this is my first hackathon!</button>
-	<div class="panel">
-	  <p>Awesome! Don't worry -- this event is as much about learning as it is making. We will
-	    have workshops and mentors to assist you throughout the event. Don't be afraid to ask
-	    for help and reach out to your peers. We're all excited for you to join the hacking
-	    community. Don't forget the best conversation starter: bonding over free food.</p>
-	</div>
-	<button class="accordion">Can high school students attend?</button>
-	<div class="panel">
-	  <p>No. Currently this event is Clemson University student - exclusive.</p>
-	</div>
-	<button class="accordion">Can mentors participate in hacking?</button>
-	<div class="panel">
-	  <p>Unfortunately, no. We need you all to be available to help our hackers throughout the
-	    duration of the event.</p>
-	</div>
-	<button class="accordion">What happens after I register?</button>
-	<div class="panel">
-	  <p>Thanks for registering! You should receive an email with further instructions
-      by 2 weeks before the HACKATHON!</p>
-	</div>
-	<button class="accordion">What do I do about teams?</button>
-	<div class="panel">
-	  <p>Gather your friends, meet some people at opening, or attend our team-creation event
-	    right after opening announcements. We're all about creating new connections and meeting
-	    new people! Max 4 people per team.</p>
-	</div>
-	<button class="accordion">Soylent?!</button>
-	<div class="panel">
-	   <p>Yes! Our great friends at Soylent are sending us some bottles! Also, get a deal here for
-50% off a case <a href="http://r.soy.lt/hVHuI">HERE</a>!</p>
-	</div>
-	<button class="accordion">Is it really all free?!</button>
-	<div class="panel">
-	  <p>Yes yes yes! Food, swag, prizes, workshops, mentors, naps, coffee, and energy drinks. It's all
-	    thanks to our wonderful sponsors and participants who connect with them.</p>
-	</div>
-	<button class="accordion">Will I be sitting at my computer all weekend?</button>
-	<div class="panel">
-	  <p>No! There’s more to the experience -- networking sessions, informal talks, workshops,
-	    games, DANCE PARTIES, and much more!</p>
-	</div>
-	<button class="accordion">Do I have to be there all 23 hours?</button>
-	<div class="panel">
-	  <p>Have to?! It's part of the experience to be there all 23 hours! Don't worry, the
-	    sleep room will have sleeping pads on deck.</p>
-	</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="mentors" class="secondary">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="mini-section">
-	<h1 class="title">Mentors</h1>
-	<p>
-	  If you would like to give guidance to some of the students
-	  at our hackathon, please apply through our mentor form!
-	</p>
-	<a href="https://goo.gl/forms/E1ukE3aCEEgny9q72" target="_blank">
-	  <button class="grey-button">BECOME A MENTOR</button>
-	</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="sponsors">
-  <h1 class="title">CUhackit 2018 Sponsors</h1>
-
-  <div class="sb-super">
-    <h5 class="tagline">CUhackit is<br/>proudly sponsored by</h5>
-    <div class="sb">
-      <object data="resources/sponsorLogos/Siemens/Siemens_color.svg">
-	Siemens
-      </object>
-    </div>
-  </div>
-
-  <hr />
-
-  <div class="sb-major">
-    <div class="sb">
-      <object data="resources/sponsorLogos/Fusion360/fusion360_white.svg">
-	Fusion360
-      </object>
-    </div>
-    <div class="sb">
-      <img src="resources/sponsorLogos/ClemsonMobile/mobile_white.png" alt="Clemson Mobile"/>
-    </div>
-
-    <div class="sb make-centered-on-small">
-      <object data="resources/sponsorLogos/WattCenter/Watt_white.svg">
-	Watt Center
-      </object>
-    </div>
-  </div>
-
-  <hr />
-
-  <div class="sb-minor">
-    <div class="sb-offset"></div>
-    <div class="sb">
-      <img src="resources/sponsorLogos/Blackbaud/blackbaud_white.png"
-	   srcset="resources/sponsorLogos/Blackbaud/blackbaud_white_1000.png 1000w,
-		resources/sponsorLogos/Blackbaud/blackbaud_white_500.png 500w,
-		resources/sponsorLogos/Blackbaud/blackbaud_white_300.png 300w" alt="Blackbaud"/>
-    </div>
-
-    <div class="sb">
-      <img src="resources/sponsorLogos/Accenture/Acc_white.png"
-	   srcset="resources/sponsorLogos/Accenture/Acc_white_1000.png 1000w,
-		resources/sponsorLogos/Accenture/Acc_white_500.png 500w,
-		resources/sponsorLogos/Accenture/Acc_white_300.png 300w"
-	   alt="Accenture" />
-    </div>
-
-
-
-    <div class="sb">
-      <img src="resources/sponsorLogos/SciDAS/SciDAS_white.png"
-	   srcset="resources/sponsorLogos/SciDAS/SciDAS_white_1000.png 1000w,
-		resources/sponsorLogos/SciDAS/SciDAS_white_500.png 500w,
-		resources/sponsorLogos/SciDAS/SciDAS_white_300.png 300w" alt="SciDAS"/>
-    </div>
-    <div class="sb-half"></div>
-    <div class="sb">
-      <img src="resources/sponsorLogos/ITSAB/ITSAB_white.png"
-	   srcset="resources/sponsorLogos/ITSAB/ITSAB_white_1000.png 1000w,
-		resources/sponsorLogos/ITSAB/ITSAB_white_500.png 500w,
-		resources/sponsorLogos/ITSAB/ITSAB_white_300.png 300w" alt="ITSAB"/>
-    </div>
-
-    <div class="sb">
-      <img src="resources/sponsorLogos/Omnibond/omnibondWhite_1000.png"
-	   srcset="resources/sponsorLogos/Omnibond/omnibondWhite_1000.png 1000w,
-		resources/sponsorLogos/Omnibond/omnibondWhite_500.png 500w,
-		resources/sponsorLogos/Omnibond/omnibondWhite_300.png 300w" alt="Omnibond"/>
-    </div>
-
-  </div>
-
-  <a href="resources/CUhackitSponsorPacket.pdf" target="_blank">
-    <button class="blue-button">BECOME A SPONSOR</button>
-  </a>
-</section>
-
-
-<section id="contact" class="secondary">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="mini-section">
-	<h1 class="title">Contact us!</h1>
-	<p>If you have any comments, questions, or just wanna chat,
-	  reach out to us at CUhackit@gmail.com
-	</p>
-	<a href="mailto:cuhackit@gmail.com">
-	  <button class="blue-button">CONTACT</button>
-	</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container-fluid">
-    <div class="row align-items-center">
-      <div class="col d-none d-md-block">
-	CUhackit&trade; 2018
-      </div>
-      <div class="col-md col-5">
-	<a class="navbar-brand nav-link" href="#top">
-	  <img src="resources/RGB_logo_bug.png" height="50" width="64"  />
-	</a>
-      </div>
-      <div class="col-md col-7">
-	<a target="_blank" href="https://fb.me/CUhackers" class="fab fa-facebook"></a>
-	<a target="_blank" href="https://www.instagram.com/cuhackit" class="fab fa-instagram"></a>
-	<a target="_blank" href="https://twitter.com/CUhackit" class="fab fa-twitter"></a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!---------------------------------------------------------------------------->
-<!--                             Scripts go here                            -->
-<!---------------------------------------------------------------------------->
-
-<!-- Bootstrap includes -->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-<!-- Accordion controller -->
-<script src="js/faq.js"></script>
-
-<!-- Canvas clock controller -->
-<script src="js/canvas-clock.js"></script>
-
-<!-- scroll spy -->
-<script src="js/slowScrollSpy.js"></script>
 
 </body>
 </html>
