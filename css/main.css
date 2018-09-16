@@ -2,100 +2,119 @@
 * @Author: Charlie Gallentine
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-09-12 19:14:38
+* @Last Modified time: 2018-09-16 15:40:50
 */
 
 /* MOBILE SITE */
 * {
-	border: 1px solid black;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
-h1 {
-	font-size: 36px;
+a {
+	color: black;
+	font-size: 24px;
+	margin: 13px 0;
 }
 
 img {
 	width: 100%;
 }
 
+.underline-red {
+	text-decoration: red underline;
+}
+
+.underline-purple {
+	text-decoration: purple underline;
+}
+
+.underline-blue {
+	text-decoration: blue underline;
+}
+
+.link-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
 .logo {
-	width: 100%;
+	width: 50%;
 }
 
 .subcontent {
+	display: flex;
+	flex-direction: column;
 	text-align: center;
 }
 
-#details {
+#home {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-#team-working {
-	font-size: 24px;
+	flex-direction: column-reverse;
 }
 
 /* Screens 720px and up */
-@media screen and (min-width: 600px) {
-	a {
-		font-size: 24px;
-	}
-
-	h1 {
-		font-size: 48px;
-	}
-
-	img {
-		width: 90%;
-		max-width: 75vh;
-	}
-
-	.home-right {
-		text-align: left;
-	}
-
+@media screen and (min-width: 500px) {
 	.link-container {
-		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
 		margin: 0 auto;
 		width: 75%;
 	}
 
-	.right {
-		justify-content: left;
-		width: 100%;
+	.logo {
+		width: 75%;
 	}
 
-	.subcontent {
-		width: 50%;
+	#team-working {
+		margin-top: 50px;
 	}
-
-	#details {
-		align-items: center;
-		height: 100vh;
-	}
-
-	#hello-world-logo {
-		width: 60%;
-	}
-
 }
 
 /* Screens 720px and up */
-@media screen and (min-width: 900px) {
-	h1 {
-		font-size: 64px;
-	}
-
+@media screen and (min-width: 840px) {
 	img {
+		margin-left: -6.25%;
 		width: 100%;
-		max-width: none;
 	}
 
-	#details {
+	.link-container {
+		justify-content: space-between;
+		margin: 28px 0 10px 0;
+		width: 100%;
+	}
+
+	.logo {
+		width: 100%;
+	}
+
+	.main-container {
+		text-align: left;
+		width: 50%;
+	}
+
+	.secondary-container {
+		text-align: left;
+		margin: 0 0 0 39px;
+		width: 39%;
+	}
+
+	.subcontent {
 		align-items: center;
 		flex-direction: row;
+		margin-top: 10vh;
+	}
+
+	#home {
+		flex-direction: column;
+		height: 100vh;
+		margin: 0 auto;
+		width: 75%;
+	}
+
+	#team-working {
+		margin-top: 0;
 	}
 }
