@@ -2,14 +2,24 @@
 * @Author: Charlie Gallentine
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-09-16 15:40:50
+* @Last Modified time: 2018-09-18 21:58:12
 */
 
 /* MOBILE SITE */
+:root {
+	--logo-purple: #721ED6;
+	--logo-red: #E80000;
+	--logo-blue: #0016FF;
+}
+
 * {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 a {
@@ -23,15 +33,15 @@ img {
 }
 
 .underline-red {
-	text-decoration: red underline;
+	text-decoration: var(--logo-red) underline;
 }
 
 .underline-purple {
-	text-decoration: purple underline;
+	text-decoration: var(--logo-purple) underline;
 }
 
 .underline-blue {
-	text-decoration: blue underline;
+	text-decoration: var(--logo-blue) underline;
 }
 
 .link-container {
@@ -53,6 +63,10 @@ img {
 #home {
 	display: flex;
 	flex-direction: column-reverse;
+}
+
+#team-working {
+	color: var(--logo-purple);
 }
 
 /* Screens 720px and up */
