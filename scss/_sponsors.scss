@@ -1,0 +1,116 @@
+#sponsors {
+
+    .row-full {
+	@extend .row;
+	margin: 0em; // why do I have to do this???
+    }
+
+
+    @extend .primary;
+    @extend .special-sizing;
+    @extend .container-fluid;
+    @extend .row-full;
+    text-align: center;
+
+
+    padding-top: 6em;
+    padding-bottom: 6em;
+
+    .title {
+	@extend .default-title;
+    }
+
+    img, object {
+	width: 100%;
+    }
+
+    .sb-super {
+	@extend .col-12;
+	@extend .row-full;
+	@extend .align-items-center;
+
+	.tagline {
+	    margin-top: 10%; margin-bottom: 5%;
+	    @extend .col-12;
+	    @extend .col-md-4;
+
+	    @include media-breakpoint-only(xs) { font-size: .8em; }
+	    @include media-breakpoint-only(sm) { font-size: .9em; }
+	    @include media-breakpoint-only(md) { font-size: 1.2em; }
+	    @include media-breakpoint-only(lg) { font-size: 2.5em; }
+	    @include media-breakpoint-only(xl) { font-size: 2.5em; }
+	}
+	.sb {
+	    margin-top: 10%; margin-bottom: 5%;
+	    padding-left: 10%; padding-right: 10%;
+	    @extend .col-12;
+	    @extend .col-md-8;
+	}
+    }
+
+
+    .sb-list {
+	@extend .col-12;
+	@extend .row-full;
+	@extend .align-items-center;
+
+    }
+    .sb-major {
+	@extend .sb-list;
+	.make-centered-on-small {
+	    @extend .offset-md-0;
+	    @extend .offset-3;
+	}
+	.sb {
+	    @extend .col-md-4;
+	    @extend .col-6;
+	    margin-top: 5%; margin-bottom: 5%;
+	    padding-left: 4%; padding-right: 4%;
+
+	}
+    }
+    .sb-minor {
+	@extend .sb-list;
+
+	.sb-half {
+	    @extend .col-2;
+	}
+	.sb {
+
+	    @extend .col-4;
+	    margin-top: 5%; margin-bottom: 5%;
+	    padding-left: 5%; padding-right: 5%;
+	}
+    }
+
+    hr {
+	border-color: $light3;
+	border-width: 1px;
+	margin-left: 15%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width: 70%;
+    }
+    button {
+	@include media-breakpoint-only(xs) {
+	    margin-top: 3.0em;
+	    margin-bottom: 1.0em;
+	}
+	@include media-breakpoint-only(sm) {
+	    margin-top: 3.2em;
+	    margin-bottom: 1.2em;
+	}
+	@include media-breakpoint-only(md) {
+	    margin-top: 3.5em;
+	    margin-bottom: 1.5em;
+	}
+	@include media-breakpoint-only(lg) {
+	    margin-top: 4.0em;
+	    margin-bottom: 3.0em;
+	}
+	@include media-breakpoint-only(xl) {
+	    margin-top: 4.0em;
+	    margin-bottom: 3.0em;
+	}
+    }
+}
