@@ -2,314 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="author" content="Angelo Carrabba, Charlie Gallentine, Courtney Shearer">
+  <meta name="author" content="Charlie Gallentine">
+
+  <!--meta http-equiv="refresh" content="1"-->
   <!-- Tab title and icon -->
-  <title>CUhackit</title>
-  <link rel="icon" href="resources/RGB_logo_bug.png">
+  <title>CUhackit|Helloworld</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!--Font Awesome link to include icons-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Custom styles  -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/countdown.css">
-  <link rel="stylesheet" href="css/faqs.css">
-  <link rel="stylesheet" href="css/contact.css">
-  <link rel="stylesheet" href="css/sponsors.css">
-  <link rel="stylesheet" href="css/details.css">
+  <!-- Custom styles (includes bootstrap too)  -->
+  <link rel="stylesheet" href="css/main.css">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112858061-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-112858061-1');
-  </script>
-
+  <link rel="stylesheet" href="https://webfonts.fontstand.com/WF-024682-e892056c2f2d30507bf3290339937e35.css" type="text/css">
 </head>
-<body id="page-top">
-<!------------------------------------------------------------------------------------------------------>
 
+<body id="top">
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <img src="resources/RGB_logo_bug.png" height="50" width="64"  />
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars fa-2x" ></i>
-    </button>
-
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#details">DETAILS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#faqs">FAQs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#becomeSponsor">SPONSORS</a>
-        </li>
-	<li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#sponsors">MENTORS</a>
-        </li>
-	<li class="nav-item">
-             <a class="nav-link js-scroll-trigger" href="#contact">CONTACT</a>
-        </li>
-	<li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="https://docs.google.com/forms/d/e/1FAIpQLSe74iE8SkqVFOAR9szMRofQZZuvF_ptVntQmUlIxPupSjg4Fg/viewform?usp=sf_link" target="_blank"><span class="register">REGISTER</span></a>
-        </li>
-      </ul>
+<section id="home">
+  <div class="subcontent">
+    <div class="main-container">
+      <p id="team-working">What's out team working on <strong>right now?</strong></p>
+      <div class="logo-date">
+        <img class="logo" src="./images/HelloWorld_RGB_bug.svg" alt="Helloworld"/>
+        <p>Oct 13, 2018 at Clemson University</p>
+      </div>
     </div>
-  </div>
-</nav>
 
-<section id="countdown" class="primary">
-  <div class="container">
-    <div style="width: 20%; margin-left: 40%;">
-      <div class="mysquare">
-	<img src="resources/RGB_logo.png"
-	     class="in-mysquare"
-	     height="150"
-	     width="192"
-	     style="width: 100%; height: 78%;"
-	     />
+    <div class="secondary-container">
+      <div class="link-container">
+        <a class="link" href="#">Learn More</a>
       </div>
     </div>
   </div>
-  <div>
-    <!-- needs 39 by 7 ratio for width to height -->
-    <canvas id="clock" width="975" height="175" style="width: 90%; margin-bottom: 1em;">
-      Can't render clock
-    </canvas>
-    <div class="time-label">
-      <span>DAYS</span><span>HOURS</span><span>MINUTES</span><span>SECONDS</span>
+
+  <div class="subcontent">
+    <div class="main-container">
+      <div class="logo-date">
+        <img class="logo" src="./images/CUhackit_RGB_bug.svg" alt="CUhackit"/>
+        <p>Jan 26-27, 2019 at Clemson University</p>
+      </div>
     </div>
-  </div>
-  <div>
-    <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSe74iE8SkqVFOAR9szMRofQZZuvF_ptVntQmUlIxPupSjg4Fg/viewform?usp=sf_link">
-      <button style="margin-bottom: 3em;">REGISTER</button>
-    </a>
-    <h3>MAR.10 - MAR.11 2018</h3>
-    <h3>Clemson University</h3>
-  </div>
-</section>
 
-
-
-<section id="details" class="secondary parallax full-section">
-  <div class="container">
-    <div class="col-md-10 mx-auto">
-      <h1 class="title"><b>Design. Code. Build.</b></h1>
-      <p class="sub" style="font-style: italic;">"CUhackit encourages creativity and collaboration on campus"</p>
-    </div>
-    <div class="col-md-12">
-        <div class="row">
-          <div class="col-md-6">
-            <h2>What</h2>
-            <p>A hackathon is best described as a 24 hour "invention marathon!</p>
-          </div>
-          <div class="col-md-6">
-            <h2>Where</h2>
-            <p>The Watt Family Innovation Center</p>
-          </div>
-          <div class="col-md-6">
-            <h2>When</h2>
-            <p>March 10/11 from 10am to 10am</p>
-          </div>
-          <div class="col-md-6">
-            <h2>Win</h2>
-            <p>Cool prizes for solving our fun challenges or create something completely your own!</p>
-          </div>
-        </div>
+    <div class="secondary-container">
+      <div class="link-container">
+        <a class="link underline-red" href="#">Pre-apply</a>
+        <a class="link underline-purple" href="#">Partner</a>
+        <a class="link underline-blue" href="#">Mentor</a>
+      </div>
+      <p>(More Coming Soon)</p>
     </div>
   </div>
 </section>
 
-<section id="faqs" class="primary full-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto">
-      	<div class="body">
-      	  <div class="head clearfix">
-	    <h2 class="title">Frequently Asked Questions</h2>
-	    <i class="fa fa-commenting-o icon1" aria-hidden="true" style="font-size: 4em;"></i>
-	    <i class="fa fa-commenting-o icon2" aria-hidden="true" style="font-size: 6em;"></i>
-	    <i class="fa fa-commenting-o icon3" aria-hidden="true" style="font-size: 5em;"></i>
-	  </div>
-          <button class="accordion">What is a hackathon?</button>
-	  <div class="panel secondary">
-	    <p>A hackathon is a 24 hour long event where students from different disciplines come
-	    together in small teams to work on real projects. The purpose of a hackathon is to have
-	    students learn about idea development and product design by being provided resources
-	    like hardware, workshops, and mentors. Hackathons are ultimately a collaborative space
-	    where creativity is encouraged and self-confidence can be obtained through hands on
-	    learning.</p>
-	  </div>
-	  <button class="accordion">Where is CUhackit?</button>
-	  <div class="panel secondary">
-	    <p>CUhackit will be held in the Watt Family Innovation Center at Clemson University. You
-	    can expect a large commonspace for announcements and community hacking, medium rooms for
-	    workshops, individual rooms for team concentration, and a separate area for sleep. We
-	    will also feature the Clemson Makerspace and the Immersive Space.</p>
-	  </div>
-	  <button class="accordion">Who is CUhackit for?</button>
-	  <div class="panel ">
-	    <p>If you attend Clemson University and are interested in making and/or learning
-	    something awesome, CUhackit is for you! This event is specifically designed to be a
-	    great experience for students at any level.</p>
-	  </div>
-	  <button class="accordion">What should I bring?</button>
-	  <div class="panel">
-	    <p>Bring comfy clothes, toiletries (toothbrush, toothpaste, deodorant, etc.), your
-	    laptop, its charger, and yourself.</p>
-	  </div>
-	  <button class="accordion">Help, this is my first hackathon!</button>
-	  <div class="panel">
-	    <p>Awesome! Don't worry -- this event is as much about learning as it is making. We will
-	    have workshops and mentors to assist you throughout the event. Don't be afraid to ask
-	    for help and reach out to your peers. We're all excited for you to join the hacking
-	    community. Don't forget the best conversation starter: bonding over free food.</p>
-	  </div>
-	  <button class="accordion">Can high school students attend?</button>
-	  <div class="panel">
-	    <p>No. Currently this event is Clemson University student - exclusive.</p>
-	  </div>
-	  <button class="accordion">Can mentors participate in hacking?</button>
-	  <div class="panel">
-	    <p>Unfortunately, no. We need you all to be available to help our hackers throughout the
-	    duration of the event.</p>
-	  </div>
-	  <button class="accordion">What happens after I register?</button>
-	  <div class="panel">
-	    <p>Thanks for registering! You should receive an email in the following 1-2 days with
-	    registration confirmation. Further instructions will follow.</p>
-	  </div>
-	  <button class="accordion">What do I do about teams?</button>
-	  <div class="panel">
-	    <p>Gather your friends, meet some people at opening, or attend our team-creation event
-	    right after opening announcements. We're all about creating new connections and meeting
-	    new people! Max 4 people per team.</p>
-	  </div>
-	  <button class="accordion">Is it really all free?!</button>
-	  <div class="panel">
-	    <p>Yes yes yes! Food, swag, prizes, workshops, mentors, naps, and coffee. It's all
-	    thanks to our wonderful sponsors and participants who connect with them.</p>
-	  </div>
-	  <button class="accordion">Will I be sitting at my computer all weekend?</button>
-	  <div class="panel">
-	    <p>No! There’s more to the experience -- networking sessions, informal talks, workshops,
-	    super smash bros, midnight yoga, and much more!</p>
-	  </div>
-	  <button class="accordion">Do I have to be there all 23 hours?</button>
-	  <div class="panel">
-	    <p>Have to?! It's part of the experience to be there all 23 hours! Don't worry, the
-	    sleep room will have sleeping pads on deck.</p>
-	  </div>
-	</div>
-      </div>
-    </div>
-</section>
-
-<section id="becomeSponsor" class="parallax full-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto text-center" >
-	<h1>Sponsors</h1>
-        <p style="font-size: larger;">CUhackit is only possible thanks to
-          the support of our awesome sponsors!</p>
-        <a href="resources/CUhackitSponsorPacket.pdf" target="_blank">
-	  <button class="grey-button">BECOME A SPONSOR</button>
-	</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="sponsors" class="full-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-	<h1 class="title">Mentors</h1>
-	<p>
-	  If you would like to give guidance to some of the students
-	  at our hackathon, please apply through our mentor form!
-	</p>
-	<a href="https://goo.gl/forms/E1ukE3aCEEgny9q72" target="_blank">
-	  <button class="blue-button">BECOME A MENTOR</button>
-	</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- <section id="contact">
-     <div class="container">
-       <div class="row">
-	 <div class="col-lg-8 mx-auto">
-           <p class="lead">Contact at cat@dog.com</p>
-	 </div>
-       </div>
-     </div>
-</section> -->
-
-<section id="contact" class="secondary parallax full-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-sm-12 mx-auto text-center">
-	<h1>Contact us!</h1>
-        <p>If you have any comments, questions, or just wanna chat,
-          reach out to us at CUhackit@gmail.com</p>
-	<a href="mailto:cuhackit@gmail.com">
-        <button class="grey-button">CONTACT</button>
-	</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="primary" style="text-align: left">
-  <div class="container">
-    <div class="row">
-      <div class="col-6">
-	<a class="js-scroll-trigger" href="#page-top">
-	  <img src="resources/RGB_logo_bug.png" height="40" width="51">
-	</a>
-      </div>
-      <div class="col-6" style="text-align: right; font-size: 2em">
-	<a href="" class="fab fa-facebook"></a>
-	<a href="" class="fab fa-instagram"></a>
-	<a href="" class="fab fa-twitter"></a>
-      </div>
-  </div>
-</footer>
-
-<!-- ------------------------------ Scripts go here -------------------------------------------- -->
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<!-- Custom JavaScript for this theme -->
-<script src="js/scrolling-nav.js"></script>
-
-<!-- Javascript for accordion menu in faq -->
-<script src="js/faq.js"></script>
-
-<!-- Our canvas clock controller -->
-<script src="js/canvas-clock.js"></script>
-
-</body></html>
+</body>
+</html>

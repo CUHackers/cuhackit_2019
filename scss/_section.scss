@@ -1,0 +1,35 @@
+// add padding to first element only
+body {
+    position: relative;
+}
+
+section {
+    margin: 0em;
+}
+section > div  {
+    //padding-top: 2em;
+    // min-height: 100vh;
+}
+
+section > div + div {
+    padding-top: 4em;
+}
+
+.primary {
+    background-color: $dark1;
+}
+.secondary {
+    background-color: $dark2;
+    box-shadow: inset $shadow;
+}
+
+
+.mini-section {
+    @extend .offset-md-2;
+    @extend .col-md-8;
+    @extend .col-sm-12;
+
+    button {
+	margin-top: 3em;
+    }
+}

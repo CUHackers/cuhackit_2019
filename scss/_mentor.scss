@@ -1,0 +1,18 @@
+#mentors {
+    background-image: url("../resources/images/codeBlueStock.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    @extend .parallax;
+
+    .row  {
+	height: 35em;
+    }
+
+    .title {
+	@extend .default-title-margin;
+    }
+}
+
+#mentors  > div {
+    min-height: 35em;
+}
