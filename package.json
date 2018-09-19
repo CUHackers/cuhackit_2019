@@ -1,31 +1,19 @@
 {
-  "name": "splash-page",
+  "name": "helloworld",
   "version": "1.0.0",
-  "description": "countdown to CUhackit!",
-  "main": "index.html",
+  "description": "A page for the CUhackit event, HelloWorld",
+  "main": "index.js",
   "scripts": {
-    "build": "node-sass scss -o css",
-    "watch": "npm run build; node-sass --watch scss -o css"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CUHackers/Splash-Page.git"
+    "url": "git+https://github.com/CUHackers/helloworld.git"
   },
-  "keywords": [
-    "hackathon"
-  ],
-  "author": "Angelo Carrabba, Charlie Gallentine, Courtney Shearer",
-  "license": "MIT",
+  "author": "Ayush Petigara, Charlie Gallentine",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CUHackers/Splash-Page/issues"
+    "url": "https://github.com/CUHackers/helloworld/issues"
   },
-  "homepage": "https://github.com/CUHackers/Splash-Page#readme",
-  "dependencies": {
-    "bootstrap": "^4.0.0",
-    "concurrently": "^3.5.1",
-    "jquery": "^3.3.1",
-    "node-sass": "^4.7.2",
-    "popper": "^1.0.1",
-    "popper.js": "^1.12.9"
-  }
+  "homepage": "https://github.com/CUHackers/helloworld#readme"
 }
