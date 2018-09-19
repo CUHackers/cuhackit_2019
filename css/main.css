@@ -2,7 +2,7 @@
 * @Author: Charlie Gallentine
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-09-18 21:58:12
+* @Last Modified time: 2018-09-19 13:47:09
 */
 
 /* MOBILE SITE */
@@ -57,6 +57,7 @@ img {
 .subcontent {
 	display: flex;
 	flex-direction: column;
+	margin-top: 50px;
 	text-align: center;
 }
 
