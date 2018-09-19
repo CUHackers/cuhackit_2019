@@ -1,0 +1,19 @@
+{
+  "name": "helloworld",
+  "version": "1.0.0",
+  "description": "A page for the CUhackit event, HelloWorld",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CUHackers/helloworld.git"
+  },
+  "author": "Ayush Petigara, Charlie Gallentine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CUHackers/helloworld/issues"
+  },
+  "homepage": "https://github.com/CUHackers/helloworld#readme"
+}

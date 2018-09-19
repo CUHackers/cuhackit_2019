@@ -1,0 +1,134 @@
+/*
+* @Author: Charlie Gallentine
+* @Date:   2018-07-25 21:30:26
+* @Last Modified by:   Charlie Gallentine
+* @Last Modified time: 2018-09-18 21:58:12
+*/
+
+/* MOBILE SITE */
+:root {
+	--logo-purple: #721ED6;
+	--logo-red: #E80000;
+	--logo-blue: #0016FF;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+a {
+	color: black;
+	font-size: 24px;
+	margin: 13px 0;
+}
+
+img {
+	width: 100%;
+}
+
+.underline-red {
+	text-decoration: var(--logo-red) underline;
+}
+
+.underline-purple {
+	text-decoration: var(--logo-purple) underline;
+}
+
+.underline-blue {
+	text-decoration: var(--logo-blue) underline;
+}
+
+.link-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.logo {
+	width: 50%;
+}
+
+.subcontent {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+#home {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+#team-working {
+	color: var(--logo-purple);
+}
+
+/* Screens 720px and up */
+@media screen and (min-width: 500px) {
+	.link-container {
+		flex-direction: row;
+		justify-content: space-around;
+		margin: 0 auto;
+		width: 75%;
+	}
+
+	.logo {
+		width: 75%;
+	}
+
+	#team-working {
+		margin-top: 50px;
+	}
+}
+
+/* Screens 720px and up */
+@media screen and (min-width: 840px) {
+	img {
+		margin-left: -6.25%;
+		width: 100%;
+	}
+
+	.link-container {
+		justify-content: space-between;
+		margin: 28px 0 10px 0;
+		width: 100%;
+	}
+
+	.logo {
+		width: 100%;
+	}
+
+	.main-container {
+		text-align: left;
+		width: 50%;
+	}
+
+	.secondary-container {
+		text-align: left;
+		margin: 0 0 0 39px;
+		width: 39%;
+	}
+
+	.subcontent {
+		align-items: center;
+		flex-direction: row;
+		margin-top: 10vh;
+	}
+
+	#home {
+		flex-direction: column;
+		height: 100vh;
+		margin: 0 auto;
+		width: 75%;
+	}
+
+	#team-working {
+		margin-top: 0;
+	}
+}
