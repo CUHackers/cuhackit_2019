@@ -1,0 +1,18 @@
+#contact {
+    background-image: url('../resources/images/gridBig.png');
+    background-repeat: repeat;
+    background-size: 100% auto;
+
+    @extend .parallax;
+
+    .row  {
+	height: 35em;
+    }
+    .title {
+	@extend .default-title-margin;
+    }
+}
+
+#contact > div {
+    min-height: 35em;
+}
