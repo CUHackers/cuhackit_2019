@@ -61,6 +61,16 @@ img {
 	text-align: center;
 }
 
+.des {
+	text-align: center;
+	/* margin-left: 17%; */
+	/* margin-left: 25%; */
+}
+
+.mcs {
+	margin-top: 15px ;
+}
+
 #home {
 	display: flex;
 	flex-direction: column-reverse;
@@ -83,8 +93,17 @@ img {
 		width: 75%;
 	}
 
+	.mcs{
+		margin-top: 25px;
+	}
+
+	.des {
+		text-align: left;
+		margin-left: 17%
+	}
+
 	#team-working {
-		margin-top: 50px;
+		margin-top: 25px;
 	}
 }
 
@@ -120,6 +139,11 @@ img {
 		align-items: center;
 		flex-direction: row;
 		margin-top: 10vh;
+	}
+
+	.des {
+		text-align: left;
+		margin-left: 0;
 	}
 
 	#home {
