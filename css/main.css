@@ -1,7 +1,7 @@
 /*
-* @Author: Charlie Gallentine
+* @Author: Charlie Gallentine, Ayush Petigara
 * @Date:   2018-07-25 21:30:26
-* @Last Modified by:   Charlie Gallentine
+* @Last Modified by:   Ayush Petigara
 * @Last Modified time: 2018-09-19 13:47:09
 */
 
@@ -28,8 +28,19 @@ a {
 	margin: 13px 0;
 }
 
+p span {
+	display:block;
+  border-bottom:3px solid black;
+  width: 100%;
+  padding-bottom: 4px;
+}
+
 img {
 	width: 100%;
+}
+
+.pre-reg {
+	margin: 1em auto 1em auto;
 }
 
 .underline-red {
@@ -74,19 +85,25 @@ img {
 #home {
 	display: flex;
 	flex-direction: column-reverse;
+	margin: 0 auto;
+	width:90%;
 }
 
 #team-working {
 	color: var(--logo-purple);
+	padding-bottom: 10px;
 }
+
 
 /* Screens 720px and up */
 @media screen and (min-width: 500px) {
 	.link-container {
-		flex-direction: row;
+		/* flex-direction: row; */
 		justify-content: space-around;
+		text-align:left;
 		margin: 0 auto;
-		width: 75%;
+		width: 67%;
+
 	}
 
 	.logo {
@@ -100,6 +117,17 @@ img {
 	.des {
 		text-align: left;
 		margin-left: 17%
+	}
+
+	.pre-reg {
+		margin: 1em auto 1em 0;
+	}
+
+	#home {
+		flex-direction: column-reverse;
+		height: 90vh;
+		margin: 0 auto;
+		width: 85%;
 	}
 
 	#team-working {
@@ -146,12 +174,16 @@ img {
 		margin-left: 0;
 	}
 
+	.pre-reg {
+		margin: 1em auto 1em 0;
+	}
+
 	#home {
 		flex-direction: column;
 		height: 100vh;
 		margin: 0 auto;
 		width: 75%;
-	}
+		}
 
 	#team-working {
 		margin-top: 0;
