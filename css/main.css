@@ -1,8 +1,8 @@
 /*
 * @Author: Charlie Gallentine, Ayush Petigara
 * @Date:   2018-07-25 21:30:26
-* @Last Modified by:   Ayush Petigara
-* @Last Modified time: 2018-09-19 13:47:09
+* @Last Modified by:   Charlie Gallentine
+* @Last Modified time: 2018-09-20 08:58:11
 */
 
 /* MOBILE SITE */
@@ -30,9 +30,9 @@ a {
 
 p span {
 	display:block;
-  border-bottom:3px solid black;
-  width: 100%;
-  padding-bottom: 4px;
+	border-bottom:3px solid black;
+	width: 100%;
+	padding-bottom: 4px;
 }
 
 img {
@@ -97,7 +97,12 @@ img {
 
 
 /* Screens 720px and up */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 500px) {	
+	.pre-reg:hover > span {
+		border-bottom:3px solid #AAA;
+		transition: border-bottom .25s ease;
+	}
+
 	.link-container {
 		/* flex-direction: row; */
 		justify-content: space-around;
@@ -122,6 +127,11 @@ img {
 
 	.pre-reg {
 		margin: 1em auto 1em 0;
+	}
+
+	.pre-reg:hover > a {
+		color: #AAA;
+		transition: color .2s ease;
 	}
 
 	#home {
