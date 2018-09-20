@@ -40,7 +40,7 @@ img {
 }
 
 .pre-reg {
-	margin: 1em auto 1em auto;
+	margin: 1em auto 1em 1.2em;
 }
 
 .underline-red {
@@ -62,7 +62,7 @@ img {
 }
 
 .logo {
-	width: 50%;
+	width: 100%;
 }
 
 .subcontent {
@@ -73,8 +73,8 @@ img {
 }
 
 .des {
-	text-align: center;
-	/* margin-left: 17%; */
+	text-align: left;
+	margin-left: 6%;
 	/* margin-left: 25%; */
 }
 
@@ -82,9 +82,10 @@ img {
 	margin-top: 15px ;
 }
 
+
 #home {
 	display: flex;
-	flex-direction: column-reverse;
+	flex-direction: column;
 	margin: 0 auto;
 	width:90%;
 }
@@ -124,7 +125,7 @@ img {
 	}
 
 	#home {
-		flex-direction: column-reverse;
+		flex-direction: column;
 		height: 90vh;
 		margin: 0 auto;
 		width: 85%;
