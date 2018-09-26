@@ -29,7 +29,7 @@ http-server -p 8000
 If http-server is not installed, it should be able to download it using:
 
 ```bash
-npm install http-server
+npm install http-server -g
 ```
 
 Test often to verify your changes as you go. Avoid pushing broken code.
