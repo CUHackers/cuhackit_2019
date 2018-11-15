@@ -8,6 +8,10 @@
 * {
   font-family: 'Access Regular', 'PT Mono', monospace;
 }
+.logo {
+  width:350px;
+  height:250px;
+}
 .link-reg{
   display: inline-block;
 }
@@ -65,11 +69,19 @@
   }
 @media (max-width:1024px) and (min-width: 667px) {
   .des {
-    margin-left: 5%;
+    margin-left: 4.5%;
+  }
+  .logo {
+    width:250px;
+    height:200px;
   }
 }
 @media screen and (max-width: 667px) {
   .des {
-    margin-left: 5%;
+    margin-left: 4.2%;
+  }
+  .logo {
+    width:200px;
+    height:150px;
   }
 }
