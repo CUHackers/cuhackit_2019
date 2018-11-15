@@ -31,13 +31,13 @@
 #faqs {
  font-family: "Access Regular";
  color: black;
- padding-bottom: 4em;
- padding-top: 1em;
+ /* padding-bottom: 4em; */
+ /* padding-top: 1em; */
  }
  #faqs .accordion {
    cursor: pointer;
    border: none;
-   padding: 1em;
+   padding: .9em;
    width: 100%;
    text-align: left;
    outline: none;
