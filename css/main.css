@@ -9,8 +9,9 @@
   font-family: 'Access Regular', 'PT Mono', monospace;
 }
 .logo {
-  width:350px;
-  height:250px;
+  /* width:350px;
+  height:250px; */
+  margin: auto;
 }
 .link-reg{
   display: inline-block;
@@ -72,16 +73,19 @@
     margin-left: 4.5%;
   }
   .logo {
-    width:250px;
-    height:200px;
+    margin: auto;
+    margin-top: 3%;
   }
 }
 @media screen and (max-width: 667px) {
   .des {
     margin-left: 4.2%;
   }
+  .spacer{
+    padding-top: 1%;
+  }
   .logo {
-    width:200px;
-    height:150px;
+    padding-top: 5%;
+    margin-left: 2%;
   }
 }
