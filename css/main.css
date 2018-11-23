@@ -1,16 +1,22 @@
 /*
 * @Author: Ayush Petigara
 * @Date:   2018-07-25 21:30:26
-* @Last Modified by:   Ayush Petigara
-* @Last Modified time: 2018-11-11
+* @Last Modified by:   Charlie Gallentine
+* @Last Modified time: 2018-11-23 14:28:30
 */
 
 * {
   font-family: 'Access Regular', 'PT Mono', monospace;
 }
+
+.container {
+  min-height: 80vh;
+}
+
 .logo {
-  width:350px;
-  height:250px;
+  /* width:350px;
+  height:250px; */
+  margin: auto;
 }
 .link-reg{
   display: inline-block;
@@ -72,16 +78,19 @@
     margin-left: 4.5%;
   }
   .logo {
-    width:250px;
-    height:200px;
+    margin: auto;
+    margin-top: 3%;
   }
 }
 @media screen and (max-width: 667px) {
   .des {
     margin-left: 4.2%;
   }
+  .spacer{
+    padding-top: 1%;
+  }
   .logo {
-    width:200px;
-    height:150px;
+    padding-top: 5%;
+    margin-left: 2%;
   }
 }
