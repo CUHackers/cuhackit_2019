@@ -10,7 +10,7 @@
 }
 
 .container {
-  min-height: 80vh;
+  /* min-height: 80vh; */
 }
 
 .logo {
@@ -33,6 +33,10 @@
 	border-bottom:3px solid red;
 	width: 100%;
 	padding-bottom: 4px;
+}
+.spacer-bottom {
+  /* padding-bottom: 1%; */
+  height: 1em;
 }
 #faqs {
  font-family: "Access Regular";
