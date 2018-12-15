@@ -6,6 +6,23 @@
 $ git pull
 ```
 
+## Working in branches
+Work should be done in a branch off of master. To check current branch:
+
+```bash
+$ git branch
+```
+
+To switch to another branch:
+
+```bash
+$ git checkout <branch_name>
+```
+
+### Branch naming
+For consistency, use branch names: <your_name>_dev_branch
+This will help track changes and with consistency.
+
 ## Installation
 
 You only need to build the css, then push to gh-pages!
