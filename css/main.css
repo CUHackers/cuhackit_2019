@@ -2,17 +2,19 @@
 * @Author: Ayush Petigara
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-15 16:54:07
+* @Last Modified time: 2018-12-15 17:33:11
 */
 
 * {
   font-family: 'Access Regular', 'PT Mono', monospace;
 }
 
-body {
-    background-image:url("/images/mobile_background.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+img {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 103%;
+  z-index: 1;
 }
 
 .custom_button {
@@ -26,6 +28,7 @@ body {
 
 footer {
   background-color: #F7F7F7;
+  height: 59px;
 }
 
 .fa-cog {
@@ -47,6 +50,14 @@ footer {
   color: black;
 }
 
+.back {
+  z-index: 0;
+}
+
+.front {
+  z-index: 100;
+}
+
 .h1_size {
   font-size: 17px;
 }
@@ -57,5 +68,21 @@ footer {
 
 .p_size_2 {
   font-size: 10px;
+}
+
+.row-group > .row {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.content-section {
+  position: relative;
+  top: 100px;
+  border: 2px solid black;
+  float: none;
+  height: 240px;
+  overflow-x: scroll;
+  width: 4000px;
+  z-index: 1;
 }
 
