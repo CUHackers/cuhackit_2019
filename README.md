@@ -23,6 +23,9 @@ $ git checkout <branch_name>
 For consistency, use branch names: <your_name>_dev_branch
 This will help track changes and with consistency.
 
+### Branch cleanup
+After a branch is merged to master/any other branch, it should be deleted. Any new work should be done on a new branch off of master. This is to avoid problems with branches getting out of alignment, along with not having dozens of defunct branches on the project.
+
 ## Installation
 
 You only need to build the css, then push to gh-pages!
