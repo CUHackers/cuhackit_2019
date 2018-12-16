@@ -2,7 +2,7 @@
 * @Author: Ayush Petigara
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-16 11:37:16
+* @Last Modified time: 2018-12-16 11:52:39
 */
 
 * {
@@ -26,22 +26,9 @@
 
 .content {
   overflow:scroll;
-  float: none;
-  margin-top: 120px;
+  margin-top:80px;
 }
 
-.right {
-  margin-left: 85%;
-}
-
-.custom_button {
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-size: 6px;
-  height: 25px;
-  width: 80px;
-}
 
 footer {
   background-color: #F7F7F7;
@@ -86,5 +73,19 @@ footer {
 
 .p_size_2 {
   font-size: 10px;
+}
+
+@media (min-width: 600px) {
+  .h1-size {
+    font-size: 36px;
+  }
+
+  .p-size-1 {
+    font-size: 18px;
+  }
+
+  .p_size_2 {
+    font-size: 24px;
+  }
 }
 
