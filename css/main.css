@@ -2,7 +2,7 @@
 * @Author: Ayush Petigara
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-16 11:52:39
+* @Last Modified time: 2018-12-16 12:18:54
 */
 
 * {
@@ -16,6 +16,7 @@
   background-image: url("/images/mobile_background.svg");
   background-repeat: no-repeat;
   /*background-attachment: fixed;*/
+  background-size: cover;
   height: 55vh;
 }
 
@@ -26,7 +27,7 @@
 
 .content {
   overflow:scroll;
-  margin-top:80px;
+  margin-top:90px;
 }
 
 
@@ -76,6 +77,11 @@ footer {
 }
 
 @media (min-width: 600px) {
+  .section-home {
+    background-image: url("/images/mobile_background.svg");
+    width: 100%;
+  }
+
   .h1-size {
     font-size: 36px;
   }
