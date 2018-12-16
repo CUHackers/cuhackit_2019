@@ -2,7 +2,7 @@
 * @Author: Ayush Petigara
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-16 14:48:38
+* @Last Modified time: 2018-12-16 15:00:55
 */
 
 * {
@@ -19,11 +19,10 @@
 }
 
 .section-home {
-  background-color:white;
+  background-color: white;
   width: 102%;
   background-image: url("/images/mobile_background.svg");
   background-repeat: no-repeat;
-  /*background-attachment: fixed;*/
   background-size: cover;
   height: 55vh;
   z-index: 1000;
@@ -125,6 +124,22 @@ footer {
   }
  #faqs .active::before {
    content: "-  ";
+  }
+
+  .section-1 {
+    min-height: 100vh;
+  }
+  .section-2 {
+    min-height: 100vh;
+  }
+  .section-3 {
+    min-height: 100vh;
+  }
+  .section-4 {
+    min-height: 100vh;
+  }
+  .section-5 {
+    min-height: 100vh;
   }
 
 
