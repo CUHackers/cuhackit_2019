@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   </head>
-  <body data-spy="scroll" data-target=".nav" data-offset="50">
+  <body data-spy="scroll" data-target=".nav" data-offset="150">
 
     <!-- MLH Logo -->
     <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:10%;top:0;width:6%;z-index:10000" href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=gray" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-gray.svg" alt="Major League Hacking 2019 Hackathon Season" style="width:100%"></a>
@@ -26,7 +26,7 @@
     <section 
       id = "navigation" 
       class = "section section-highlight position-fixed non-mobile">
-      <nav class="nav nav-pills justify-content-left">
+      <nav class="nav nav-pills justify-content-left ml-5">
         <li class="nav-item">
           <a class="nav-link active" href="#0">Home</a>
         </li>
@@ -40,7 +40,7 @@
           <a class="nav-link disabled" href="#3">FAQ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#4">Team</a>
+          <a class="nav-link disabled" href="#4">Contact</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="#5">Partners</a>
@@ -48,38 +48,54 @@
       </nav>
     </section>
 
-    <section id="home" class="section section-home front">
+    <section id="0" class="section section-home front">
       <div class="row mt-5"></div>
       <div class="row mt-2"></div>
       <div class="row">
-        <h1 class="col-8 h1-size ml-4 mt-5">
-          Come Join Us For The 2019</br>CUhackit Hackathon
+        <img 
+          src="/images/CUhackit_Combined_Logo_RGB_Color_STANDARD.svg"
+          class="logo col-6 ml-4"/>
+      </div>
+      <div class="row">
+        <h1 class="col-8 h1-size ml-4">
+          Come Join Us For The 2019<br>CUhackit Hackathon
         </h1>
       </div>
       <div class="row">
-        <p class="col-8 p-size-1 ml-4">Welcome to the home of the CUhackit Hackathon. We are a student lead and run organization striving to provide the best hackathon experience possible. We welcome all hackers and creators to sign up and prepare for a fun time</p>
+        <p class="col-7 p-size-1 ml-4">
+          Welcome to the home of the CUhackit Hackathon. We are a student lead and run organization striving to provide the best hackathon experience possible. We welcome all hackers and creators to sign up and prepare for a fun time
+        </p>
       </div>
-      <div class="row">
+      <div class="row justify-content-left pl-5">
         <a href="https://cuhackit.typeform.com/to/c67Vut">
-          <button class="ml-4 btn btn-sm btn-outline-dark">
+          <button
+            style="background-color:white;"
+            class="btn btn-sm btn-outline-dark white-back">
             Apply as Participant
           </button>
         </a>
-        <button class="ml-2 btn btn-sm btn-outline-dark">
+        <button 
+          style="background-color:white; "
+          class="non-mobile ml-2 btn btn-sm btn-outline-dark white-back">
           Apply as Mentor
         </button>
       </div>
     </section>
 
     <section class="content">
-      <section id ="1" class = "section section-1 col-8 ml-5">
+      <section 
+        id ="1" 
+        class = "section section-1 full-size col-8 ml-5">
         <h2>About CUhackit</h2>
         <p> 
-          We love hackathons. We love hackathons so much, that we are having our own. CUhackit is a 24 hour lollapalooza of creativity, coding, and cup stacking. We are a group of students from each year in school, from a wide variety of backgrounds and courses of study, and we cannot wait to see you here!
+          We love hackathons. We love hackathons so much, that we are having our own. CUhackit is a 24 hour inventapalooza of creativity, coding, and cup stacking. We are a group of students from each year in school, from a wide variety of backgrounds and courses of study, and we cannot wait to see you here!
         </p>
       </section>
 
-      <section id ="2" class = "section section-2 col-8 ml-5">
+      <section 
+        id ="2" 
+        class = "section section-2 full-size col-8 ml-5"
+        style="min-height: 100vh;">
         <h2>Schedule</h2>
         <p> Some very nice text
           that happens to be very nice
@@ -87,7 +103,10 @@
         </p>
       </section>
 
-      <section id ="3" class = "section section-3 non-mobile col-8 ml-5">
+      <section 
+        id ="3" 
+        class = "section section-3 full-size non-mobile col-8 ml-5"
+        style="min-height: 100vh;">
         <h2>Frequently Asked Questions</h2>
         <div id="faqs" class="container py-3">
         <div class="row main-row">
@@ -180,7 +199,10 @@
       </div>
       </section>
 
-      <section id ="4" class = "section section-4 col-8 ml-5">
+      <section 
+        id ="4" 
+        class = "section section-4 full-size col-8 ml-5" 
+        style="min-height: 100vh;">
         <h2>Contact Us</h2>
         <p>
           Have any questions? Want to tell us your favorite color? Contact us at:
@@ -191,10 +213,13 @@
         </p>
       </section>
 
-      <section id ="5" class = "section section-5 col-8 ml-5">
+      <section 
+        id ="5" 
+        class = "section section-5 full-size col-8 ml-5" 
+        style="min-height: 100vh;">
         <h2>Partners</h2>
         <p>
-          CUhackit would not be possible without the help of our amazing sponsors:
+          CUhackit would not be possible without the help of our amazing partners:
         </p>
       </section>
 
