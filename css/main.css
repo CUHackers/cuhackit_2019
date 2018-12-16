@@ -2,26 +2,36 @@
 * @Author: Ayush Petigara
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-15 18:16:57
+* @Last Modified time: 2018-12-16 11:37:16
 */
 
 * {
   font-family: 'Access Regular', 'PT Mono', monospace;
 }
 
-img {
-  position: absolute;
-  top: 0;
-  left: -2px;
-  width: 103%;
-  z-index: 1;
+
+.section-home {
+  position: fixed;
+  width: 102%;
+  background-image: url("/images/mobile_background.svg");
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  height: 55vh;
+}
+
+
+.section-buffer {
+  min-height: 40vh;
 }
 
 .content {
-  overflow-y: scroll;
-  overflow-x: scroll;
+  overflow:scroll;
   float: none;
   margin-top: 120px;
+}
+
+.right {
+  margin-left: 85%;
 }
 
 .custom_button {
@@ -35,19 +45,9 @@ img {
 
 footer {
   background-color: #F7F7F7;
-  height: 59px;
+  max-height: 10vh;
 }
 
-.hero-img {
-  border: 2px solid black;
-  min-width: 200px;
-  height: 210px;
-  margin-left: 20px;
-}
-
-.in-block {
-  display: inline-block;
-}
 
 .fa-cog {
   background-color: black;
@@ -76,11 +76,11 @@ footer {
   z-index: 100;
 }
 
-.h1_size {
+.h1-size {
   font-size: 17px;
 }
 
-.p_size_1 {
+.p-size-1 {
   font-size: 6px;
 }
 
