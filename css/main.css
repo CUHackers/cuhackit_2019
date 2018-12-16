@@ -2,7 +2,7 @@
 * @Author: Ayush Petigara
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-15 17:33:11
+* @Last Modified time: 2018-12-15 18:16:57
 */
 
 * {
@@ -17,6 +17,13 @@ img {
   z-index: 1;
 }
 
+.content {
+  overflow-y: scroll;
+  overflow-x: scroll;
+  float: none;
+  margin-top: 120px;
+}
+
 .custom_button {
   background-color: white;
   border: 1px solid black;
@@ -29,6 +36,17 @@ img {
 footer {
   background-color: #F7F7F7;
   height: 59px;
+}
+
+.hero-img {
+  border: 2px solid black;
+  min-width: 200px;
+  height: 210px;
+  margin-left: 20px;
+}
+
+.in-block {
+  display: inline-block;
 }
 
 .fa-cog {
@@ -68,21 +86,5 @@ footer {
 
 .p_size_2 {
   font-size: 10px;
-}
-
-.row-group > .row {
-  overflow-x: scroll;
-  white-space: nowrap;
-}
-
-.content-section {
-  position: relative;
-  top: 100px;
-  border: 2px solid black;
-  float: none;
-  height: 240px;
-  overflow-x: scroll;
-  width: 4000px;
-  z-index: 1;
 }
 
