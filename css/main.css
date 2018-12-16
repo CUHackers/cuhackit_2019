@@ -2,13 +2,12 @@
 * @Author: Ayush Petigara
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-16 14:17:41
+* @Last Modified time: 2018-12-16 14:24:22
 */
 
 * {
   font-family: 'Access Regular', 'PT Mono', monospace;
 }
-
 
 .section-home {
   background-color:white;
@@ -23,6 +22,10 @@
   background-color:white;
 }
 
+
+.section-3 {
+  display: none;
+}
 
 .section-buffer {
   min-height: 40vh;
@@ -137,6 +140,10 @@ footer {
 
   .p_size_2 {
     font-size: 16px;
+  }
+
+  .section-3 {
+    display: block;
   }
 }
 
