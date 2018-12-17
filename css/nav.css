@@ -2,13 +2,13 @@
 * @Author: Charlie Gallentine
 * @Date:   2018-12-16 19:44:04
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-16 20:40:02
+* @Last Modified time: 2018-12-16 22:22:15
 */
 #navigation {
   background-color: #FFFFFF;
   float: left;
-  height: 10vh;
+  height: 3.75em;
   top: 0;
   width: 100%;
-  z-index: 101;
+  z-index: 100 !important;
 }
