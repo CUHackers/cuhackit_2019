@@ -2,13 +2,21 @@
 * @Author: Ayush Petigara
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-17 14:17:25
+* @Last Modified time: 2018-12-17 14:43:02
 */
 
 * {
   font-family: 'Access Regular', 'PT Mono', monospace;
   overflow-x: hidden;
 }
+
+.nav-pills > li > a:hover,
+.nav-pills > li > a:active,
+.nav-pills > li > a:focus {
+  background-color: #721ED6;
+  color: white;
+}
+
 
 #front_art {
   width: 30%;
