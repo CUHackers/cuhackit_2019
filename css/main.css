@@ -9,8 +9,8 @@
   font-family: 'Access Regular', 'PT Mono', monospace;
 }
 
-body { 
-    padding-top: 65px; 
+body {
+    padding-top: 65px;
 }
 
 #navigation {
@@ -137,6 +137,11 @@ footer {
   content: "-  ";
 }
 
+.logos{
+  margin:10px;
+}
+
+
 
 @media (min-width: 600px) {
   .section-home {
@@ -183,4 +188,3 @@ footer {
     font-size: 24px;
   }
 }
-
