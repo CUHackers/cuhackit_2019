@@ -2,7 +2,7 @@
 * @Author: Ayush Petigara
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-17 14:15:52
+* @Last Modified time: 2018-12-17 14:17:25
 */
 
 * {
@@ -79,7 +79,7 @@ th,td {
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 730px) {
   .section-home {
     background-image: url("/images/desktop_background.svg");
     width: 100%;
