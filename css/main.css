@@ -60,6 +60,13 @@
   margin:10px;
 }
 
+td {
+  font-size: 0.7rem;
+}
+th,td {
+  padding-left:10px;
+}
+
 
 @media (min-width: 600px) {
   .section-home {
@@ -87,6 +94,12 @@
   .mobile {
     display: none !important;
   }
+  td {
+    font-size: 0.87rem;
+  }
+  th,td {
+    padding-left:45px;
+  }
 }
 
 @media (min-width: 950px) {
@@ -107,9 +120,6 @@
     font-size: 24px;
   }
 
-  .schedule_table {
-
-  }
 
   .heading {
     font-size: 1.5rem;
@@ -119,6 +129,9 @@
 
   th,td {
     padding-left:45px;
+  }
+  td {
+    font-size: 1.0rem;
   }
 
   .schedule_table {
