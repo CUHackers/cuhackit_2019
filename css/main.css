@@ -101,4 +101,32 @@
   .p_size_2 {
     font-size: 24px;
   }
+
+  .schedule_table {
+
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    padding-bottom: 10px;
+  }
+
+  th,td {
+    padding-left:45px;
+  }
+
+  .schedule_table {
+    margin-left: 3%;
+  }
+
+  .schedule_heading {
+    margin-left: 8%;
+  }
+
+  .u-bottom {
+    padding-bottom: 8px;
+    border-bottom: 1px solid black;
+    line-height: 48px;
+  }
 }
