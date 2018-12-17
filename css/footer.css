@@ -1,0 +1,30 @@
+/*
+* @Author: Charlie Gallentine
+* @Date:   2018-12-16 19:44:55
+* @Last Modified by:   Charlie Gallentine
+* @Last Modified time: 2018-12-16 19:45:09
+*/
+footer {
+  background-color: #EEEEEE;
+  max-height: 10vh;
+}
+
+
+.fa-cog {
+  background-color: black;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.fa-extra-pad {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.fa-white {
+  color: white;
+}
+
+.fa-black {
+  color: black;
+}
