@@ -8,7 +8,10 @@
     <!-- Tab title and icon -->
     <title>CUhackit</title>
     <!-- Custom styles -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/faqs.css">
+    <link rel="stylesheet" href="./css/nav.css">
     <!-- Favicon -->
     <link rel="icon" href="./images/CUhackit_RGB2.png">
     <!-- Bootstrap and Font Awesome -->
@@ -28,27 +31,27 @@
       class = "section section-highlight position-fixed non-mobile">
       <nav style="margin-left:20px;"class="nav nav-pills justify-content-left">
         <li class="nav-item">
-          <a class="nav-link active" href="#0">Home</a>
+          <img 
+            src="./images/CUhackit_RGB_Bug_Color.svg" 
+            width="50px"
+            alt="Home"/>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#1">About</a>
+        <li class="nav-item move-down-10">
+          <a class="nav-link disabled" href="#0">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#2">Schedule</a>
+        <li class="nav-item move-down-10">
+          <a class="nav-link disabled" href="#1">Schedule</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#3">FAQ</a>
+        <li class="nav-item move-down-10">
+          <a class="nav-link disabled" href="#2">FAQ</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#4">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#5">Partners</a>
+        <li class="nav-item move-down-10">
+          <a class="nav-link disabled" href="#3">Partners</a>
         </li>
       </nav>
     </section>
 
-    <section id="0" class="section section-home front">
+    <section id="0" class="section section-home front full-size">
       <div class="row mt-5"></div>
       <div class="row mt-2"></div>
       <div class="row">
@@ -58,243 +61,238 @@
           class="logo col-6 ml-4"/>
       </div>
       <div class="row">
-        <h1 class="col-8 h1-size ml-4">
-          Come Join Us For The 2019<br>CUhackit Hackathon!
+        <div class="col-1"></div>
+        <h1 class="col-8 h1-size ml-5">
+          Come Join Us For The<br>2019 CUhackit Hackathon!
         </h1>
       </div>
       <div style="padding-left:20px;"><hr align="left" width="50%"></div>
       <div class="row">
-        <p class="col-7 p-size-1 ml-4">
+        <div class="col-1"></div>
+        <p class="col-6 p-size-1 ml-5">
           Welcome to the home of the CUhackit Hackathon. We are a student lead and run organization striving to provide the best hackathon experience possible. We welcome all hackers and creators to sign up and prepare for a fun time
         </p>
       </div>
       <br>
-      <div class="row justify-content-left pl-5">
-        <a href="https://cuhackit.typeform.com/to/c67Vut">
+      <div 
+        class="row mobile justify-content-right"
+        style="text-align: center;">
+        <a href="https://cuhackit.typeform.com/to/c67Vut" class="col-2">
           <button
             style="background-color:white;"
             class="btn btn-sm btn-outline-dark white-back">
-            Apply as Participant
+            Apply as a Participant
           </button>
         </a>
-        <button
-          style="background-color:white; "
-          class="non-mobile ml-2 btn btn-sm btn-outline-dark white-back">
-          Apply as Mentor
-        </button>
+        <a href="#"  class="col-2">
+          <button
+            class="btn btn-sm btn-outline-dark white-back">
+            Apply as a Mentor
+          </button>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="non-mobile">
+          <a href="https://cuhackit.typeform.com/to/c67Vut" class="ml-5">
+            <button
+              class="btn btn-lg btn-outline-dark white-back ml-3">
+              Apply as a Participant
+            </button>
+          </a>
+          <a href="#">
+            <button
+              class="btn btn-lg btn-outline-dark white-back ml-3">
+              Apply as a Mentor
+            </button>
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="content">
-      <section
-        id ="1"
-        class = "section section-1 full-size col-8"
-        style="min-height: 100vh; padding-top: 50px;">
-        <h2>About CUhackit</h2>
-        <div style=""><hr align="left" width="50%"></div>
-        <p>
-          We love hackathons! We love hackathons so much, that we are having our own. CUhackit is a 24 hour inventapalooza of creativity, coding, and cup stacking. We are a group of students from each year in school, from a wide variety of backgrounds and courses of study, and we cannot wait to see you here!
-        </p>
-      </section>
+    <section
+      id ="1"
+      class = "section section-1 full-size col-8"
+      style="min-height: 100vh; padding-top: 60px;">
+      <h2>The Schedule</h2>
+      <p>*Sessions and Activities TBA</p>
+      <div style=""><hr align="left" width="50%"></div>
+      <div class="container">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Event</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>9:00am - 10:30am</td>
+              <td>Hacker Registration</td>
+              <td>Main Lobby</td>
+            </tr>
+            <tr>
+              <td>10:30 AM</td>
+              <td>Opening Ceremony</td>
+              <td>Auditorium </td>
+            </tr>
+            <tr>
+              <td>11:00 AM</td>
+              <td>HACKING BEGINS!</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>12:00pm - 2:00pm</td>
+              <td>Lunch</td>
+              <td>Main Lobby</td>
+            </tr>
+            <tr>
+              <td>3:00pm - 4:30pm</td>
+              <td>Snack - TBA!</td>
+              <td>Watt Parking Lot</td>
+            </tr>
+            <tr>
+              <td>6:00pm - 8:00pm</td>
+              <td>Dinner</td>
+              <td>Main Lobby</td>
+            </tr>
+            <tr>
+              <td>12:00 AM</td>
+              <td>Midnight Snack</td>
+              <td>Main Lobby</td>
+            </tr>
+            <tr>
+              <td>7:00am-9:00am</td>
+              <td>Breakfast</td>
+              <td>Main Lobby</td>
+            </tr>
+            <tr>
+              <td>11:00am - 3:00pm</td>
+              <td>Lunch - Food Trucks</td>
+              <td>Watt Parking Lot</td>
+            </tr>
+            <tr>
+              <td>11:00 AM</td>
+              <td>Devpost Submissions Due</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>12:00pm - 1:30pm</td>
+              <td>Demos and Judging</td>
+              <td>Main Lobby </td>
+            </tr>
+            <tr>
+              <td>1:30pm - 2:00pm</td>
+              <td>Awards/Closing Ceremony</td>
+              <td>Auditorium </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-      <section
-        id ="2"
-        class = "section section-2 full-size col-8"
-        style="min-height: 100vh; padding-top: 50px;">
-        <h2>The Schedule</h2>
-        <p>*Sessions and Activities TBA</p>
-        <div style=""><hr align="left" width="50%"></div>
-        <div class="container">
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th>Time</th>
-                <th>Event</th>
-                <th>Location</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>9:00am - 10:30am</td>
-                <td>Hacker Registration</td>
-                <td>Main Lobby</td>
-              </tr>
-              <tr>
-                <td>10:30 AM</td>
-                <td>Opening Ceremony</td>
-                <td>Auditorium </td>
-              </tr>
-              <tr>
-                <td>11:00 AM</td>
-                <td>HACKING BEGINS!</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>12:00pm - 2:00pm</td>
-                <td>Lunch</td>
-                <td>Main Lobby</td>
-              </tr>
-              <tr>
-                <td>3:00pm - 4:30pm</td>
-                <td>Snack - TBA!</td>
-                <td>Watt Parking Lot</td>
-              </tr>
-              <tr>
-                <td>6:00pm - 8:00pm</td>
-                <td>Dinner</td>
-                <td>Main Lobby</td>
-              </tr>
-              <tr>
-                <td>12:00 AM</td>
-                <td>Midnight Snack</td>
-                <td>Main Lobby</td>
-              </tr>
-              <tr>
-                <td>7:00am-9:00am</td>
-                <td>Breakfast</td>
-                <td>Main Lobby</td>
-              </tr>
-              <tr>
-                <td>11:00am - 3:00pm</td>
-                <td>Lunch - Food Trucks</td>
-                <td>Watt Parking Lot</td>
-              </tr>
-              <tr>
-                <td>11:00 AM</td>
-                <td>Devpost Submissions Due</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>12:00pm - 1:30pm</td>
-                <td>Demos and Judging</td>
-                <td>Main Lobby </td>
-              </tr>
-              <tr>
-                <td>1:30pm - 2:00pm</td>
-                <td>Awards/Closing Ceremony</td>
-                <td>Auditorium </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section
-        id ="3"
-        class = "section section-3 full-size non-mobile col-8"
-        style="min-height: 100vh; padding-top: 50px;">
-        <h2>Frequently Asked Questions</h2>
-        <div style=""><hr align="left" width="50%"></div>
-        <div id="faqs" class="container py-3">
-        <div class="row main-row">
-          <div class="col-md-10 col-sm-12">
-            <button class="accordion">What is a hackathon?</button>
-            <div class="panel">
-              <p>A hackathon is a 24 hour long event where students from different disciplines come
-                together in small teams to work on real projects. The purpose of a hackathon is to have
-                students learn about idea development and product design by being provided resources
-                like hardware, workshops, and mentors. Hackathons are ultimately a collaborative space
-                where creativity is encouraged and self-confidence can be obtained through hands on
-                learning.</p>
-            </div>
-            <button class="accordion">Where is CUhackit?</button>
-            <div class="panel">
-              <p>CUhackit will be held in the Watt Family Innovation Center at Clemson University. You
-                can expect a large commonspace for announcements and community hacking, medium rooms for
-                workshops, individual rooms for team concentration, and a separate area for sleep. We
-                will also feature the Clemson Makerspace and the Immersive Space.</p>
-            </div>
-            <button class="accordion">Who is CUhackit for?</button>
-            <div class="panel">
-              <p>If you’re a college student interested in making and/or learning something awesome,
-                CUhackit is for you! This event is specifically designed to be a great experience for
-                students at any level.</p>
-            </div>
-            <button class="accordion">What should I bring?</button>
-            <div class="panel">
-              <p>Bring comfy clothes, toiletries (toothbrush, toothpaste, deodorant, etc.), your
-                laptop, its charger, and yourself.</p>
-            </div>
-            <button class="accordion">Help, this is my first hackathon!</button>
-            <div class="panel">
-              <p>Awesome! Don't worry -- this event is as much about learning as it is making. We will
-                have workshops and mentors to assist you throughout the event. Don't be afraid to ask
-                for help and reach out to your peers. We're all excited for you to join the hacking
-                community. Don't forget the best conversation starter: bonding over free food.</p>
-            </div>
-            <button class="accordion">Can high school students attend?</button>
-            <div class="panel">
-              <p>Unfortunately not. Currently this event is college student-exclusive.</p>
-            </div>
-            <button class="accordion">Can mentors participate in hacking?</button>
-            <div class="panel">
-              <p>Unfortunately, no. We need you all to be available to help our hackers throughout the
-                duration of the event.</p>
-            </div>
-            <button class="accordion">What happens after I pre-register?</button>
-            <div class="panel">
-              <p>Thanks for your interest! We will be keeping our pre-registrants updated via email about
-                event details and acceptances to CUhackit!</p>
-            </div>
-            <button class="accordion">Will travel be reimbursed?</button>
-            <div class="panel">
-              <p>Up to a certain dollar amount, yes! More details will be announced closer to the event,
-                but feel free to email us at cuhackit@gmail.com with any questions.</p>
-            </div>
-            <button class="accordion">What do I do about teams?</button>
-            <div class="panel">
-              <p>Gather your friends, meet some people at opening, or attend our team-creation event
-                right after opening announcements. We're all about creating new connections and meeting
-                new people! Max 4 people per team.</p>
-            </div>
-            <!-- <button class="accordion">Soylent?!</button>
-            <div class="panel">
-               <p>Yes! Our great friends at Soylent are sending us some bottles! Also, get a deal here for
-                 50% off a case <a href="http://r.soy.lt/hVHuI">HERE</a>!</p>
-            </div> -->
-            <button class="accordion">Is it really all free?!</button>
-            <div class="panel">
-              <p>Yes yes yes! Food, swag, prizes, workshops, mentors, naps, coffee, and energy drinks. It's all
-                thanks to our wonderful sponsors and participants who connect with them.</p>
-            </div>
-            <button class="accordion">Will I be sitting at my computer all weekend?</button>
-            <div class="panel">
-              <p>No! There’s more to the experience -- networking sessions, informal talks, workshops,
-                games, DANCE PARTIES, and much more!</p>
-            </div>
-            <button class="accordion">Do I have to be there all 24 hours?</button>
-            <div class="panel">
-              <p>Have to?! It's part of the experience to be there all 23 hours! Don't worry, the
-                sleep room will have sleeping pads on deck.</p>
-            </div>
-            <button class="accordion">How rowdy can I be?</button>
-            <div class="panel">
-              <p>CUhackit is held strictly to the MLH Code of Conduct found <a href="http://mlh.io/code-of-conduct" target="_blank">here</a>.</p>
-            </div>
+    <section
+      id ="2"
+      class = "section section-2 full-size non-mobile col-8"
+      style="min-height: 100vh; padding-top: 60px;">
+      <h2>Frequently Asked Questions</h2>
+      <div style=""><hr align="left" width="50%"></div>
+      <div id="faqs" class="container py-3">
+      <div class="row main-row">
+        <div class="col-md-10 col-sm-12">
+          <button class="accordion">What is a hackathon?</button>
+          <div class="panel">
+            <p>A hackathon is a 24 hour long event where students from different disciplines come
+              together in small teams to work on real projects. The purpose of a hackathon is to have
+              students learn about idea development and product design by being provided resources
+              like hardware, workshops, and mentors. Hackathons are ultimately a collaborative space
+              where creativity is encouraged and self-confidence can be obtained through hands on
+              learning.</p>
+          </div>
+          <button class="accordion">Where is CUhackit?</button>
+          <div class="panel">
+            <p>CUhackit will be held in the Watt Family Innovation Center at Clemson University. You
+              can expect a large commonspace for announcements and community hacking, medium rooms for
+              workshops, individual rooms for team concentration, and a separate area for sleep. We
+              will also feature the Clemson Makerspace and the Immersive Space.</p>
+          </div>
+          <button class="accordion">Who is CUhackit for?</button>
+          <div class="panel">
+            <p>If you’re a college student interested in making and/or learning something awesome,
+              CUhackit is for you! This event is specifically designed to be a great experience for
+              students at any level.</p>
+          </div>
+          <button class="accordion">What should I bring?</button>
+          <div class="panel">
+            <p>Bring comfy clothes, toiletries (toothbrush, toothpaste, deodorant, etc.), your
+              laptop, its charger, and yourself.</p>
+          </div>
+          <button class="accordion">Help, this is my first hackathon!</button>
+          <div class="panel">
+            <p>Awesome! Don't worry -- this event is as much about learning as it is making. We will
+              have workshops and mentors to assist you throughout the event. Don't be afraid to ask
+              for help and reach out to your peers. We're all excited for you to join the hacking
+              community. Don't forget the best conversation starter: bonding over free food.</p>
+          </div>
+          <button class="accordion">Can high school students attend?</button>
+          <div class="panel">
+            <p>Unfortunately not. Currently this event is college student-exclusive.</p>
+          </div>
+          <button class="accordion">Can mentors participate in hacking?</button>
+          <div class="panel">
+            <p>Unfortunately, no. We need you all to be available to help our hackers throughout the
+              duration of the event.</p>
+          </div>
+          <button class="accordion">What happens after I pre-register?</button>
+          <div class="panel">
+            <p>Thanks for your interest! We will be keeping our pre-registrants updated via email about
+              event details and acceptances to CUhackit!</p>
+          </div>
+          <button class="accordion">Will travel be reimbursed?</button>
+          <div class="panel">
+            <p>Up to a certain dollar amount, yes! More details will be announced closer to the event,
+              but feel free to email us at cuhackit@gmail.com with any questions.</p>
+          </div>
+          <button class="accordion">What do I do about teams?</button>
+          <div class="panel">
+            <p>Gather your friends, meet some people at opening, or attend our team-creation event
+              right after opening announcements. We're all about creating new connections and meeting
+              new people! Max 4 people per team.</p>
+          </div>
+          <!-- <button class="accordion">Soylent?!</button>
+          <div class="panel">
+             <p>Yes! Our great friends at Soylent are sending us some bottles! Also, get a deal here for
+               50% off a case <a href="http://r.soy.lt/hVHuI">HERE</a>!</p>
+          </div> -->
+          <button class="accordion">Is it really all free?!</button>
+          <div class="panel">
+            <p>Yes yes yes! Food, swag, prizes, workshops, mentors, naps, coffee, and energy drinks. It's all
+              thanks to our wonderful sponsors and participants who connect with them.</p>
+          </div>
+          <button class="accordion">Will I be sitting at my computer all weekend?</button>
+          <div class="panel">
+            <p>No! There’s more to the experience -- networking sessions, informal talks, workshops,
+              games, DANCE PARTIES, and much more!</p>
+          </div>
+          <button class="accordion">Do I have to be there all 24 hours?</button>
+          <div class="panel">
+            <p>Have to?! It's part of the experience to be there all 23 hours! Don't worry, the
+              sleep room will have sleeping pads on deck.</p>
+          </div>
+          <button class="accordion">How rowdy can I be?</button>
+          <div class="panel">
+            <p>CUhackit is held strictly to the MLH Code of Conduct found <a href="http://mlh.io/code-of-conduct" target="_blank">here</a>.</p>
           </div>
         </div>
       </div>
-      </section>
+    </div>
+    </section>
 
       <section
-        id ="4"
-        class = "section section-4 full-size col-8"
-        style="min-height: 100vh; padding-top: 50px;">
-        <h2>Contact Us</h2>
-        <div style=""><hr align="left" width="50%"></div>
-        <p>
-          Have any questions? Want to tell us your favorite color? Contact us at:
-        </p>
-        <h4>CUhackit@g.clemson.edu</h4>
-        <p>
-          We'd love to hear from you!
-        </p>
-      </section>
-
-      <section
-        id ="5"
-        class = "section section-5 full-size col-8"
-        style="min-height: 100vh; padding-top: 50px;">
+        id ="3"
+        class = "section section-3 full-size col-8"
+        style="min-height: 100vh; padding-top: 60px;">
         <h2>Partners</h2>
         <div style=""><hr align="left" width="50%"></div>
         </br>
@@ -329,7 +327,6 @@
             <div class="col"><img class="mx-auto d-block"style="max-height:70%;max-width:70%;" src="./images/partners/sticker-mule-logo.png"></div>
           </div>
         </div>
-
       </section>
 
       <section class = "section">
@@ -341,34 +338,39 @@
     </section>
     <section class="section-buffer"></section>
 
-    <footer class="fixed-bottom front text-center">
-      <div class="text-center py-3">
-        <div class="row d-flex justify-content-around">
-          <div class="col-2"></div>
-          <div class="col-2 text-center">
-            <a href="https://www.facebook.com/events/519593375221070/">
-              <i class="fab fa-white fa-cog fa-extra-pad fa-facebook-f"></i>
-            </a>
+    <section
+      id ="footer"
+        class = "section section-4 full-size"
+        style="min-height: 10vh; width:100%; overflow-x: hidden;">
+      <footer class="front text-center"">
+        <div class="text-center py-3">
+          <div class="row d-flex justify-content-around">
+            <div class="col-2"></div>
+            <div class="col-2 text-center">
+              <a href="https://www.facebook.com/events/519593375221070/">
+                <i class="fab fa-white fa-cog fa-extra-pad fa-facebook-f"></i>
+              </a>
+            </div>
+            <div class="col-2 text-center">
+              <a href="https://twitter.com/cuhackit?lang=en">
+                <i class="fab fa-white fa-cog fa-twitter"></i>
+              </a>
+            </div>
+            <div class="col-2 text-center">
+              <a href="https://www.instagram.com/cuhackit/?hl=en">
+                <i class="fab fa-white fa-cog icon-3x fa-instagram"></i>
+              </a>
+            </div>
+            <div class="col-2 text-center">
+              <a href="mailto:cuhackit@g.clemson.edu">
+                <i class="far fa-white fa-cog fa-envelope"></i>
+              </a>
+            </div>
+            <div class="col-2"></div>
           </div>
-          <div class="col-2 text-center">
-            <a href="https://twitter.com/cuhackit?lang=en">
-              <i class="fab fa-white fa-cog fa-twitter"></i>
-            </a>
-          </div>
-          <div class="col-2 text-center">
-            <a href="https://www.instagram.com/cuhackit/?hl=en">
-              <i class="fab fa-white fa-cog icon-3x fa-instagram"></i>
-            </a>
-          </div>
-          <div class="col-2 text-center">
-            <a href="mailto:cuhackit@g.clemson.edu">
-              <i class="far fa-white fa-cog fa-envelope"></i>
-            </a>
-          </div>
-          <div class="col-2"></div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </section>
 
     <!-- END CONTENT -->
 

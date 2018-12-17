@@ -2,24 +2,23 @@
 * @Author: Ayush Petigara
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-16 16:22:25
+* @Last Modified time: 2018-12-16 20:09:44
 */
 
 * {
   font-family: 'Access Regular', 'PT Mono', monospace;
 }
 
-body {
-    padding-top: 65px;
+.white-back {
+  background-color: white !important;
 }
 
-#navigation {
-  background-color: #FFFFFF;
-  float: left;
-  height: 50px;
-  top: 0;
-  width: 100%;
-  z-index: 101;
+.non-mobile {
+  display: none !important;
+}
+
+.mobile {
+  display: block !important;
 }
 
 .section-home {
@@ -33,41 +32,8 @@ body {
   z-index: 999;
 }
 
-.non-mobile {
-  display: none;
-}
-
-.mobile {
-  display: block;
-}
-
 .content {
   overflow-x:hidden;
-}
-
-footer {
-  background-color: #EEEEEE;
-  max-height: 10vh;
-}
-
-
-.fa-cog {
-  background-color: black;
-  border-radius: 50%;
-  padding: 5px;
-}
-
-.fa-extra-pad {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.fa-white {
-  color: white;
-}
-
-.fa-black {
-  color: black;
 }
 
 .back {
@@ -94,59 +60,16 @@ footer {
   min-height: 100vh;
 }
 
-.white-back {
-  background-color: white;
-}
-
-#faqs {
-  color: black;
-  font-family: "Access Regular";
-}
-
-#faqs .accordion {
-  cursor: pointer;
-  border: none;
-  padding: .9em;
-  width: 100%;
-  text-align: left;
-  outline: none;
-  transition: 0.4s;
-  background-color: white !important;
-  color: black !important;
-  margin-left: 0;
-}
-#faqs .panel {
-  font-size: .9em;
-  max-height: 0;
-  overflow: hidden;
-  text-align: left;
-  transition: max-height 0.2s ease-out;
-  vertical-align: middle;
-  padding: 0em 1em;
-  margin-left: 3em;
-}
-#faqs .active + .panel {
-  padding: 1em 1em 0em 1em;
-}
-#faqs .accordion::before {
-  content: "+  ";
-  font-size: 1em;
-  color: black;
-}
-#faqs .active::before {
-  content: "-  ";
-}
-
 .logos{
   margin:10px;
 }
-
 
 
 @media (min-width: 600px) {
   .section-home {
     background-image: url("/images/desktop_background.svg");
     width: 100%;
+    height: 100vh;
   }
 
   .h1-size {
@@ -162,20 +85,20 @@ footer {
   }
 
   .non-mobile {
-    display: block;
+    display: block !important;
   }
 
   .mobile {
-    display: none;
+    display: none !important;
   }
 }
 
 @media (min-width: 950px) {
-  .section-home {
+/*  .section-home {
     width: 100%;
-    height: 70vh;
+    height: 100vh;
   }
-
+*/
   .h1-size {
     font-size: 32px;
   }

@@ -1,0 +1,18 @@
+/*
+* @Author: Charlie Gallentine
+* @Date:   2018-12-16 19:44:04
+* @Last Modified by:   Charlie Gallentine
+* @Last Modified time: 2018-12-16 19:58:17
+*/
+#navigation {
+  background-color: #FFFFFF;
+  float: left;
+  height: 10vh;
+  top: 0;
+  width: 100%;
+  z-index: 101;
+}
+
+.move-down-10 {
+	margin-top: 10px;
+}
