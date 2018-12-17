@@ -2,7 +2,7 @@
 * @Author: Charlie Gallentine
 * @Date:   2018-12-16 19:44:31
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-16 19:44:43
+* @Last Modified time: 2018-12-16 20:46:43
 */
 #faqs {
   color: black;
@@ -10,6 +10,9 @@
 }
 
 #faqs .accordion {
+  background: url("/images/rectangle.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   cursor: pointer;
   border: none;
   padding: .9em;
@@ -17,7 +20,7 @@
   text-align: left;
   outline: none;
   transition: 0.4s;
-  background-color: white !important;
+  background-color: #EEEEEE !important;
   color: black !important;
   margin-left: 0;
 }
