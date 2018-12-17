@@ -2,7 +2,7 @@
 * @Author: Ayush Petigara
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-16 22:23:23
+* @Last Modified time: 2018-12-16 23:22:41
 */
 
 * {
@@ -29,6 +29,7 @@
   height: 55vh;
   overflow: hidden;
   width: 102%;
+  min-height: 550px;
 }
 
 .content {
@@ -40,7 +41,7 @@
 }
 
 .p-size-1 {
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .p_size_2 {
@@ -48,7 +49,11 @@
 }
 
 .full-size {
-  min-height: 80vh;
+  min-height: 900px;
+  max-height: 1200px;
+  min-width: 300px;
+  max-width: 1300px;
+  width: 100%;
 }
 
 .logos{
