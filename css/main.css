@@ -86,6 +86,13 @@ th,td {
   padding-left:10px;
 }
 
+.tb {
+  margin-left: 0%;
+}
+
+/* table{
+  width: 90%;
+} */
 
 @media (min-width: 730px) {
   .section-home {
@@ -124,6 +131,10 @@ th,td {
   th,td {
     padding-left:45px;
   }
+  table{
+    width: 100%;
+  }
+
 }
 
 @media (min-width: 950px) {
@@ -156,6 +167,9 @@ th,td {
   }
   td {
     font-size: 1.0rem;
+  }
+  table{
+    width: 100%;
   }
 
   .schedule_table {
