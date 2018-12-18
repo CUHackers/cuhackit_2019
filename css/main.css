@@ -2,12 +2,16 @@
 * @Author: Ayush Petigara
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-17 14:43:02
+* @Last Modified time: 2018-12-18 07:26:42
 */
 
 * {
   font-family: 'Access Regular', 'PT Mono', monospace;
   overflow-x: hidden;
+}
+
+body {
+  max-width: 1300px;
 }
 
 .nav-pills > li > a:hover,
@@ -19,7 +23,7 @@
 
 
 #front_art {
-  width: 30%;
+  width: 29%;
   position: absolute;
   left: 860px;
   top: 180px;
@@ -88,6 +92,10 @@ th,td {
 
 .tb {
   margin-left: 0%;
+}
+
+table {
+  margin-left: -20px;
 }
 
 /* table{
@@ -186,3 +194,4 @@ th,td {
     line-height: 48px;
   }
 }
+
