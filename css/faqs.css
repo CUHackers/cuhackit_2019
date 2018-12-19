@@ -2,7 +2,7 @@
 * @Author: Charlie Gallentine
 * @Date:   2018-12-16 19:44:31
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-19 10:43:48
+* @Last Modified time: 2018-12-19 11:00:55
 */
 #faqs {
   color: black;
@@ -15,7 +15,7 @@
   background-size: cover;
   cursor: pointer;
   border: none;
-  padding: .9em;
+  padding-bottom: 20px;
   width: 100%;
   text-align: left;
   outline: none;

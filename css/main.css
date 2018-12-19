@@ -2,7 +2,7 @@
 * @Author: Ayush Petigara
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-19 10:44:36
+* @Last Modified time: 2018-12-19 11:16:01
 */
 
 * {
@@ -76,6 +76,7 @@ body {
   max-height: 1200px;
   min-width: 300px;
   max-width: 1300px;
+  /*height: 85vh;*/
   width: 100%;
 }
 
@@ -84,19 +85,15 @@ body {
 }
 
 td {
-  /*font-size: 0.7rem;*/
   font-size: 12px;
 }
+
 th,td {
   padding-left:10px;
 }
 
 .tb {
   margin-left: 0%;
-}
-
-table {
-  margin-left: -20px;
 }
 
 
@@ -132,7 +129,7 @@ table {
     display: none !important;
   }
   td {
-    font-size: 0.87rem;
+    font-size: 1rem;
   }
   th,td {
     padding-left:45px;
