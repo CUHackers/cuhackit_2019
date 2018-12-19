@@ -2,7 +2,7 @@
 * @Author: Charlie Gallentine
 * @Date:   2018-12-16 19:44:31
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-16 21:47:44
+* @Last Modified time: 2018-12-19 11:00:55
 */
 #faqs {
   color: black;
@@ -15,7 +15,7 @@
   background-size: cover;
   cursor: pointer;
   border: none;
-  padding: .9em;
+  padding-bottom: 20px;
   width: 100%;
   text-align: left;
   outline: none;
@@ -25,7 +25,8 @@
   margin-left: 0;
 }
 #faqs .panel {
-  font-size: .9em;
+  /*font-size: .9em;*/
+  font-size: 16px;
   max-height: 0;
   overflow: hidden;
   text-align: left;
@@ -39,7 +40,8 @@
 }
 #faqs .accordion::before {
   content: "+  ";
-  font-size: 1em;
+  /*font-size: 1em;*/
+  font-size: 16px;
   color: black;
 }
 #faqs .active::before {
