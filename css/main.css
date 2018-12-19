@@ -2,7 +2,7 @@
 * @Author: Ayush Petigara
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-19 11:16:01
+* @Last Modified time: 2018-12-19 11:30:09
 */
 
 * {
@@ -37,6 +37,10 @@ body {
 
 .non-mobile {
   display: none !important;
+}
+
+.non-mid {
+  display: block !important;
 }
 
 .mobile {
@@ -125,6 +129,10 @@ th,td {
     display: block !important;
   }
 
+  .non-mid {
+    display: none !important;
+  }
+
   .mobile {
     display: none !important;
   }
@@ -145,6 +153,9 @@ th,td {
     left: 860px;
   }
 
+  .non-mid {
+    display: block !important;
+  }
 
   .h1-size {
     font-size: 32px;

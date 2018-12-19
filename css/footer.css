@@ -2,7 +2,7 @@
 * @Author: Charlie Gallentine
 * @Date:   2018-12-16 19:44:55
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-19 11:27:23
+* @Last Modified time: 2018-12-19 11:38:45
 */
 footer {
   background-color: #EEEEEE;
@@ -14,7 +14,7 @@ footer {
   background-color: black;
   border-radius: 50%;
   padding: 5px;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .fa-extra-pad {
@@ -28,4 +28,11 @@ footer {
 
 .fa-black {
   color: black;
+}
+
+@media (min-width: 730px)
+{
+	.fa-cog {
+	  margin-left: 60px;
+	}
 }
