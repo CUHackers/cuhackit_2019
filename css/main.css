@@ -2,12 +2,13 @@
 * @Author: Ayush Petigara
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-19 11:30:09
+* @Last Modified time: 2018-12-19 11:49:11
 */
 
 * {
   font-family: 'Access Regular', 'PT Mono', monospace;
   overflow-x: hidden;
+  font-size: 16px;
 }
 
 body {
@@ -33,6 +34,10 @@ body {
 
 .white-back {
   background-color: white !important;
+}
+
+.grey-back {
+  background-color: #EEEEEE;
 }
 
 .non-mobile {
@@ -94,6 +99,10 @@ td {
 
 th,td {
   padding-left:10px;
+}
+
+tr>td {
+  font-variant-numeric: tabular-nums;
 }
 
 .tb {
