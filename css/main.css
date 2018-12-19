@@ -2,7 +2,7 @@
 * @Author: Ayush Petigara
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-18 07:26:42
+* @Last Modified time: 2018-12-19 10:44:36
 */
 
 * {
@@ -60,15 +60,15 @@ body {
 }
 
 .h1-size {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .p-size-1 {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .p_size_2 {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .full-size {
@@ -84,7 +84,8 @@ body {
 }
 
 td {
-  font-size: 0.7rem;
+  /*font-size: 0.7rem;*/
+  font-size: 12px;
 }
 th,td {
   padding-left:10px;
@@ -98,9 +99,6 @@ table {
   margin-left: -20px;
 }
 
-/* table{
-  width: 90%;
-} */
 
 @media (min-width: 730px) {
   .section-home {
@@ -115,15 +113,15 @@ table {
   }
 
   .h1-size {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .p-size-1 {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .p_size_2 {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .non-mobile {
@@ -156,7 +154,7 @@ table {
   }
 
   .p-size-1 {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .p_size_2 {
