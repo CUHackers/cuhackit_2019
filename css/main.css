@@ -2,7 +2,7 @@
 * @Author: Ayush Petigara
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-19 11:49:11
+* @Last Modified time: 2018-12-24 10:48:24
 */
 
 * {
@@ -20,6 +20,11 @@ body {
 .nav-pills > li > a:focus {
   background-color: #721ED6;
   color: white;
+}
+
+.nav-pills > li,
+.nav-pills > li > a {
+  border-radius: 0 !important;
 }
 
 
