@@ -2,17 +2,18 @@
 * @Author: Charlie Gallentine
 * @Date:   2018-12-16 19:44:31
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-19 11:00:55
+* @Last Modified time: 2018-12-27 13:34:29
 */
 #faqs {
   color: black;
   font-family: "Access Regular";
 }
 
+#challenges {
+  background-color: #EEEEEE !important;
+}
+
 #faqs .accordion {
-  background: url("/images/rectangle.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
   cursor: pointer;
   border: none;
   padding-bottom: 20px;
@@ -32,15 +33,15 @@
   text-align: left;
   transition: max-height 0.2s ease-out;
   vertical-align: middle;
-  padding: 0em 1em;
+  padding: 0;
   margin-left: 3em;
 }
+
 #faqs .active + .panel {
-  padding: 1em 1em 0em 1em;
+  padding:0;
 }
 #faqs .accordion::before {
   content: "+  ";
-  /*font-size: 1em;*/
   font-size: 16px;
   color: black;
 }
