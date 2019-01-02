@@ -87,7 +87,7 @@ body {
 
 .full-size {
   min-height: 900px;
-  max-height: 1200px;
+  max-height: 1250px;
   min-width: 300px;
   max-width: 1300px;
   /*height: 85vh;*/
@@ -214,4 +214,3 @@ tr>td {
     line-height: 48px;
   }
 }
-
