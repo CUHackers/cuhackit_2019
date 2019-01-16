@@ -27,6 +27,17 @@ body {
   border-radius: 0 !important;
 }
 
+td.table-vert {
+  padding: 0;
+}
+
+td.table-vert h3 {
+  transform: rotateZ(-90deg) translateY(20px);
+}
+
+td.table-vert h5 {
+  transform: rotateZ(-90deg);
+}
 
 #front_art {
   width: 29%;
