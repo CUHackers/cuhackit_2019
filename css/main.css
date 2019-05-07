@@ -2,7 +2,7 @@
 * @Author: Ayush Petigara
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2019-05-07 11:37:17
+* @Last Modified time: 2019-05-07 11:46:02
 */
 
 * {
@@ -69,7 +69,8 @@ td.table-vert h5 {
 }
 
 .bgImg95{
-  background-image: url('/images/95.svg');
+  border :2px solid orange;
+  background-image: url('images/graphs/Chart1.svg');
   background-position:center;
   background-repeat:no-repeat;
   background-size:cover;
