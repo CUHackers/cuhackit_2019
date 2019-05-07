@@ -2,7 +2,7 @@
 * @Author: Ayush Petigara
 * @Date:   2018-07-25 21:30:26
 * @Last Modified by:   Charlie Gallentine
-* @Last Modified time: 2018-12-24 10:48:24
+* @Last Modified time: 2019-05-07 11:46:02
 */
 
 * {
@@ -68,6 +68,16 @@ td.table-vert h5 {
   display: block !important;
 }
 
+.bgImg95{
+  border :2px solid orange;
+  background-image: url('images/graphs/Chart1.svg');
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  height:200px;
+  width:200px;
+}
+
 .section-home {
   background-color: white;
   background-image: url("/images/mobile_background.svg");
@@ -85,11 +95,14 @@ td.table-vert h5 {
 }
 
 .h1-size {
-  font-size: 16px;
+  font-size: 14px;
 }
 
+.h3-size {
+  font-size: 42px;
+}
 .p-size-1 {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .p_size_2 {
